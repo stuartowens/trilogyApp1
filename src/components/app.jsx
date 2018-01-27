@@ -6,15 +6,27 @@ import Feature from './Feature.jsx';
 import Story from './Story.jsx';
 import Faq from './Faq.jsx';
 import Footer from './Footer.jsx';
+import Form from './Form.jsx';
+import heroContent from '../Content/HeroContent.js';
 
 
 
 class App extends React.Component {
+  constructor(){
+    super()
+    this.state= {
+      heroId: 'Hero_code'
+    }
+  }
+  componentDidMount(){
+    heroContent();
+  };
   render() {
     return (
         <div className="App">
           <Header />
-          <Hero />
+          <Hero heroId={this.state.heroId}/>
+          <Form />
           <Feature />
           <Story />
           <Faq />

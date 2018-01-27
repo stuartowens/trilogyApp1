@@ -21891,29 +21891,37 @@
 
 	__webpack_require__(185);
 
-	var _Hero = __webpack_require__(190);
+	var _Hero = __webpack_require__(193);
 
 	var _Hero2 = _interopRequireDefault(_Hero);
 
-	var _Header = __webpack_require__(193);
+	var _Header = __webpack_require__(196);
 
 	var _Header2 = _interopRequireDefault(_Header);
 
-	var _Feature = __webpack_require__(194);
+	var _Feature = __webpack_require__(197);
 
 	var _Feature2 = _interopRequireDefault(_Feature);
 
-	var _Story = __webpack_require__(195);
+	var _Story = __webpack_require__(198);
 
 	var _Story2 = _interopRequireDefault(_Story);
 
-	var _Faq = __webpack_require__(196);
+	var _Faq = __webpack_require__(199);
 
 	var _Faq2 = _interopRequireDefault(_Faq);
 
-	var _Footer = __webpack_require__(197);
+	var _Footer = __webpack_require__(200);
 
 	var _Footer2 = _interopRequireDefault(_Footer);
+
+	var _Form = __webpack_require__(205);
+
+	var _Form2 = _interopRequireDefault(_Form);
+
+	var _HeroContent = __webpack_require__(201);
+
+	var _HeroContent2 = _interopRequireDefault(_HeroContent);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -21929,17 +21937,28 @@
 	  function App() {
 	    _classCallCheck(this, App);
 
-	    return _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).apply(this, arguments));
+	    var _this = _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).call(this));
+
+	    _this.state = {
+	      heroId: 'Hero_code'
+	    };
+	    return _this;
 	  }
 
 	  _createClass(App, [{
+	    key: 'componentDidMount',
+	    value: function componentDidMount() {
+	      (0, _HeroContent2.default)();
+	    }
+	  }, {
 	    key: 'render',
 	    value: function render() {
 	      return _react2.default.createElement(
 	        'div',
 	        { className: 'App' },
 	        _react2.default.createElement(_Header2.default, null),
-	        _react2.default.createElement(_Hero2.default, null),
+	        _react2.default.createElement(_Hero2.default, { heroId: this.state.heroId }),
+	        _react2.default.createElement(_Form2.default, null),
 	        _react2.default.createElement(_Feature2.default, null),
 	        _react2.default.createElement(_Story2.default, null),
 	        _react2.default.createElement(_Faq2.default, null),
@@ -21972,7 +21991,7 @@
 	options.transform = transform
 	options.insertInto = undefined;
 
-	var update = __webpack_require__(188)(content, options);
+	var update = __webpack_require__(191)(content, options);
 
 	if(content.locals) module.exports = content.locals;
 
@@ -22007,18 +22026,41 @@
 /* 186 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(187)(false);
+	var escape = __webpack_require__(187);
+	exports = module.exports = __webpack_require__(188)(false);
 	// imports
 
 
 	// module
-	exports.push([module.id, ".Hero {\n  background-color: blue; }\n\n.App {\n  background-color: green; }\n", ""]);
+	exports.push([module.id, "#Hero_code {\n  background-image: url(" + escape(__webpack_require__(189)) + ");\n  background-size: cover; }\n\n#Hero_data {\n  background-image: url(" + escape(__webpack_require__(190)) + ");\n  background-size: cover; }\n\n.App {\n  font-family: 'Roboto'; }\n\n.Header {\n  height: 5vmax;\n  background-color: black; }\n  .Header img {\n    left: 5;\n    position: absolute;\n    height: 5vmax; }\n  .Header p {\n    font-family: 'Roboto';\n    font-style: normal;\n    right: 0;\n    width: 30vmax;\n    font-size: 20px;\n    color: #dcdcdc;\n    position: absolute;\n    text-align: right;\n    padding-right: 2vmax; }\n    .Header p a {\n      color: #38bcbd; }\n\n.Learn-Head {\n  font-family: 'Roboto';\n  color: white;\n  border: solid green thin;\n  width: 30vmax;\n  text-align: left;\n  padding: 10px; }\n  .Learn-Head h1 {\n    font-size: 50px; }\n  .Learn-Head p {\n    font-size: 25px; }\n\n.Form {\n  border: solid red thin;\n  width: 20vmax;\n  text-align: center;\n  background-color: rgba(220, 220, 220, 0.5); }\n", ""]);
 
 	// exports
 
 
 /***/ }),
 /* 187 */
+/***/ (function(module, exports) {
+
+	module.exports = function escape(url) {
+	    if (typeof url !== 'string') {
+	        return url
+	    }
+	    // If url is already wrapped in quotes, remove them
+	    if (/^['"].*['"]$/.test(url)) {
+	        url = url.slice(1, -1);
+	    }
+	    // Should url be wrapped?
+	    // See https://drafts.csswg.org/css-values-3/#urls
+	    if (/["'() \t\n]/.test(url)) {
+	        return '"' + url.replace(/"/g, '\\"').replace(/\n/g, '\\n') + '"'
+	    }
+
+	    return url
+	}
+
+
+/***/ }),
+/* 188 */
 /***/ (function(module, exports) {
 
 	/*
@@ -22100,7 +22142,19 @@
 
 
 /***/ }),
-/* 188 */
+/* 189 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "static/media/code_hero.jpg";
+
+/***/ }),
+/* 190 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "static/media/data_hero.jpg";
+
+/***/ }),
+/* 191 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/*
@@ -22166,7 +22220,7 @@
 	var	singletonCounter = 0;
 	var	stylesInsertedAtTop = [];
 
-	var	fixUrls = __webpack_require__(189);
+	var	fixUrls = __webpack_require__(192);
 
 	module.exports = function(list, options) {
 		if (false) {
@@ -22482,7 +22536,7 @@
 
 
 /***/ }),
-/* 189 */
+/* 192 */
 /***/ (function(module, exports) {
 
 	
@@ -22577,7 +22631,7 @@
 
 
 /***/ }),
-/* 190 */
+/* 193 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -22594,13 +22648,17 @@
 
 	__webpack_require__(185);
 
-	var _Coding = __webpack_require__(191);
+	var _Coding = __webpack_require__(194);
 
 	var _Coding2 = _interopRequireDefault(_Coding);
 
-	var _Data = __webpack_require__(192);
+	var _Data = __webpack_require__(195);
 
 	var _Data2 = _interopRequireDefault(_Data);
+
+	var _Form = __webpack_require__(205);
+
+	var _Form2 = _interopRequireDefault(_Form);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -22613,23 +22671,74 @@
 	var Hero = function (_React$Component) {
 	  _inherits(Hero, _React$Component);
 
-	  function Hero() {
+	  function Hero(props) {
 	    _classCallCheck(this, Hero);
 
-	    return _possibleConstructorReturn(this, (Hero.__proto__ || Object.getPrototypeOf(Hero)).apply(this, arguments));
+	    var _this = _possibleConstructorReturn(this, (Hero.__proto__ || Object.getPrototypeOf(Hero)).call(this, props));
+
+	    _this.state = {
+	      // heroId: 'Hero_code'
+	    };
+	    return _this;
 	  }
 
 	  _createClass(Hero, [{
+	    key: 'componentDidMount',
+	    value: function componentDidMount() {
+	      console.log(this.props, 'heroId');
+	    }
+	  }, {
 	    key: 'render',
 	    value: function render() {
 	      return _react2.default.createElement(
 	        'div',
-	        { className: 'Hero' },
+	        { id: 'Hero_code' },
 	        _react2.default.createElement(
-	          'h1',
-	          null,
-	          'Hero Component'
-	        )
+	          'div',
+	          { className: 'Learn-Head' },
+	          _react2.default.createElement(
+	            'h1',
+	            null,
+	            'Learn Coding',
+	            _react2.default.createElement('br', null),
+	            ' in 24 Weeks'
+	          ),
+	          _react2.default.createElement(
+	            'p',
+	            null,
+	            'Class starts May 15, 2018'
+	          )
+	        ),
+	        _react2.default.createElement('h2', { id: 'Content' }),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'Top-Content' },
+	          _react2.default.createElement(
+	            'h2',
+	            { id: 'Top-Content-H' },
+	            'CODING'
+	          ),
+	          _react2.default.createElement(
+	            'p',
+	            { id: 'Top-Content-P' },
+	            'Coding Boot Camp equips stuedents skills for full-stack web development through dynamic, in-person classes.'
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'Bottom-Content' },
+	          _react2.default.createElement(
+	            'h2',
+	            { id: 'Bottom-Content-H' },
+	            'DATA ANALYTICS'
+	          ),
+	          _react2.default.createElement(
+	            'p',
+	            { id: 'Bottom-Content-P' },
+	            'Data Boot Camp equips students with the key skills for full-stack web developemnt through dynamic, in-person classes.'
+	          )
+	        ),
+	        _react2.default.createElement(_Form2.default, null)
 	      );
 	    }
 	  }]);
@@ -22640,7 +22749,7 @@
 	exports.default = Hero;
 
 /***/ }),
-/* 191 */
+/* 194 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -22695,7 +22804,7 @@
 	exports.default = Coding;
 
 /***/ }),
-/* 192 */
+/* 195 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -22750,7 +22859,7 @@
 	exports.default = Data;
 
 /***/ }),
-/* 193 */
+/* 196 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -22775,6 +22884,9 @@
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
+	var svgFile = __webpack_require__(204);
+	var svgFile2 = __webpack_require__(203);
+
 	var Header = function (_React$Component) {
 	  _inherits(Header, _React$Component);
 
@@ -22790,10 +22902,18 @@
 	      return _react2.default.createElement(
 	        'div',
 	        { className: 'Header' },
+	        _react2.default.createElement('img', { src: svgFile }),
 	        _react2.default.createElement(
-	          'h1',
+	          'p',
 	          null,
-	          'Header Component'
+	          'To speak with an',
+	          _react2.default.createElement('br', null),
+	          'admissions advisor call ',
+	          _react2.default.createElement(
+	            'a',
+	            null,
+	            '(555)123-4567'
+	          )
 	        )
 	      );
 	    }
@@ -22805,7 +22925,7 @@
 	exports.default = Header;
 
 /***/ }),
-/* 194 */
+/* 197 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -22860,7 +22980,7 @@
 	exports.default = Feature;
 
 /***/ }),
-/* 195 */
+/* 198 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -22915,7 +23035,7 @@
 	exports.default = Story;
 
 /***/ }),
-/* 196 */
+/* 199 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -22970,7 +23090,7 @@
 	exports.default = Faq;
 
 /***/ }),
-/* 197 */
+/* 200 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -23023,6 +23143,131 @@
 	}(_react2.default.Component);
 
 	exports.default = Footer;
+
+/***/ }),
+/* 201 */
+/***/ (function(module, exports) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	var heroContent = function heroContent() {
+	  var heroIds = ['Hero_code', 'Hero_data'];
+	  var heroContent = [{
+	    h: 'CODING',
+	    p: 'Coding Boot Camp equips stuedents skills for full-stack web development through dynamic, in-person classes.'
+	  }, {
+	    h: 'DATA ANALYTICS',
+	    p: 'Data Boot Camp equips students with the key skills for full-stack web developemnt through dynamic, in-person classes.'
+	  }];
+	  console.log('Hero component loaded');
+	  var heroDiv = document.getElementById("Hero_code");
+	  var topContentH = document.getElementById("Top-Content-H");
+	  var bottomContentH = document.getElementById("Bottom-Content-H");
+	  var topContentP = document.getElementById("Top-Content-P");
+	  var bottomContentP = document.getElementById("Bottom-Content-P");
+
+	  var i = 0;
+	  setInterval(function () {
+	    heroDiv.id = heroIds[i];
+	    topContentH.innerHTML = bottomContentH.innerHTML;
+	    topContentP.innerHTML = bottomContentP.innerHTML;
+	    bottomContentH.innerHTML = heroContent[i].h;
+	    bottomContentP.innerHTML = heroContent[i].p;
+	    i = i + 1;
+	    if (i === heroIds.length) {
+	      i = 0;
+	    }
+	  }, 5000);
+	};
+
+	exports.default = heroContent;
+
+/***/ }),
+/* 202 */,
+/* 203 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "static/media/logo_trilogy_blk.svg";
+
+/***/ }),
+/* 204 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "static/media/logo_trilogy.svg";
+
+/***/ }),
+/* 205 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	__webpack_require__(185);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var Form = function (_React$Component) {
+	  _inherits(Form, _React$Component);
+
+	  function Form() {
+	    _classCallCheck(this, Form);
+
+	    return _possibleConstructorReturn(this, (Form.__proto__ || Object.getPrototypeOf(Form)).apply(this, arguments));
+	  }
+
+	  _createClass(Form, [{
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
+	        'div',
+	        { className: 'Form' },
+	        _react2.default.createElement(
+	          'h2',
+	          null,
+	          'GET PROGRAM INFO'
+	        ),
+	        _react2.default.createElement(
+	          'form',
+	          null,
+	          _react2.default.createElement(
+	            'p',
+	            null,
+	            'Step 1 of 3'
+	          ),
+	          _react2.default.createElement('input', { type: 'text', placeholder: 'First name' }),
+	          _react2.default.createElement('input', { type: 'text', placeholder: 'Last name' }),
+	          _react2.default.createElement(
+	            'button',
+	            { type: 'submit' },
+	            'CONTINUE'
+	          )
+	        )
+	      );
+	    }
+	  }]);
+
+	  return Form;
+	}(_react2.default.Component);
+
+	exports.default = Form;
 
 /***/ })
 /******/ ]);

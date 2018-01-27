@@ -6,7 +6,13 @@ class Form extends React.Component {
   render() {
     return (
         <div className="Form">
-          <h1>Form Component</h1>
+          <h2>GET PROGRAM INFO</h2>
+          <form>
+            <p>Step 1 of 3</p>
+            <input type="text" placeholder="First name" />
+            <input type="text" placeholder="Last name" />
+            <button type="submit">CONTINUE</button>
+          </form>
         </div>
       )
   }
