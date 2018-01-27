@@ -1,6 +1,7 @@
 import React from 'react';
 import './app.scss';
 import Hero from './Hero.jsx';
+import HeroMobile from './HeroMobile.jsx';
 import Header from './Header.jsx';
 import Feature from './Feature.jsx';
 import Story from './Story.jsx';
@@ -25,6 +26,7 @@ class App extends React.Component {
         <div className="App">
           {/* <Header /> */}
           <Hero heroId={this.state.heroId}/>
+          <HeroMobile />
           <Feature />
           <Story />
           <Faq />

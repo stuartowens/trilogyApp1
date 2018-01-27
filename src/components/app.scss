@@ -3,25 +3,57 @@ $blue: #38bcdb !global;
 $blue-hover: #2e91a3 !global;
 $grey: #a9aaab !global;
 $light-grey: #dcdcdc !global;
+$code-background: url("../images/code_hero.jpg");
+$data-background: url("../images/data_hero.jpg");
+$faq-background: url("../images/faq.jpg");
+$about-background: url("../images/about.jpg");
+$featuring-background: url("../images/featuring.jpg");
+$mobile-code-background: url("../images/mobile/code_mobile_hero.jpg");
+$mobile-data-background: url("../images/mobile/data_mobile_hero.jpg");
+$mobile-about-background: url("../images/mobile/about_mobile.jpg");
+$mobile-faq-background: url("../images/mobile/faq_mobile.jpg");
+$mobile-featuring-background: url("../images/mobile/featuring_mobile.jpg");
+
 
 
 .App {
   font-family: 'Roboto';
 }
 #Hero_code {
-  background-image: url("../images/code_hero.jpg");
+  background-image: $mobile-code-background;
+  @media screen and (min-width: 800px) {
+    background-image: $code-background;
+  }
 }
 #Hero_data {
-  background-image: url("../images/data_hero.jpg");
+  background-image: $mobile-data-background;
+  @media screen and (min-width: 800px) {
+    background-image: $data-background;
+  }
 }
+
+
 
 .Hero {
   background-size: cover;
-  display: flex;
+  display: none;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
 }
+.Hero-Mobile {
+  background-size: cover;
+  background-image: $mobile-data-background;
+}
+@media only screen and (max-height: 800px) {
+  .Hero {
+    display: flex;
+  }
+  .Hero-Mobile {
+    display: none;
+  }
+}
+
 .Header {
   order:1;
   height: 7vmax;
@@ -172,7 +204,10 @@ $light-grey: #dcdcdc !global;
   }
 }
 .Feature {
-  background-image: url("../images/featuring.jpg");
+  background-image: $mobile-featuring-background;
+  @media screen and (min-width: 800px) {
+    background-image: $featuring-background;
+  }
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -181,7 +216,10 @@ $light-grey: #dcdcdc !global;
   height: 50vmax;
 }
 .lazy-feature {
-  background-image: url("../images/featuring.jpg");
+  background-image: $mobile-featuring-background;
+  @media screen and (min-width: 800px) {
+    background-image: $featuring-background;
+  }
   background-size: cover;
   h1 {
     margin-top: 0;
@@ -220,45 +258,18 @@ $light-grey: #dcdcdc !global;
   }
 }
 
-.Story {
-  background-image: url("../images/about.jpg");
-  background-size: cover;
-  height: 30vw;
-  position: relative;
-  h1 {
-    font-size: 3vw;
-    padding-top: 4vw;
-    vertical-align: middle;
-    margin : auto;
-    position : absolute;
-    top:3vw;
-    bottom:0;
-    left:0;
-    right:0;
-    text-decoration: underline;
-    color: $blue-hover;
-    text-align: center;
-  }
-  p {
-    width: 75vw;
-    color: white;
-    text-align: center;
-    font-size: 1.5vw;
-    font-family: 'Roboto Slab';
-    font-weight: lighter;
-    margin : auto;
-    position : absolute;
-    top:12vw;
-    bottom:0;
-    left:0;
-    right:0;
-  }
-}
+
 
 .Faq {
-  background-image: url("../images/faq.jpg");
+  background-image: $mobile-faq-background;
+  @media screen and (min-width: 800px) {
+    background-image: $faq-background;
+  }
   background-size: cover;
+  height: 45vw;
   h1 {
+    margin-top: 0;
+    padding-top: 5vw;
     font-size: 3vw;
     text-decoration: underline;
     color: black;
@@ -286,6 +297,8 @@ $light-grey: #dcdcdc !global;
   }
   #answer-#{$i} {
     display: none;
+    font-family: 'Roboto Slab';
+    font-size: 1vw;
   }
   #answer-#{$i}:target {
     display: block;
@@ -295,7 +308,7 @@ $light-grey: #dcdcdc !global;
 .Footer {
   order:1;
   height: 7vmax;
-  width: 100vmax;
+  // width: 100vmax;
   background-color: $blue;
   img {
     left: 5;
@@ -318,5 +331,81 @@ $light-grey: #dcdcdc !global;
     a {
       color: #38bcbd;
     }
+  }
+}
+
+$parallax-perspective : 1 !default;
+$parallax-element : "body" !default;
+$parallax-ios : true !default;
+
+@mixin parallax-init($perspective : $parallax-perspective, $element : $parallax-element, $parallax-ios : $parallax-ios) {
+  @if $element == "body" {
+    html, body {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+  }
+  #{$element} {
+    overflow: auto;
+    perspective: $perspective * 1px;
+    transform-style: preserve-3d;
+    @if $parallax-ios == false {
+      -webkit-overflow-scrolling: touchl
+    }
+    &, * {
+      transform-style: preserve-3d;
+    }
+  }
+}
+
+@mixin parallax($distance : 0, $perspective : $parallax-perspective) {
+  transform: translateZ($distance * $perspective * 1px) scale(abs($distance - 1));
+  z-index: $distance * 1000;
+}
+
+@include parallax-init;
+// @include parallax-init;
+
+.Story {
+  // @include parallax-init();
+  background-image: $mobile-about-background;
+  @media screen and (min-width: 800px) {
+    background-image: $about-background;
+  }
+  background-size: cover;
+  height: 30vw;
+  position: relative;
+  h1 {
+    @include parallax(.1);
+    font-size: 3vw;
+    padding-top: 4vw;
+    vertical-align: middle;
+    margin : auto;
+    position : absolute;
+    top:3vw;
+    bottom:0;
+    left:0;
+    right:0;
+    text-decoration: underline;
+    color: $blue-hover;
+    text-align: center;
+  }
+  p {
+    @include parallax(.2);
+    width: 75vw;
+    color: white;
+    text-align: center;
+    font-size: 1.5vw;
+    font-family: 'Roboto Slab';
+    font-weight: lighter;
+    margin : auto;
+    position : absolute;
+    top:12vw;
+    bottom:0;
+    left:0;
+    right:0;
   }
 }
