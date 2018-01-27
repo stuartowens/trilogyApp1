@@ -219,3 +219,38 @@ $light-grey: #dcdcdc !global;
     font-size: .8vw;
   }
 }
+
+.Story {
+  background-image: url("../images/about.jpg");
+  background-size: cover;
+  height: 30vw;
+  position: relative;
+  h1 {
+    font-size: 3vw;
+    padding-top: 4vw;
+    vertical-align: middle;
+    margin : auto;
+    position : absolute;
+    top:3vw;
+    bottom:0;
+    left:0;
+    right:0;
+    text-decoration: underline;
+    color: $blue-hover;
+    text-align: center;
+  }
+  p {
+    width: 75vw;
+    color: white;
+    text-align: center;
+    font-size: 1.5vw;
+    font-family: 'Roboto Slab';
+    font-weight: lighter;
+    margin : auto;
+    position : absolute;
+    top:12vw;
+    bottom:0;
+    left:0;
+    right:0;
+  }
+}
