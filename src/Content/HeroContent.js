@@ -13,7 +13,6 @@ const heroContent = () => {
       p: 'Data Boot Camp equips students with the key skills for full-stack web development <br /> through dynamic, in-person classes.'
     }
   ]
-  console.log('Hero component loaded')
   var heroDiv = document.getElementById("Hero_code");
   var topContentH = document.getElementById("Top-Content-H");
   var bottomContentH = document.getElementById("Bottom-Content-H");

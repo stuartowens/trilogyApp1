@@ -14,7 +14,7 @@ class Hero extends React.Component {
     }
   }
   componentDidMount () {
-    console.log(this.props, 'heroId');
+    // console.log(this.props, 'heroId');
   }
   render() {
     return (

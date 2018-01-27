@@ -21891,35 +21891,31 @@
 
 	__webpack_require__(185);
 
-	var _Hero = __webpack_require__(193);
+	var _Hero = __webpack_require__(194);
 
 	var _Hero2 = _interopRequireDefault(_Hero);
 
-	var _Header = __webpack_require__(197);
+	var _Header = __webpack_require__(198);
 
 	var _Header2 = _interopRequireDefault(_Header);
 
-	var _Feature = __webpack_require__(200);
+	var _Feature = __webpack_require__(201);
 
 	var _Feature2 = _interopRequireDefault(_Feature);
 
-	var _Story = __webpack_require__(201);
+	var _Story = __webpack_require__(206);
 
 	var _Story2 = _interopRequireDefault(_Story);
 
-	var _Faq = __webpack_require__(202);
+	var _Faq = __webpack_require__(207);
 
 	var _Faq2 = _interopRequireDefault(_Faq);
 
-	var _Footer = __webpack_require__(203);
+	var _Footer = __webpack_require__(208);
 
 	var _Footer2 = _interopRequireDefault(_Footer);
 
-	var _Form = __webpack_require__(196);
-
-	var _Form2 = _interopRequireDefault(_Form);
-
-	var _HeroContent = __webpack_require__(204);
+	var _HeroContent = __webpack_require__(209);
 
 	var _HeroContent2 = _interopRequireDefault(_HeroContent);
 
@@ -21957,7 +21953,6 @@
 	        'div',
 	        { className: 'App' },
 	        _react2.default.createElement(_Hero2.default, { heroId: this.state.heroId }),
-	        _react2.default.createElement(_Form2.default, null),
 	        _react2.default.createElement(_Feature2.default, null),
 	        _react2.default.createElement(_Story2.default, null),
 	        _react2.default.createElement(_Faq2.default, null),
@@ -21990,7 +21985,7 @@
 	options.transform = transform
 	options.insertInto = undefined;
 
-	var update = __webpack_require__(191)(content, options);
+	var update = __webpack_require__(192)(content, options);
 
 	if(content.locals) module.exports = content.locals;
 
@@ -22031,7 +22026,7 @@
 
 
 	// module
-	exports.push([module.id, ".App {\n  font-family: 'Roboto'; }\n\n#Hero_code {\n  background-image: url(" + escape(__webpack_require__(189)) + "); }\n\n#Hero_data {\n  background-image: url(" + escape(__webpack_require__(190)) + "); }\n\n.Hero {\n  background-size: cover;\n  display: flex;\n  flex-direction: row;\n  flex-wrap: wrap;\n  justify-content: space-between; }\n\n.Header {\n  order: 1;\n  height: 7vmax;\n  width: 100vmax;\n  background-color: rgba(0, 0, 0, 0.8); }\n  .Header img {\n    left: 5;\n    position: absolute;\n    height: 5vmax;\n    margin-left: 5vmax;\n    margin-bottom: 1vmax;\n    padding: 1vmax; }\n  .Header p {\n    font-family: 'Roboto';\n    font-style: normal;\n    right: 0;\n    width: 30vmax;\n    font-size: 15px;\n    color: #dcdcdc;\n    position: absolute;\n    text-align: right;\n    padding-right: 2vmax; }\n    .Header p a {\n      color: #38bcbd; }\n\n.Learn-Head {\n  order: 2;\n  font-family: 'Roboto';\n  font-weight: bold;\n  color: white;\n  width: 25vmax;\n  margin-left: 4vmax;\n  margin-top: 3vmax;\n  text-align: left;\n  padding: 10px; }\n  .Learn-Head h1 {\n    font-size: 45px;\n    font-weight: bold;\n    margin-bottom: 0; }\n  .Learn-Head p {\n    font-size: 20px;\n    margin-top: 0;\n    font-family: 'Roboto Slab';\n    font-weight: lighter; }\n\n.Form {\n  order: 4;\n  width: 25vmax;\n  height: 10vmax;\n  margin-right: 5vmax;\n  margin-left: 4vmax;\n  margin-bottom: 3vmax;\n  text-align: center;\n  background-color: rgba(220, 220, 220, 0.85);\n  border-radius: 5px; }\n  .Form h2 {\n    margin-top: 5px;\n    margin-bottom: 0;\n    font-size: 2vmax;\n    font-weight: bold; }\n  .Form p {\n    margin-bottom: 0;\n    font-size: .95vw; }\n  .Form input {\n    background: transparent;\n    border: none;\n    border-bottom: 1px solid #000000;\n    text-align: center;\n    font-size: 1.5vmax;\n    width: 9vmax;\n    margin-left: 10px;\n    margin-bottom: .3vw; }\n  .Form button {\n    color: white;\n    font-size: 1.8vmax;\n    font-weight: bold;\n    border-radius: 6px;\n    background-color: #38bcdb;\n    width: 24vmax;\n    height: 2.7vmax;\n    margin-bottom: 0; }\n  .Form button:hover {\n    color: white;\n    background-color: #2e91a3; }\n\n.Top-Content {\n  order: 3;\n  width: 28vmax;\n  margin-right: 7vmax;\n  margin-top: 3vmax;\n  text-align: right; }\n  .Top-Content h2 {\n    font-size: 1.7vmax;\n    color: #38bcbd;\n    margin-bottom: .3vw; }\n  .Top-Content p {\n    color: white;\n    font-size: 1.2vw;\n    font-weight: 200;\n    margin-bottom: 0;\n    margin-top: 0;\n    border-bottom: solid #2e91a3 thick; }\n  .Top-Content h1 {\n    color: #38bcbd;\n    font-style: oblique;\n    margin-top: 0; }\n\n.Bottom-Content {\n  order: 5;\n  width: 28vmax;\n  margin-right: 7vmax;\n  margin-bottom: 3vmax;\n  text-align: right; }\n  .Bottom-Content h2 {\n    font-size: 1.7vmax;\n    color: white;\n    margin-bottom: .3vw; }\n  .Bottom-Content p {\n    color: white;\n    font-size: 1.2vw;\n    font-weight: 200;\n    margin-bottom: 0;\n    margin-top: 0;\n    border-bottom: solid white thick; }\n  .Bottom-Content h1 {\n    color: white;\n    font-style: oblique;\n    margin-top: 0; }\n", ""]);
+	exports.push([module.id, ".App {\n  font-family: 'Roboto'; }\n\n#Hero_code {\n  background-image: url(" + escape(__webpack_require__(189)) + "); }\n\n#Hero_data {\n  background-image: url(" + escape(__webpack_require__(190)) + "); }\n\n.Hero {\n  background-size: cover;\n  display: flex;\n  flex-direction: row;\n  flex-wrap: wrap;\n  justify-content: space-between; }\n\n.Header {\n  order: 1;\n  height: 7vmax;\n  width: 100vmax;\n  background-color: rgba(0, 0, 0, 0.8); }\n  .Header img {\n    left: 5;\n    position: absolute;\n    height: 5vmax;\n    margin-left: 5vmax;\n    margin-bottom: 1vmax;\n    padding: 1vmax; }\n  .Header p {\n    font-family: 'Roboto';\n    font-style: normal;\n    right: 0;\n    width: 30vmax;\n    font-size: 15px;\n    color: #dcdcdc;\n    position: absolute;\n    text-align: right;\n    padding-right: 2vmax; }\n    .Header p a {\n      color: #38bcbd; }\n\n.Learn-Head {\n  order: 2;\n  font-family: 'Roboto';\n  font-weight: bold;\n  color: white;\n  width: 25vmax;\n  margin-left: 4vmax;\n  margin-top: 3vmax;\n  text-align: left;\n  padding: 10px; }\n  .Learn-Head h1 {\n    font-size: 45px;\n    font-weight: bold;\n    margin-bottom: 0; }\n  .Learn-Head p {\n    font-size: 20px;\n    margin-top: 0;\n    font-family: 'Roboto Slab';\n    font-weight: lighter; }\n\n.Form {\n  order: 4;\n  width: 25vmax;\n  height: 10.5vmax;\n  margin-right: 8vmax;\n  margin-left: 4vmax;\n  margin-bottom: 3vmax;\n  text-align: center;\n  background-color: rgba(220, 220, 220, 0.85);\n  border-radius: 5px; }\n  .Form h2 {\n    margin-top: 5px;\n    margin-bottom: 0;\n    font-size: 2vmax;\n    font-weight: bold; }\n  .Form p {\n    margin-bottom: 0;\n    font-size: .95vw; }\n  .Form input {\n    background: transparent;\n    border: none;\n    border-bottom: 1px solid #000000;\n    text-align: center;\n    font-size: 1.5vmax;\n    width: 9vmax;\n    margin-left: 10px;\n    margin-bottom: .3vw; }\n  .Form button {\n    color: white;\n    font-size: 1.8vmax;\n    font-weight: bold;\n    border-radius: 6px;\n    background-color: #38bcdb;\n    width: 24vmax;\n    height: 2.7vmax;\n    margin-bottom: 0; }\n  .Form button:hover {\n    color: white;\n    background-color: #2e91a3; }\n\n.Top-Content {\n  order: 3;\n  width: 28vmax;\n  margin-right: 7vmax;\n  margin-top: 3vmax;\n  text-align: right; }\n  .Top-Content h2 {\n    font-size: 1.7vmax;\n    color: #38bcbd;\n    margin-bottom: .3vw; }\n  .Top-Content p {\n    color: white;\n    font-size: 1.2vw;\n    font-weight: 200;\n    margin-bottom: 0;\n    margin-top: 0;\n    border-bottom: solid #2e91a3 thick; }\n  .Top-Content h1 {\n    color: #38bcbd;\n    font-style: oblique;\n    margin-top: 0; }\n\n.Bottom-Content {\n  order: 5;\n  width: 28vmax;\n  margin-right: 7vmax;\n  margin-bottom: 3vmax;\n  text-align: right; }\n  .Bottom-Content h2 {\n    font-size: 1.7vmax;\n    color: white;\n    margin-bottom: .3vw; }\n  .Bottom-Content p {\n    color: white;\n    font-size: 1.2vw;\n    font-weight: 200;\n    margin-bottom: 0;\n    margin-top: 0;\n    border-bottom: solid white thick; }\n  .Bottom-Content h1 {\n    color: white;\n    font-style: oblique;\n    margin-top: 0; }\n\n.Feature {\n  background-image: url(" + escape(__webpack_require__(191)) + ");\n  background-size: cover;\n  display: flex;\n  flex-direction: column;\n  flex-wrap: wrap;\n  justify-content: space-around;\n  height: 50vmax; }\n\n.lazy-feature {\n  background-image: url(" + escape(__webpack_require__(191)) + ");\n  background-size: cover; }\n  .lazy-feature h1 {\n    margin-top: 0;\n    font-size: 3vw;\n    width: 95vw;\n    padding-top: 4vw;\n    text-decoration: underline;\n    color: white;\n    text-align: center; }\n\n#feature-1 {\n  font-family: 'Roboto Slab';\n  color: white;\n  order: 1;\n  width: 20vw;\n  margin: 6vw;\n  margin-top: 0;\n  margin-bottom: 2vw;\n  text-align: center; }\n  #feature-1 img {\n    width: 4vw; }\n\n#feature-2 {\n  font-family: 'Roboto Slab';\n  color: white;\n  order: 2;\n  width: 20vw;\n  margin: 6vw;\n  margin-top: 0;\n  margin-bottom: 2vw;\n  text-align: center; }\n  #feature-2 img {\n    width: 4vw; }\n\n#feature-3 {\n  font-family: 'Roboto Slab';\n  color: white;\n  order: 3;\n  width: 20vw;\n  margin: 6vw;\n  margin-top: 0;\n  margin-bottom: 2vw;\n  text-align: center; }\n  #feature-3 img {\n    width: 4vw; }\n\n#feature-4 {\n  font-family: 'Roboto Slab';\n  color: white;\n  order: 4;\n  width: 20vw;\n  margin: 6vw;\n  margin-top: 0;\n  margin-bottom: 2vw;\n  text-align: center; }\n  #feature-4 img {\n    width: 4vw; }\n\n#feature-5 {\n  font-family: 'Roboto Slab';\n  color: white;\n  order: 5;\n  width: 20vw;\n  margin: 6vw;\n  margin-top: 0;\n  margin-bottom: 2vw;\n  text-align: center; }\n  #feature-5 img {\n    width: 4vw; }\n\n#feature-6 {\n  font-family: 'Roboto Slab';\n  color: white;\n  order: 6;\n  width: 20vw;\n  margin: 6vw;\n  margin-top: 0;\n  margin-bottom: 2vw;\n  text-align: center; }\n  #feature-6 img {\n    width: 4vw; }\n\n#feature-3 img {\n  height: 35vw;\n  width: auto; }\n\n#feature-3 p {\n  font-size: .8vw; }\n", ""]);
 
 	// exports
 
@@ -22156,6 +22151,12 @@
 /* 191 */
 /***/ (function(module, exports, __webpack_require__) {
 
+	module.exports = __webpack_require__.p + "static/media/featuring.jpg";
+
+/***/ }),
+/* 192 */
+/***/ (function(module, exports, __webpack_require__) {
+
 	/*
 		MIT License http://www.opensource.org/licenses/mit-license.php
 		Author Tobias Koppers @sokra
@@ -22219,7 +22220,7 @@
 	var	singletonCounter = 0;
 	var	stylesInsertedAtTop = [];
 
-	var	fixUrls = __webpack_require__(192);
+	var	fixUrls = __webpack_require__(193);
 
 	module.exports = function(list, options) {
 		if (false) {
@@ -22535,7 +22536,7 @@
 
 
 /***/ }),
-/* 192 */
+/* 193 */
 /***/ (function(module, exports) {
 
 	
@@ -22630,7 +22631,7 @@
 
 
 /***/ }),
-/* 193 */
+/* 194 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -22647,19 +22648,19 @@
 
 	__webpack_require__(185);
 
-	var _Coding = __webpack_require__(194);
+	var _Coding = __webpack_require__(195);
 
 	var _Coding2 = _interopRequireDefault(_Coding);
 
-	var _Data = __webpack_require__(195);
+	var _Data = __webpack_require__(196);
 
 	var _Data2 = _interopRequireDefault(_Data);
 
-	var _Form = __webpack_require__(196);
+	var _Form = __webpack_require__(197);
 
 	var _Form2 = _interopRequireDefault(_Form);
 
-	var _Header = __webpack_require__(197);
+	var _Header = __webpack_require__(198);
 
 	var _Header2 = _interopRequireDefault(_Header);
 
@@ -22688,7 +22689,7 @@
 	  _createClass(Hero, [{
 	    key: 'componentDidMount',
 	    value: function componentDidMount() {
-	      console.log(this.props, 'heroId');
+	      // console.log(this.props, 'heroId');
 	    }
 	  }, {
 	    key: 'render',
@@ -22760,7 +22761,7 @@
 	exports.default = Hero;
 
 /***/ }),
-/* 194 */
+/* 195 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -22815,7 +22816,7 @@
 	exports.default = Coding;
 
 /***/ }),
-/* 195 */
+/* 196 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -22870,7 +22871,7 @@
 	exports.default = Data;
 
 /***/ }),
-/* 196 */
+/* 197 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -22942,7 +22943,7 @@
 	exports.default = Form;
 
 /***/ }),
-/* 197 */
+/* 198 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -22967,8 +22968,8 @@
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-	var svgFile = __webpack_require__(198);
-	var svgFile2 = __webpack_require__(199);
+	var Logo = __webpack_require__(199);
+	var svgFile2 = __webpack_require__(200);
 
 	var Header = function (_React$Component) {
 	  _inherits(Header, _React$Component);
@@ -22985,7 +22986,7 @@
 	      return _react2.default.createElement(
 	        'div',
 	        { className: 'Header' },
-	        _react2.default.createElement('img', { src: svgFile }),
+	        _react2.default.createElement('img', { src: Logo }),
 	        _react2.default.createElement(
 	          'p',
 	          null,
@@ -23008,19 +23009,19 @@
 	exports.default = Header;
 
 /***/ }),
-/* 198 */
+/* 199 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "static/media/logo_trilogy.svg";
 
 /***/ }),
-/* 199 */
+/* 200 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "static/media/logo_trilogy_blk.svg";
 
 /***/ }),
-/* 200 */
+/* 201 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -23045,6 +23046,12 @@
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
+	var phone = __webpack_require__(202);
+	var completeProjIcon = __webpack_require__(203);
+	var benefitIcon = __webpack_require__(204);
+	var dataCodingIcon = __webpack_require__(205);
+	var timeIcon = __webpack_require__(210);
+
 	var Feature = function (_React$Component) {
 	  _inherits(Feature, _React$Component);
 
@@ -23059,11 +23066,65 @@
 	    value: function render() {
 	      return _react2.default.createElement(
 	        'div',
-	        { className: 'Feature' },
+	        { className: 'lazy-feature' },
 	        _react2.default.createElement(
 	          'h1',
 	          null,
-	          'Feature Component'
+	          'Featuring'
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'Feature' },
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'feature-child', id: 'feature-3' },
+	            _react2.default.createElement('img', { src: phone }),
+	            _react2.default.createElement(
+	              'p',
+	              null,
+	              '*The material in this course is subject to change due to market demand.'
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'feature-child', id: 'feature-1' },
+	            _react2.default.createElement('img', { src: dataCodingIcon }),
+	            _react2.default.createElement(
+	              'p',
+	              null,
+	              'Learn Advanced Excel, Python, Javascript \'(D3.js, Leaflet.js)\', HTML5/CSS, API Interactions, Social Media Mining, SQL, Tableau, Advanced Statistics, Machine LEarning, R, Git/GitHub, and More.*'
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'feature-child', id: 'feature-2' },
+	            _react2.default.createElement('img', { src: timeIcon }),
+	            _react2.default.createElement(
+	              'p',
+	              null,
+	              'Study part-time, three days a week, while maintaining your work schedule.'
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'feature-child', id: 'feature-4' },
+	            _react2.default.createElement('img', { src: benefitIcon }),
+	            _react2.default.createElement(
+	              'p',
+	              null,
+	              'Benefit from a wide range of career services to position you for success as you work to advance in your current career or seek a new opportunity.'
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'feature-child', id: 'feature-5' },
+	            _react2.default.createElement('img', { src: completeProjIcon }),
+	            _react2.default.createElement(
+	              'p',
+	              null,
+	              'Complete projects using real data sets from the worlds of finance, healthcare, government, social welfare, and more-allowing you to build a strong portfolio with a professional demonstration.'
+	            )
+	          )
 	        )
 	      );
 	    }
@@ -23075,7 +23136,31 @@
 	exports.default = Feature;
 
 /***/ }),
-/* 201 */
+/* 202 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "static/media/phone.png";
+
+/***/ }),
+/* 203 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "static/media/complete_proj.svg";
+
+/***/ }),
+/* 204 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "static/media/benefit.svg";
+
+/***/ }),
+/* 205 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "static/media/data_coding.svg";
+
+/***/ }),
+/* 206 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -23130,7 +23215,7 @@
 	exports.default = Story;
 
 /***/ }),
-/* 202 */
+/* 207 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -23185,7 +23270,7 @@
 	exports.default = Faq;
 
 /***/ }),
-/* 203 */
+/* 208 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -23240,7 +23325,7 @@
 	exports.default = Footer;
 
 /***/ }),
-/* 204 */
+/* 209 */
 /***/ (function(module, exports) {
 
 	'use strict';
@@ -23257,7 +23342,6 @@
 	    h: 'DATA ANALYTICS',
 	    p: 'Data Boot Camp equips students with the key skills for full-stack web development <br /> through dynamic, in-person classes.'
 	  }];
-	  console.log('Hero component loaded');
 	  var heroDiv = document.getElementById("Hero_code");
 	  var topContentH = document.getElementById("Top-Content-H");
 	  var bottomContentH = document.getElementById("Bottom-Content-H");
@@ -23279,6 +23363,12 @@
 	};
 
 	exports.default = heroContent;
+
+/***/ }),
+/* 210 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "static/media/time.svg";
 
 /***/ })
 /******/ ]);

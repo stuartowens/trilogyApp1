@@ -76,8 +76,8 @@ $light-grey: #dcdcdc !global;
 .Form {
   order: 4;
   width: 25vmax;
-  height: 10vmax;
-  margin-right: 5vmax;
+  height: 10.5vmax;
+  margin-right: 8vmax;
   margin-left: 4vmax;
   margin-bottom: 3vmax;
   text-align: center;
@@ -169,5 +169,53 @@ $light-grey: #dcdcdc !global;
     color: white;
     font-style: oblique;
     margin-top: 0;
+  }
+}
+.Feature {
+  background-image: url("../images/featuring.jpg");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  height: 50vmax;
+}
+.lazy-feature {
+  background-image: url("../images/featuring.jpg");
+  background-size: cover;
+  h1 {
+    margin-top: 0;
+    font-size: 3vw;
+    width: 95vw;
+    padding-top: 4vw;
+    text-decoration: underline;
+    color: white;
+    text-align: center;
+  }
+}
+
+
+@for $i from 1 through 6 {
+  #feature-#{$i} {
+    font-family: 'Roboto Slab';
+    color: white;
+    order: $i;
+    width: 20vw;
+    margin: 6vw;
+    margin-top:0;
+    margin-bottom:2vw;
+    text-align: center;
+    img {
+      width: 4vw;
+    }
+   }
+}
+#feature-3 {
+  img {
+    height: 35vw;
+    width: auto;
+  }
+  p {
+    font-size: .8vw;
   }
 }
