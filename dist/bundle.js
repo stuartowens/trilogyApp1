@@ -22026,7 +22026,7 @@
 
 
 	// module
-	exports.push([module.id, ".App {\n  font-family: 'Roboto'; }\n\n#Hero_code {\n  background-image: url(" + escape(__webpack_require__(189)) + "); }\n\n#Hero_data {\n  background-image: url(" + escape(__webpack_require__(190)) + "); }\n\n.Hero {\n  background-size: cover;\n  display: flex;\n  flex-direction: row;\n  flex-wrap: wrap;\n  justify-content: space-between; }\n\n.Header {\n  order: 1;\n  height: 7vmax;\n  width: 100vmax;\n  background-color: rgba(0, 0, 0, 0.8); }\n  .Header img {\n    left: 5;\n    position: absolute;\n    height: 5vmax;\n    margin-left: 5vmax;\n    margin-bottom: 1vmax;\n    padding: 1vmax; }\n  .Header p {\n    font-family: 'Roboto';\n    font-style: normal;\n    right: 0;\n    width: 30vmax;\n    font-size: 15px;\n    color: #dcdcdc;\n    position: absolute;\n    text-align: right;\n    padding-right: 2vmax; }\n    .Header p a {\n      color: #38bcbd; }\n\n.Learn-Head {\n  order: 2;\n  font-family: 'Roboto';\n  font-weight: bold;\n  color: white;\n  width: 25vmax;\n  margin-left: 4vmax;\n  margin-top: 3vmax;\n  text-align: left;\n  padding: 10px; }\n  .Learn-Head h1 {\n    font-size: 4vw;\n    font-weight: bold;\n    margin-bottom: 0; }\n  .Learn-Head p {\n    font-size: 2vw;\n    margin-top: 0;\n    font-family: 'Roboto Slab';\n    font-weight: lighter; }\n\n.Form {\n  order: 4;\n  width: 25vmax;\n  height: 10.5vmax;\n  margin-right: 8vmax;\n  margin-left: 4vmax;\n  margin-bottom: 3vmax;\n  text-align: center;\n  background-color: rgba(220, 220, 220, 0.85);\n  border-radius: 5px; }\n  .Form h2 {\n    margin-top: 5px;\n    margin-bottom: 0;\n    font-size: 2vmax;\n    font-weight: bold; }\n  .Form p {\n    margin-bottom: 0;\n    font-size: .95vw; }\n  .Form input {\n    background: transparent;\n    border: none;\n    border-bottom: 1px solid #000000;\n    text-align: center;\n    font-size: 1.5vmax;\n    width: 9vmax;\n    margin-left: 10px;\n    margin-bottom: .3vw; }\n  .Form button {\n    color: white;\n    font-size: 1.8vmax;\n    font-weight: bold;\n    border-radius: 6px;\n    background-color: #38bcdb;\n    width: 24vmax;\n    height: 2.7vmax;\n    margin-bottom: 0; }\n  .Form button:hover {\n    color: white;\n    background-color: #2e91a3; }\n\n.Top-Content {\n  order: 3;\n  width: 28vmax;\n  margin-right: 7vmax;\n  margin-top: 3vmax;\n  text-align: right; }\n  .Top-Content h2 {\n    font-size: 1.7vmax;\n    color: #38bcbd;\n    margin-bottom: .3vw; }\n  .Top-Content p {\n    color: white;\n    font-size: 1.2vw;\n    font-weight: 200;\n    margin-bottom: 0;\n    margin-top: 0;\n    border-bottom: solid #2e91a3 thick; }\n  .Top-Content h1 {\n    color: #38bcbd;\n    font-style: oblique;\n    margin-top: 0; }\n\n.Bottom-Content {\n  order: 5;\n  width: 28vmax;\n  margin-right: 7vmax;\n  margin-bottom: 3vmax;\n  text-align: right; }\n  .Bottom-Content h2 {\n    font-size: 1.7vmax;\n    color: white;\n    margin-bottom: .3vw; }\n  .Bottom-Content p {\n    color: white;\n    font-size: 1.2vw;\n    font-weight: 200;\n    margin-bottom: 0;\n    margin-top: 0;\n    border-bottom: solid white thick; }\n  .Bottom-Content h1 {\n    color: white;\n    font-style: oblique;\n    margin-top: 0; }\n\n.Feature {\n  background-image: url(" + escape(__webpack_require__(191)) + ");\n  background-size: cover;\n  display: flex;\n  flex-direction: column;\n  flex-wrap: wrap;\n  justify-content: space-around;\n  height: 50vmax; }\n\n.lazy-feature {\n  background-image: url(" + escape(__webpack_require__(191)) + ");\n  background-size: cover; }\n  .lazy-feature h1 {\n    margin-top: 0;\n    font-size: 3vw;\n    width: 95vw;\n    padding-top: 4vw;\n    text-decoration: underline;\n    color: white;\n    text-align: center; }\n\n#feature-1 {\n  font-family: 'Roboto Slab';\n  color: white;\n  order: 1;\n  width: 20vw;\n  margin: 6vw;\n  margin-top: 0;\n  margin-bottom: 2vw;\n  text-align: center; }\n  #feature-1 img {\n    width: 6vw; }\n\n#feature-2 {\n  font-family: 'Roboto Slab';\n  color: white;\n  order: 2;\n  width: 20vw;\n  margin: 6vw;\n  margin-top: 0;\n  margin-bottom: 2vw;\n  text-align: center; }\n  #feature-2 img {\n    width: 6vw; }\n\n#feature-3 {\n  font-family: 'Roboto Slab';\n  color: white;\n  order: 3;\n  width: 20vw;\n  margin: 6vw;\n  margin-top: 0;\n  margin-bottom: 2vw;\n  text-align: center; }\n  #feature-3 img {\n    width: 6vw; }\n\n#feature-4 {\n  font-family: 'Roboto Slab';\n  color: white;\n  order: 4;\n  width: 20vw;\n  margin: 6vw;\n  margin-top: 0;\n  margin-bottom: 2vw;\n  text-align: center; }\n  #feature-4 img {\n    width: 6vw; }\n\n#feature-5 {\n  font-family: 'Roboto Slab';\n  color: white;\n  order: 5;\n  width: 20vw;\n  margin: 6vw;\n  margin-top: 0;\n  margin-bottom: 2vw;\n  text-align: center; }\n  #feature-5 img {\n    width: 6vw; }\n\n#feature-6 {\n  font-family: 'Roboto Slab';\n  color: white;\n  order: 6;\n  width: 20vw;\n  margin: 6vw;\n  margin-top: 0;\n  margin-bottom: 2vw;\n  text-align: center; }\n  #feature-6 img {\n    width: 6vw; }\n\n#feature-3 img {\n  height: 35vw;\n  width: auto; }\n\n#feature-3 p {\n  font-size: .8vw; }\n\n.Story {\n  background-image: url(" + escape(__webpack_require__(211)) + ");\n  background-size: cover;\n  height: 30vw;\n  position: relative; }\n  .Story h1 {\n    font-size: 3vw;\n    padding-top: 4vw;\n    vertical-align: middle;\n    margin: auto;\n    position: absolute;\n    top: 3vw;\n    bottom: 0;\n    left: 0;\n    right: 0;\n    text-decoration: underline;\n    color: #2e91a3;\n    text-align: center; }\n  .Story p {\n    width: 75vw;\n    color: white;\n    text-align: center;\n    font-size: 1.5vw;\n    font-family: 'Roboto Slab';\n    font-weight: lighter;\n    margin: auto;\n    position: absolute;\n    top: 12vw;\n    bottom: 0;\n    left: 0;\n    right: 0; }\n\n.Faq {\n  background-image: url(" + escape(__webpack_require__(212)) + ");\n  background-size: cover; }\n  .Faq h1 {\n    font-size: 3vw;\n    text-decoration: underline;\n    color: black; }\n\n#faq-1 {\n  font-family: 'Roboto Slab';\n  font-size: 1.2vw;\n  color: black;\n  order: 1;\n  width: 30vw;\n  margin: 6vw;\n  margin-top: 0;\n  margin-bottom: 2vw;\n  text-align: center; }\n\n#answer-1 {\n  display: none; }\n\n#answer-1:target {\n  display: block; }\n\n#faq-2 {\n  font-family: 'Roboto Slab';\n  font-size: 1.2vw;\n  color: black;\n  order: 2;\n  width: 30vw;\n  margin: 6vw;\n  margin-top: 0;\n  margin-bottom: 2vw;\n  text-align: center; }\n\n#answer-2 {\n  display: none; }\n\n#answer-2:target {\n  display: block; }\n\n#faq-3 {\n  font-family: 'Roboto Slab';\n  font-size: 1.2vw;\n  color: black;\n  order: 3;\n  width: 30vw;\n  margin: 6vw;\n  margin-top: 0;\n  margin-bottom: 2vw;\n  text-align: center; }\n\n#answer-3 {\n  display: none; }\n\n#answer-3:target {\n  display: block; }\n\n#faq-4 {\n  font-family: 'Roboto Slab';\n  font-size: 1.2vw;\n  color: black;\n  order: 4;\n  width: 30vw;\n  margin: 6vw;\n  margin-top: 0;\n  margin-bottom: 2vw;\n  text-align: center; }\n\n#answer-4 {\n  display: none; }\n\n#answer-4:target {\n  display: block; }\n\n#faq-5 {\n  font-family: 'Roboto Slab';\n  font-size: 1.2vw;\n  color: black;\n  order: 5;\n  width: 30vw;\n  margin: 6vw;\n  margin-top: 0;\n  margin-bottom: 2vw;\n  text-align: center; }\n\n#answer-5 {\n  display: none; }\n\n#answer-5:target {\n  display: block; }\n\n#faq-6 {\n  font-family: 'Roboto Slab';\n  font-size: 1.2vw;\n  color: black;\n  order: 6;\n  width: 30vw;\n  margin: 6vw;\n  margin-top: 0;\n  margin-bottom: 2vw;\n  text-align: center; }\n\n#answer-6 {\n  display: none; }\n\n#answer-6:target {\n  display: block; }\n\n#faq-7 {\n  font-family: 'Roboto Slab';\n  font-size: 1.2vw;\n  color: black;\n  order: 7;\n  width: 30vw;\n  margin: 6vw;\n  margin-top: 0;\n  margin-bottom: 2vw;\n  text-align: center; }\n\n#answer-7 {\n  display: none; }\n\n#answer-7:target {\n  display: block; }\n", ""]);
+	exports.push([module.id, ".App {\n  font-family: 'Roboto'; }\n\n#Hero_code {\n  background-image: url(" + escape(__webpack_require__(189)) + "); }\n\n#Hero_data {\n  background-image: url(" + escape(__webpack_require__(190)) + "); }\n\n.Hero {\n  background-size: cover;\n  display: flex;\n  flex-direction: row;\n  flex-wrap: wrap;\n  justify-content: space-between; }\n\n.Header {\n  order: 1;\n  height: 7vmax;\n  width: 100vmax;\n  background-color: rgba(0, 0, 0, 0.8); }\n  .Header img {\n    left: 5;\n    position: absolute;\n    height: 5vmax;\n    margin-left: 5vmax;\n    margin-bottom: 1vmax;\n    padding: 1vmax; }\n  .Header p {\n    font-family: 'Roboto';\n    font-style: normal;\n    right: 0;\n    width: 30vmax;\n    font-size: 15px;\n    color: #dcdcdc;\n    position: absolute;\n    text-align: right;\n    padding-right: 2vmax; }\n    .Header p a {\n      color: #38bcbd; }\n\n.Learn-Head {\n  order: 2;\n  font-family: 'Roboto';\n  font-weight: bold;\n  color: white;\n  width: 25vmax;\n  margin-left: 4vmax;\n  margin-top: 3vmax;\n  text-align: left;\n  padding: 10px; }\n  .Learn-Head h1 {\n    font-size: 4vw;\n    font-weight: bold;\n    margin-bottom: 0; }\n  .Learn-Head p {\n    font-size: 2vw;\n    margin-top: 0;\n    font-family: 'Roboto Slab';\n    font-weight: lighter; }\n\n.Form {\n  order: 4;\n  width: 25vmax;\n  height: 10.5vmax;\n  margin-right: 8vmax;\n  margin-left: 4vmax;\n  margin-bottom: 3vmax;\n  text-align: center;\n  background-color: rgba(220, 220, 220, 0.85);\n  border-radius: 5px; }\n  .Form h2 {\n    margin-top: 5px;\n    margin-bottom: 0;\n    font-size: 2vmax;\n    font-weight: bold; }\n  .Form p {\n    margin-bottom: 0;\n    font-size: .95vw; }\n  .Form input {\n    background: transparent;\n    border: none;\n    border-bottom: 1px solid #000000;\n    text-align: center;\n    font-size: 1.5vmax;\n    width: 9vmax;\n    margin-left: 10px;\n    margin-bottom: .3vw; }\n  .Form button {\n    color: white;\n    font-size: 1.8vmax;\n    font-weight: bold;\n    border-radius: 6px;\n    background-color: #38bcdb;\n    width: 24vmax;\n    height: 2.7vmax;\n    margin-bottom: 0; }\n  .Form button:hover {\n    color: white;\n    background-color: #2e91a3; }\n\n.Top-Content {\n  order: 3;\n  width: 28vmax;\n  margin-right: 7vmax;\n  margin-top: 3vmax;\n  text-align: right; }\n  .Top-Content h2 {\n    font-size: 1.7vmax;\n    color: #38bcbd;\n    margin-bottom: .3vw; }\n  .Top-Content p {\n    color: white;\n    font-size: 1.2vw;\n    font-weight: 200;\n    margin-bottom: 0;\n    margin-top: 0;\n    border-bottom: solid #2e91a3 thick; }\n  .Top-Content h1 {\n    color: #38bcbd;\n    font-style: oblique;\n    margin-top: 0; }\n\n.Bottom-Content {\n  order: 5;\n  width: 28vmax;\n  margin-right: 7vmax;\n  margin-bottom: 3vmax;\n  text-align: right; }\n  .Bottom-Content h2 {\n    font-size: 1.7vmax;\n    color: white;\n    margin-bottom: .3vw; }\n  .Bottom-Content p {\n    color: white;\n    font-size: 1.2vw;\n    font-weight: 200;\n    margin-bottom: 0;\n    margin-top: 0;\n    border-bottom: solid white thick; }\n  .Bottom-Content h1 {\n    color: white;\n    font-style: oblique;\n    margin-top: 0; }\n\n.Feature {\n  background-image: url(" + escape(__webpack_require__(191)) + ");\n  background-size: cover;\n  display: flex;\n  flex-direction: column;\n  flex-wrap: wrap;\n  justify-content: space-around;\n  height: 50vmax; }\n\n.lazy-feature {\n  background-image: url(" + escape(__webpack_require__(191)) + ");\n  background-size: cover; }\n  .lazy-feature h1 {\n    margin-top: 0;\n    font-size: 3vw;\n    width: 95vw;\n    padding-top: 4vw;\n    text-decoration: underline;\n    color: white;\n    text-align: center; }\n\n#feature-1 {\n  font-family: 'Roboto Slab';\n  color: white;\n  order: 1;\n  width: 20vw;\n  margin: 6vw;\n  margin-top: 0;\n  margin-bottom: 2vw;\n  text-align: center; }\n  #feature-1 img {\n    width: 6vw; }\n\n#feature-2 {\n  font-family: 'Roboto Slab';\n  color: white;\n  order: 2;\n  width: 20vw;\n  margin: 6vw;\n  margin-top: 0;\n  margin-bottom: 2vw;\n  text-align: center; }\n  #feature-2 img {\n    width: 6vw; }\n\n#feature-3 {\n  font-family: 'Roboto Slab';\n  color: white;\n  order: 3;\n  width: 20vw;\n  margin: 6vw;\n  margin-top: 0;\n  margin-bottom: 2vw;\n  text-align: center; }\n  #feature-3 img {\n    width: 6vw; }\n\n#feature-4 {\n  font-family: 'Roboto Slab';\n  color: white;\n  order: 4;\n  width: 20vw;\n  margin: 6vw;\n  margin-top: 0;\n  margin-bottom: 2vw;\n  text-align: center; }\n  #feature-4 img {\n    width: 6vw; }\n\n#feature-5 {\n  font-family: 'Roboto Slab';\n  color: white;\n  order: 5;\n  width: 20vw;\n  margin: 6vw;\n  margin-top: 0;\n  margin-bottom: 2vw;\n  text-align: center; }\n  #feature-5 img {\n    width: 6vw; }\n\n#feature-6 {\n  font-family: 'Roboto Slab';\n  color: white;\n  order: 6;\n  width: 20vw;\n  margin: 6vw;\n  margin-top: 0;\n  margin-bottom: 2vw;\n  text-align: center; }\n  #feature-6 img {\n    width: 6vw; }\n\n#feature-3 img {\n  height: 35vw;\n  width: auto; }\n\n#feature-3 p {\n  font-size: .8vw; }\n\n.Story {\n  background-image: url(" + escape(__webpack_require__(211)) + ");\n  background-size: cover;\n  height: 30vw;\n  position: relative; }\n  .Story h1 {\n    font-size: 3vw;\n    padding-top: 4vw;\n    vertical-align: middle;\n    margin: auto;\n    position: absolute;\n    top: 3vw;\n    bottom: 0;\n    left: 0;\n    right: 0;\n    text-decoration: underline;\n    color: #2e91a3;\n    text-align: center; }\n  .Story p {\n    width: 75vw;\n    color: white;\n    text-align: center;\n    font-size: 1.5vw;\n    font-family: 'Roboto Slab';\n    font-weight: lighter;\n    margin: auto;\n    position: absolute;\n    top: 12vw;\n    bottom: 0;\n    left: 0;\n    right: 0; }\n\n.Faq {\n  background-image: url(" + escape(__webpack_require__(212)) + ");\n  background-size: cover; }\n  .Faq h1 {\n    font-size: 3vw;\n    text-decoration: underline;\n    color: black; }\n\n.faq-questions {\n  width: 40vw;\n  margin-left: 10vw; }\n  .faq-questions a {\n    text-decoration: none; }\n\n#faq-1 {\n  font-family: 'Roboto Slab';\n  font-size: 1.2vw;\n  color: black;\n  order: 1;\n  width: 30vw;\n  margin-top: 0;\n  margin-bottom: 0;\n  text-align: left; }\n\n#answer-1 {\n  display: none; }\n\n#answer-1:target {\n  display: block; }\n\n#faq-2 {\n  font-family: 'Roboto Slab';\n  font-size: 1.2vw;\n  color: black;\n  order: 2;\n  width: 30vw;\n  margin-top: 0;\n  margin-bottom: 0;\n  text-align: left; }\n\n#answer-2 {\n  display: none; }\n\n#answer-2:target {\n  display: block; }\n\n#faq-3 {\n  font-family: 'Roboto Slab';\n  font-size: 1.2vw;\n  color: black;\n  order: 3;\n  width: 30vw;\n  margin-top: 0;\n  margin-bottom: 0;\n  text-align: left; }\n\n#answer-3 {\n  display: none; }\n\n#answer-3:target {\n  display: block; }\n\n#faq-4 {\n  font-family: 'Roboto Slab';\n  font-size: 1.2vw;\n  color: black;\n  order: 4;\n  width: 30vw;\n  margin-top: 0;\n  margin-bottom: 0;\n  text-align: left; }\n\n#answer-4 {\n  display: none; }\n\n#answer-4:target {\n  display: block; }\n\n#faq-5 {\n  font-family: 'Roboto Slab';\n  font-size: 1.2vw;\n  color: black;\n  order: 5;\n  width: 30vw;\n  margin-top: 0;\n  margin-bottom: 0;\n  text-align: left; }\n\n#answer-5 {\n  display: none; }\n\n#answer-5:target {\n  display: block; }\n\n#faq-6 {\n  font-family: 'Roboto Slab';\n  font-size: 1.2vw;\n  color: black;\n  order: 6;\n  width: 30vw;\n  margin-top: 0;\n  margin-bottom: 0;\n  text-align: left; }\n\n#answer-6 {\n  display: none; }\n\n#answer-6:target {\n  display: block; }\n\n#faq-7 {\n  font-family: 'Roboto Slab';\n  font-size: 1.2vw;\n  color: black;\n  order: 7;\n  width: 30vw;\n  margin-top: 0;\n  margin-bottom: 0;\n  text-align: left; }\n\n#answer-7 {\n  display: none; }\n\n#answer-7:target {\n  display: block; }\n\n.Footer {\n  order: 1;\n  height: 7vmax;\n  width: 100vmax;\n  background-color: #38bcdb; }\n  .Footer img {\n    left: 5;\n    position: absolute;\n    height: 5vmax;\n    margin-left: 5vmax;\n    margin-bottom: 1vmax;\n    padding: 1vmax; }\n  .Footer p {\n    font-family: 'Roboto';\n    font-style: normal;\n    right: 0;\n    width: 30vmax;\n    font-size: .8vw;\n    color: black;\n    position: absolute;\n    text-align: right;\n    padding-right: 2vmax; }\n    .Footer p a {\n      color: #38bcbd; }\n", ""]);
 
 	// exports
 
@@ -23261,205 +23261,209 @@
 	        'div',
 	        { className: 'Faq' },
 	        _react2.default.createElement(
-	          'h1',
-	          null,
-	          'Frequently Asked Questions'
-	        ),
-	        _react2.default.createElement(
 	          'div',
-	          { id: 'faq-1' },
+	          { className: 'faq-questions' },
 	          _react2.default.createElement(
-	            'a',
-	            { href: '#answer-1' },
-	            _react2.default.createElement('i', { className: 'fa fa-chevron-circle-right', 'aria-hidden': 'true' }),
-	            'When does the program start?'
-	          )
-	        ),
-	        _react2.default.createElement(
-	          'div',
-	          { id: 'answer-1' },
-	          _react2.default.createElement(
-	            'ul',
+	            'h1',
 	            null,
+	            'Frequently Asked Questions'
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { id: 'faq-1' },
 	            _react2.default.createElement(
-	              'li',
-	              null,
-	              'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-	            ),
-	            _react2.default.createElement(
-	              'li',
-	              null,
-	              'Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-	            ),
-	            _react2.default.createElement(
-	              'li',
-	              null,
-	              'Consectetur adipiscing elit'
+	              'a',
+	              { href: '#answer-1' },
+	              _react2.default.createElement('i', { id: 'icon-1', className: 'fa fa-chevron-circle-right', 'aria-hidden': 'true' }),
+	              '  When does the program start?'
 	            )
-	          )
-	        ),
-	        _react2.default.createElement(
-	          'div',
-	          { id: 'faq-2' },
+	          ),
 	          _react2.default.createElement(
-	            'a',
-	            { href: '#answer-2' },
-	            _react2.default.createElement('i', { className: 'fa fa-chevron-circle-right', 'aria-hidden': 'true' }),
-	            'Can I keep working while studying at Trilogy Data Science and Analytics Boot Camp?'
-	          )
-	        ),
-	        _react2.default.createElement(
-	          'div',
-	          { id: 'answer-2' },
-	          _react2.default.createElement(
-	            'ul',
-	            null,
+	            'div',
+	            { id: 'answer-1' },
 	            _react2.default.createElement(
-	              'li',
+	              'ul',
 	              null,
-	              'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-	            ),
-	            _react2.default.createElement(
-	              'li',
-	              null,
-	              'Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-	            ),
-	            _react2.default.createElement(
-	              'li',
-	              null,
-	              'Consectetur adipiscing elit'
+	              _react2.default.createElement(
+	                'li',
+	                null,
+	                'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+	              ),
+	              _react2.default.createElement(
+	                'li',
+	                null,
+	                'Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+	              ),
+	              _react2.default.createElement(
+	                'li',
+	                null,
+	                'Consectetur adipiscing elit'
+	              )
 	            )
-	          )
-	        ),
-	        _react2.default.createElement(
-	          'div',
-	          { id: 'faq-3' },
+	          ),
 	          _react2.default.createElement(
-	            'a',
-	            { href: '#answer-3' },
-	            _react2.default.createElement('i', { className: 'fa fa-chevron-circle-right', 'aria-hidden': 'true' }),
-	            'How long does it take to complete the program?'
-	          )
-	        ),
-	        _react2.default.createElement(
-	          'div',
-	          { id: 'answer-3' },
-	          _react2.default.createElement(
-	            'ul',
-	            null,
+	            'div',
+	            { id: 'faq-2' },
 	            _react2.default.createElement(
-	              'li',
-	              null,
-	              'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-	            ),
-	            _react2.default.createElement(
-	              'li',
-	              null,
-	              'Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-	            ),
-	            _react2.default.createElement(
-	              'li',
-	              null,
-	              'Consectetur adipiscing elit'
+	              'a',
+	              { href: '#answer-2' },
+	              _react2.default.createElement('i', { className: 'fa fa-chevron-circle-right', 'aria-hidden': 'true' }),
+	              '  Can I keep working while studying at Trilogy Data Science and Analytics Boot Camp?'
 	            )
-	          )
-	        ),
-	        _react2.default.createElement(
-	          'div',
-	          { id: 'faq-4' },
+	          ),
 	          _react2.default.createElement(
-	            'a',
-	            { href: '#answer-4' },
-	            _react2.default.createElement('i', { className: 'fa fa-chevron-circle-right', 'aria-hidden': 'true' }),
-	            'Do you provide career placement support?'
-	          )
-	        ),
-	        _react2.default.createElement(
-	          'div',
-	          { id: 'answer-4' },
-	          _react2.default.createElement(
-	            'ul',
-	            null,
+	            'div',
+	            { id: 'answer-2' },
 	            _react2.default.createElement(
-	              'li',
+	              'ul',
 	              null,
-	              'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-	            ),
-	            _react2.default.createElement(
-	              'li',
-	              null,
-	              'Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-	            ),
-	            _react2.default.createElement(
-	              'li',
-	              null,
-	              'Consectetur adipiscing elit'
+	              _react2.default.createElement(
+	                'li',
+	                null,
+	                'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+	              ),
+	              _react2.default.createElement(
+	                'li',
+	                null,
+	                'Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+	              ),
+	              _react2.default.createElement(
+	                'li',
+	                null,
+	                'Consectetur adipiscing elit'
+	              )
 	            )
-	          )
-	        ),
-	        _react2.default.createElement(
-	          'div',
-	          { id: 'faq-5' },
+	          ),
 	          _react2.default.createElement(
-	            'a',
-	            { href: '#answer-5' },
-	            _react2.default.createElement('i', { className: 'fa fa-chevron-circle-right', 'aria-hidden': 'true' }),
-	            'Do I need to have previous experience in programming or data analytics before applying?'
-	          )
-	        ),
-	        _react2.default.createElement(
-	          'div',
-	          { id: 'answer-5' },
-	          _react2.default.createElement(
-	            'ul',
-	            null,
+	            'div',
+	            { id: 'faq-3' },
 	            _react2.default.createElement(
-	              'li',
-	              null,
-	              'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-	            ),
-	            _react2.default.createElement(
-	              'li',
-	              null,
-	              'Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-	            ),
-	            _react2.default.createElement(
-	              'li',
-	              null,
-	              'Consectetur adipiscing elit'
+	              'a',
+	              { href: '#answer-3' },
+	              _react2.default.createElement('i', { className: 'fa fa-chevron-circle-right', 'aria-hidden': 'true' }),
+	              '  How long does it take to complete the program?'
 	            )
-	          )
-	        ),
-	        _react2.default.createElement(
-	          'div',
-	          { id: 'faq-6' },
+	          ),
 	          _react2.default.createElement(
-	            'a',
-	            { href: '#answer-6' },
-	            _react2.default.createElement('i', { className: 'fa fa-chevron-circle-right', 'aria-hidden': 'true' }),
-	            'What sets your boot camp apart from othere I can join in Trilogy?'
-	          )
-	        ),
-	        _react2.default.createElement(
-	          'div',
-	          { id: 'answer-6' },
+	            'div',
+	            { id: 'answer-3' },
+	            _react2.default.createElement(
+	              'ul',
+	              null,
+	              _react2.default.createElement(
+	                'li',
+	                null,
+	                'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+	              ),
+	              _react2.default.createElement(
+	                'li',
+	                null,
+	                'Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+	              ),
+	              _react2.default.createElement(
+	                'li',
+	                null,
+	                'Consectetur adipiscing elit'
+	              )
+	            )
+	          ),
 	          _react2.default.createElement(
-	            'ul',
-	            null,
+	            'div',
+	            { id: 'faq-4' },
 	            _react2.default.createElement(
-	              'li',
-	              null,
-	              'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-	            ),
+	              'a',
+	              { href: '#answer-4' },
+	              _react2.default.createElement('i', { className: 'fa fa-chevron-circle-right', 'aria-hidden': 'true' }),
+	              '  Do you provide career placement support?'
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { id: 'answer-4' },
 	            _react2.default.createElement(
-	              'li',
+	              'ul',
 	              null,
-	              'Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-	            ),
+	              _react2.default.createElement(
+	                'li',
+	                null,
+	                'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+	              ),
+	              _react2.default.createElement(
+	                'li',
+	                null,
+	                'Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+	              ),
+	              _react2.default.createElement(
+	                'li',
+	                null,
+	                'Consectetur adipiscing elit'
+	              )
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { id: 'faq-5' },
 	            _react2.default.createElement(
-	              'li',
+	              'a',
+	              { href: '#answer-5' },
+	              _react2.default.createElement('i', { className: 'fa fa-chevron-circle-right', 'aria-hidden': 'true' }),
+	              '  Do I need to have previous experience in programming or data analytics before applying?'
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { id: 'answer-5' },
+	            _react2.default.createElement(
+	              'ul',
 	              null,
-	              'Consectetur adipiscing elit'
+	              _react2.default.createElement(
+	                'li',
+	                null,
+	                'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+	              ),
+	              _react2.default.createElement(
+	                'li',
+	                null,
+	                'Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+	              ),
+	              _react2.default.createElement(
+	                'li',
+	                null,
+	                'Consectetur adipiscing elit'
+	              )
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { id: 'faq-6' },
+	            _react2.default.createElement(
+	              'a',
+	              { href: '#answer-6' },
+	              _react2.default.createElement('i', { className: 'fa fa-chevron-circle-right', 'aria-hidden': 'true' }),
+	              '  What sets your boot camp apart from othere I can join in Trilogy?'
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { id: 'answer-6' },
+	            _react2.default.createElement(
+	              'ul',
+	              null,
+	              _react2.default.createElement(
+	                'li',
+	                null,
+	                'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+	              ),
+	              _react2.default.createElement(
+	                'li',
+	                null,
+	                'Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+	              ),
+	              _react2.default.createElement(
+	                'li',
+	                null,
+	                'Consectetur adipiscing elit'
+	              )
 	            )
 	          )
 	        )
@@ -23498,6 +23502,8 @@
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
+	var Logo2 = __webpack_require__(200);
+
 	var Footer = function (_React$Component) {
 	  _inherits(Footer, _React$Component);
 
@@ -23513,10 +23519,34 @@
 	      return _react2.default.createElement(
 	        'div',
 	        { className: 'Footer' },
+	        _react2.default.createElement('img', { src: Logo2 }),
 	        _react2.default.createElement(
-	          'h1',
+	          'p',
 	          null,
-	          'Footer Component'
+	          'This program is offered through ',
+	          _react2.default.createElement('br', null),
+	          ' asdcdwfwf ',
+	          _react2.default.createElement(
+	            'strong',
+	            null,
+	            'https://sddff:/'
+	          ),
+	          ' ',
+	          _react2.default.createElement('br', null),
+	          ' Powered by Trilogy Education Services ',
+	          _react2.default.createElement('br', null),
+	          ' Contact lsdfsss Boot Camp at ',
+	          _react2.default.createElement(
+	            'strong',
+	            null,
+	            '(xxx) xxx-xxxx'
+	          ),
+	          ' ',
+	          _react2.default.createElement('br', null),
+	          _react2.default.createElement('br', null),
+	          ' ',
+	          _react2.default.createElement('strong', null),
+	          ' | Privacy/Your Privacy Rights'
 	        )
 	      );
 	    }
