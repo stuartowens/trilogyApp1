@@ -21895,31 +21895,31 @@
 
 	var _Hero2 = _interopRequireDefault(_Hero);
 
-	var _Header = __webpack_require__(196);
+	var _Header = __webpack_require__(197);
 
 	var _Header2 = _interopRequireDefault(_Header);
 
-	var _Feature = __webpack_require__(197);
+	var _Feature = __webpack_require__(200);
 
 	var _Feature2 = _interopRequireDefault(_Feature);
 
-	var _Story = __webpack_require__(198);
+	var _Story = __webpack_require__(201);
 
 	var _Story2 = _interopRequireDefault(_Story);
 
-	var _Faq = __webpack_require__(199);
+	var _Faq = __webpack_require__(202);
 
 	var _Faq2 = _interopRequireDefault(_Faq);
 
-	var _Footer = __webpack_require__(200);
+	var _Footer = __webpack_require__(203);
 
 	var _Footer2 = _interopRequireDefault(_Footer);
 
-	var _Form = __webpack_require__(205);
+	var _Form = __webpack_require__(196);
 
 	var _Form2 = _interopRequireDefault(_Form);
 
-	var _HeroContent = __webpack_require__(201);
+	var _HeroContent = __webpack_require__(204);
 
 	var _HeroContent2 = _interopRequireDefault(_HeroContent);
 
@@ -21956,7 +21956,6 @@
 	      return _react2.default.createElement(
 	        'div',
 	        { className: 'App' },
-	        _react2.default.createElement(_Header2.default, null),
 	        _react2.default.createElement(_Hero2.default, { heroId: this.state.heroId }),
 	        _react2.default.createElement(_Form2.default, null),
 	        _react2.default.createElement(_Feature2.default, null),
@@ -22032,7 +22031,7 @@
 
 
 	// module
-	exports.push([module.id, "#Hero_code {\n  background-image: url(" + escape(__webpack_require__(189)) + ");\n  background-size: cover; }\n\n#Hero_data {\n  background-image: url(" + escape(__webpack_require__(190)) + ");\n  background-size: cover; }\n\n.App {\n  font-family: 'Roboto'; }\n\n.Header {\n  height: 5vmax;\n  background-color: black; }\n  .Header img {\n    left: 5;\n    position: absolute;\n    height: 5vmax; }\n  .Header p {\n    font-family: 'Roboto';\n    font-style: normal;\n    right: 0;\n    width: 30vmax;\n    font-size: 20px;\n    color: #dcdcdc;\n    position: absolute;\n    text-align: right;\n    padding-right: 2vmax; }\n    .Header p a {\n      color: #38bcbd; }\n\n.Learn-Head {\n  font-family: 'Roboto';\n  color: white;\n  border: solid green thin;\n  width: 30vmax;\n  text-align: left;\n  padding: 10px; }\n  .Learn-Head h1 {\n    font-size: 50px; }\n  .Learn-Head p {\n    font-size: 25px; }\n\n.Form {\n  border: solid red thin;\n  width: 20vmax;\n  text-align: center;\n  background-color: rgba(220, 220, 220, 0.5); }\n", ""]);
+	exports.push([module.id, ".App {\n  font-family: 'Roboto'; }\n\n#Hero_code {\n  background-image: url(" + escape(__webpack_require__(189)) + "); }\n\n#Hero_data {\n  background-image: url(" + escape(__webpack_require__(190)) + "); }\n\n.Hero {\n  background-size: cover;\n  display: flex;\n  flex-direction: row;\n  flex-wrap: wrap;\n  justify-content: space-between; }\n\n.Header {\n  order: 1;\n  height: 7vmax;\n  width: 100vmax;\n  background-color: rgba(0, 0, 0, 0.8); }\n  .Header img {\n    left: 5;\n    position: absolute;\n    height: 5vmax;\n    margin-left: 5vmax;\n    margin-bottom: 1vmax;\n    padding: 1vmax; }\n  .Header p {\n    font-family: 'Roboto';\n    font-style: normal;\n    right: 0;\n    width: 30vmax;\n    font-size: 15px;\n    color: #dcdcdc;\n    position: absolute;\n    text-align: right;\n    padding-right: 2vmax; }\n    .Header p a {\n      color: #38bcbd; }\n\n.Learn-Head {\n  order: 2;\n  font-family: 'Roboto';\n  font-weight: bold;\n  color: white;\n  width: 25vmax;\n  margin-left: 4vmax;\n  margin-top: 3vmax;\n  text-align: left;\n  padding: 10px; }\n  .Learn-Head h1 {\n    font-size: 45px;\n    font-weight: bold;\n    margin-bottom: 0; }\n  .Learn-Head p {\n    font-size: 20px;\n    margin-top: 0;\n    font-family: 'Roboto Slab';\n    font-weight: lighter; }\n\n.Form {\n  order: 4;\n  width: 25vmax;\n  height: 10vmax;\n  margin-right: 5vmax;\n  margin-left: 4vmax;\n  margin-bottom: 3vmax;\n  text-align: center;\n  background-color: rgba(220, 220, 220, 0.85);\n  border-radius: 5px; }\n  .Form h2 {\n    margin-top: 5px;\n    margin-bottom: 0;\n    font-size: 2vmax;\n    font-weight: bold; }\n  .Form p {\n    margin-bottom: 0;\n    font-size: .95vw; }\n  .Form input {\n    background: transparent;\n    border: none;\n    border-bottom: 1px solid #000000;\n    text-align: center;\n    font-size: 1.5vmax;\n    width: 9vmax;\n    margin-left: 10px;\n    margin-bottom: .3vw; }\n  .Form button {\n    color: white;\n    font-size: 1.8vmax;\n    font-weight: bold;\n    border-radius: 6px;\n    background-color: #38bcdb;\n    width: 24vmax;\n    height: 2.7vmax;\n    margin-bottom: 0; }\n  .Form button:hover {\n    color: white;\n    background-color: #2e91a3; }\n\n.Top-Content {\n  order: 3;\n  width: 28vmax;\n  margin-right: 7vmax;\n  margin-top: 3vmax;\n  text-align: right; }\n  .Top-Content h2 {\n    font-size: 1.7vmax;\n    color: #38bcbd;\n    margin-bottom: .3vw; }\n  .Top-Content p {\n    color: white;\n    font-size: 1.2vw;\n    font-weight: 200;\n    margin-bottom: 0;\n    margin-top: 0;\n    border-bottom: solid #2e91a3 thick; }\n  .Top-Content h1 {\n    color: #38bcbd;\n    font-style: oblique;\n    margin-top: 0; }\n\n.Bottom-Content {\n  order: 5;\n  width: 28vmax;\n  margin-right: 7vmax;\n  margin-bottom: 3vmax;\n  text-align: right; }\n  .Bottom-Content h2 {\n    font-size: 1.7vmax;\n    color: white;\n    margin-bottom: .3vw; }\n  .Bottom-Content p {\n    color: white;\n    font-size: 1.2vw;\n    font-weight: 200;\n    margin-bottom: 0;\n    margin-top: 0;\n    border-bottom: solid white thick; }\n  .Bottom-Content h1 {\n    color: white;\n    font-style: oblique;\n    margin-top: 0; }\n", ""]);
 
 	// exports
 
@@ -22656,9 +22655,13 @@
 
 	var _Data2 = _interopRequireDefault(_Data);
 
-	var _Form = __webpack_require__(205);
+	var _Form = __webpack_require__(196);
 
 	var _Form2 = _interopRequireDefault(_Form);
+
+	var _Header = __webpack_require__(197);
+
+	var _Header2 = _interopRequireDefault(_Header);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -22692,53 +22695,61 @@
 	    value: function render() {
 	      return _react2.default.createElement(
 	        'div',
-	        { id: 'Hero_code' },
+	        null,
 	        _react2.default.createElement(
 	          'div',
-	          { className: 'Learn-Head' },
+	          { className: 'Hero', id: 'Hero_code' },
+	          _react2.default.createElement(_Header2.default, null),
 	          _react2.default.createElement(
-	            'h1',
-	            null,
-	            'Learn Coding',
-	            _react2.default.createElement('br', null),
-	            ' in 24 Weeks'
+	            'div',
+	            { className: 'Learn-Head' },
+	            _react2.default.createElement(
+	              'h1',
+	              null,
+	              'Learn Coding',
+	              _react2.default.createElement('br', null),
+	              ' in 24 Weeks'
+	            ),
+	            _react2.default.createElement(
+	              'p',
+	              null,
+	              'Class starts May 15, 2018'
+	            )
 	          ),
 	          _react2.default.createElement(
-	            'p',
-	            null,
-	            'Class starts May 15, 2018'
-	          )
-	        ),
-	        _react2.default.createElement('h2', { id: 'Content' }),
-	        _react2.default.createElement(
-	          'div',
-	          { className: 'Top-Content' },
-	          _react2.default.createElement(
-	            'h2',
-	            { id: 'Top-Content-H' },
-	            'CODING'
+	            'div',
+	            { className: 'Top-Content' },
+	            _react2.default.createElement(
+	              'h2',
+	              { id: 'Top-Content-H' },
+	              'CODING'
+	            ),
+	            _react2.default.createElement(
+	              'p',
+	              { id: 'Top-Content-P' },
+	              'Coding Boot Camp equips students skills for full-stack web development through ',
+	              _react2.default.createElement('br', null),
+	              ' dynamic, in-person classes.'
+	            )
 	          ),
 	          _react2.default.createElement(
-	            'p',
-	            { id: 'Top-Content-P' },
-	            'Coding Boot Camp equips stuedents skills for full-stack web development through dynamic, in-person classes.'
-	          )
-	        ),
-	        _react2.default.createElement(
-	          'div',
-	          { className: 'Bottom-Content' },
-	          _react2.default.createElement(
-	            'h2',
-	            { id: 'Bottom-Content-H' },
-	            'DATA ANALYTICS'
+	            'div',
+	            { className: 'Bottom-Content' },
+	            _react2.default.createElement(
+	              'h2',
+	              { id: 'Bottom-Content-H' },
+	              'DATA ANALYTICS'
+	            ),
+	            _react2.default.createElement(
+	              'p',
+	              { id: 'Bottom-Content-P' },
+	              'Data Boot Camp equips students with the key skills for full-stack web development',
+	              _react2.default.createElement('br', null),
+	              ' through dynamic, in-person classes.'
+	            )
 	          ),
-	          _react2.default.createElement(
-	            'p',
-	            { id: 'Bottom-Content-P' },
-	            'Data Boot Camp equips students with the key skills for full-stack web developemnt through dynamic, in-person classes.'
-	          )
-	        ),
-	        _react2.default.createElement(_Form2.default, null)
+	          _react2.default.createElement(_Form2.default, null)
+	        )
 	      );
 	    }
 	  }]);
@@ -22884,8 +22895,80 @@
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-	var svgFile = __webpack_require__(204);
-	var svgFile2 = __webpack_require__(203);
+	var Form = function (_React$Component) {
+	  _inherits(Form, _React$Component);
+
+	  function Form() {
+	    _classCallCheck(this, Form);
+
+	    return _possibleConstructorReturn(this, (Form.__proto__ || Object.getPrototypeOf(Form)).apply(this, arguments));
+	  }
+
+	  _createClass(Form, [{
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
+	        'div',
+	        { className: 'Form' },
+	        _react2.default.createElement(
+	          'h2',
+	          null,
+	          'GET PROGRAM INFO'
+	        ),
+	        _react2.default.createElement(
+	          'p',
+	          null,
+	          'Step 1 of 3'
+	        ),
+	        _react2.default.createElement(
+	          'form',
+	          null,
+	          _react2.default.createElement('input', { type: 'text', placeholder: 'First name' }),
+	          _react2.default.createElement('input', { type: 'text', placeholder: 'Last name' })
+	        ),
+	        _react2.default.createElement(
+	          'button',
+	          { type: 'submit' },
+	          'CONTINUE ',
+	          _react2.default.createElement('i', { className: 'fa fa-arrow-circle-o-right', 'aria-hidden': 'true' })
+	        )
+	      );
+	    }
+	  }]);
+
+	  return Form;
+	}(_react2.default.Component);
+
+	exports.default = Form;
+
+/***/ }),
+/* 197 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	__webpack_require__(185);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var svgFile = __webpack_require__(198);
+	var svgFile2 = __webpack_require__(199);
 
 	var Header = function (_React$Component) {
 	  _inherits(Header, _React$Component);
@@ -22925,7 +23008,19 @@
 	exports.default = Header;
 
 /***/ }),
-/* 197 */
+/* 198 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "static/media/logo_trilogy.svg";
+
+/***/ }),
+/* 199 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "static/media/logo_trilogy_blk.svg";
+
+/***/ }),
+/* 200 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -22980,7 +23075,7 @@
 	exports.default = Feature;
 
 /***/ }),
-/* 198 */
+/* 201 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -23035,7 +23130,7 @@
 	exports.default = Story;
 
 /***/ }),
-/* 199 */
+/* 202 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -23090,7 +23185,7 @@
 	exports.default = Faq;
 
 /***/ }),
-/* 200 */
+/* 203 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -23145,7 +23240,7 @@
 	exports.default = Footer;
 
 /***/ }),
-/* 201 */
+/* 204 */
 /***/ (function(module, exports) {
 
 	'use strict';
@@ -23157,10 +23252,10 @@
 	  var heroIds = ['Hero_code', 'Hero_data'];
 	  var heroContent = [{
 	    h: 'CODING',
-	    p: 'Coding Boot Camp equips stuedents skills for full-stack web development through dynamic, in-person classes.'
+	    p: 'Coding Boot Camp equips stuedents skills for full-stack web development through <br /> dynamic, in-person classes.'
 	  }, {
 	    h: 'DATA ANALYTICS',
-	    p: 'Data Boot Camp equips students with the key skills for full-stack web developemnt through dynamic, in-person classes.'
+	    p: 'Data Boot Camp equips students with the key skills for full-stack web development <br /> through dynamic, in-person classes.'
 	  }];
 	  console.log('Hero component loaded');
 	  var heroDiv = document.getElementById("Hero_code");
@@ -23184,90 +23279,6 @@
 	};
 
 	exports.default = heroContent;
-
-/***/ }),
-/* 202 */,
-/* 203 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__.p + "static/media/logo_trilogy_blk.svg";
-
-/***/ }),
-/* 204 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__.p + "static/media/logo_trilogy.svg";
-
-/***/ }),
-/* 205 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	__webpack_require__(185);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	var Form = function (_React$Component) {
-	  _inherits(Form, _React$Component);
-
-	  function Form() {
-	    _classCallCheck(this, Form);
-
-	    return _possibleConstructorReturn(this, (Form.__proto__ || Object.getPrototypeOf(Form)).apply(this, arguments));
-	  }
-
-	  _createClass(Form, [{
-	    key: 'render',
-	    value: function render() {
-	      return _react2.default.createElement(
-	        'div',
-	        { className: 'Form' },
-	        _react2.default.createElement(
-	          'h2',
-	          null,
-	          'GET PROGRAM INFO'
-	        ),
-	        _react2.default.createElement(
-	          'form',
-	          null,
-	          _react2.default.createElement(
-	            'p',
-	            null,
-	            'Step 1 of 3'
-	          ),
-	          _react2.default.createElement('input', { type: 'text', placeholder: 'First name' }),
-	          _react2.default.createElement('input', { type: 'text', placeholder: 'Last name' }),
-	          _react2.default.createElement(
-	            'button',
-	            { type: 'submit' },
-	            'CONTINUE'
-	          )
-	        )
-	      );
-	    }
-	  }]);
-
-	  return Form;
-	}(_react2.default.Component);
-
-	exports.default = Form;
 
 /***/ })
 /******/ ]);

@@ -24,7 +24,7 @@ class App extends React.Component {
   render() {
     return (
         <div className="App">
-          <Header />
+          {/* <Header /> */}
           <Hero heroId={this.state.heroId}/>
           <Form />
           <Feature />

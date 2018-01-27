@@ -1,29 +1,46 @@
+
+$blue: #38bcdb !global;
+$blue-hover: #2e91a3 !global;
+$grey: #a9aaab !global;
+$light-grey: #dcdcdc !global;
+
+
+.App {
+  font-family: 'Roboto';
+}
 #Hero_code {
   background-image: url("../images/code_hero.jpg");
-  background-size: cover;
 }
 #Hero_data {
   background-image: url("../images/data_hero.jpg");
-  background-size: cover;
 }
-.App {
-  // background-color: green;
-  font-family: 'Roboto';
+
+.Hero {
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 .Header {
-  height: 5vmax;
-  background-color: black;
+  order:1;
+  height: 7vmax;
+  width: 100vmax;
+  background-color: rgba(0,0,0,.8);
   img {
     left: 5;
     position: absolute;
     height: 5vmax;
+    margin-left: 5vmax;
+    margin-bottom: 1vmax;
+    padding: 1vmax;
   }
   p {
     font-family: 'Roboto';
     font-style: normal;
     right: 0;
     width: 30vmax;
-    font-size: 20px;
+    font-size: 15px;
     color: #dcdcdc;
     position: absolute;
     text-align:right;
@@ -33,23 +50,124 @@
     }
   }
 }
+
 .Learn-Head {
+  order: 2;
   font-family: 'Roboto';
+  font-weight: bold;
   color: white;
-  border: solid green thin;
-  width: 30vmax;
+  width: 25vmax;
+  margin-left: 4vmax;
+  margin-top: 3vmax;
   text-align: left;
   padding: 10px;
   h1 {
-    font-size: 50px;
+    font-size: 45px;
+    font-weight: bold;
+    margin-bottom:0;
   }
   p {
-    font-size: 25px;
+    font-size: 20px;
+    margin-top: 0;
+    font-family: 'Roboto Slab';
+    font-weight: lighter;
   }
 }
 .Form {
-  border: solid red thin;
-  width: 20vmax;
+  order: 4;
+  width: 25vmax;
+  height: 10vmax;
+  margin-right: 5vmax;
+  margin-left: 4vmax;
+  margin-bottom: 3vmax;
   text-align: center;
-  background-color: rgba(220,220,220,.5);
+  background-color: rgba(220,220,220,.85);
+  border-radius: 5px;
+  h2 {
+    margin-top: 5px;
+    margin-bottom: 0;
+    font-size: 2vmax;
+    font-weight: bold;
+  }
+  p {
+    margin-bottom:0;
+    font-size: .95vw;
+  }
+  input {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #000000;
+    text-align: center;
+    font-size: 1.5vmax;
+    width: 9vmax;
+    margin-left: 10px;
+    margin-bottom: .3vw;
+  }
+  button {
+    color: white;
+    font-size: 1.8vmax;
+    font-weight: bold;
+    border-radius: 6px;
+    background-color: $blue;
+    width: 24vmax;
+    height: 2.7vmax;
+    margin-bottom: 0;
+  }
+  button:hover {
+    color: white;
+    background-color: $blue-hover;
+
+  }
+}
+
+
+.Top-Content {
+  order: 3;
+  width: 28vmax;
+  margin-right: 7vmax;
+  margin-top: 3vmax;
+  text-align: right;
+  h2 {
+    font-size: 1.7vmax;
+    color: #38bcbd;
+    margin-bottom: .3vw;
+  }
+  p {
+    color: white;
+    font-size: 1.2vw;
+    font-weight: 200;
+    margin-bottom: 0;
+    margin-top: 0;
+    border-bottom: solid $blue-hover thick;
+  }
+  h1 {
+    color: #38bcbd;
+    font-style: oblique;
+    margin-top: 0;
+  }
+}
+.Bottom-Content {
+  order: 5;
+  width: 28vmax;
+  margin-right: 7vmax;
+  margin-bottom: 3vmax;
+  text-align: right;
+  h2 {
+    font-size: 1.7vmax;
+    color: white;
+    margin-bottom: .3vw;
+  }
+  p {
+    color: white;
+    font-size: 1.2vw;
+    font-weight: 200;
+    margin-bottom: 0;
+    margin-top: 0;
+    border-bottom: solid white thick;
+  }
+  h1 {
+    color: white;
+    font-style: oblique;
+    margin-top: 0;
+  }
 }

@@ -6,11 +6,11 @@ const heroContent = () => {
   var heroContent = [
     {
       h: 'CODING',
-      p:'Coding Boot Camp equips stuedents skills for full-stack web development through dynamic, in-person classes.'
+      p:'Coding Boot Camp equips stuedents skills for full-stack web development through <br /> dynamic, in-person classes.'
     },
     {
       h: 'DATA ANALYTICS',
-      p: 'Data Boot Camp equips students with the key skills for full-stack web developemnt through dynamic, in-person classes.'
+      p: 'Data Boot Camp equips students with the key skills for full-stack web development <br /> through dynamic, in-person classes.'
     }
   ]
   console.log('Hero component loaded')
