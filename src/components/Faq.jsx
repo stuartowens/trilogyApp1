@@ -4,20 +4,6 @@ import Collapsible from  './Collapsible.jsx';
 
 
 class Faq extends React.Component {
-  // constructor(){
-  //   super()
-  // }
-  // componentDidMount(){
-  //   var answer = document.getElementById('answer-1');
-  //   var question = document.getElementById('faq-1');
-  //   $('#answer-1').hide();
-  //   $('#faq-1').click(
-  //       function() {
-  //           var toggle = $(this).nextUntil('#faq-1');
-  //           toggle.slideToggle();
-  //           $('#answer-1').not(toggle).slideUp();
-  //       });
-  // };
   render() {
     return (
         <div className="Faq">
