@@ -312,6 +312,34 @@ $mobile-featuring-background: url("../images/mobile/featuring_mobile.jpg");
     text-decoration: none;
   }
 }
+.Collapsible__trigger {
+  font-family: 'Roboto Slab';
+  font-size: 1.2vw;
+  color: black;
+  margin-top:0;
+  margin-bottom:0;
+  text-align: left;
+}
+.Collapsible__trigger:before {
+  font-family:'FontAwesome';
+  font-size: 1.2vw;
+  content:"\f13a";
+  float: left;
+  color: black;
+  border-radius: 50%;
+  //Having trouble getting background of icon to within  the icon, it seems to spill out
+  //It seems to not be round or the border radius property is not set properly
+  background-color: $blue;
+}
+.Collapsible__trigger.is-closed:before {
+  font-family:'FontAwesome';
+  font-size: 1.2vw;
+  content:"\f138";
+  float: left;
+  color: $blue;
+  border-radius: 50%;
+  background-color: black;
+}
 
 @for $i from 1 through 7 {
   #faq-#{$i} {
@@ -325,12 +353,8 @@ $mobile-featuring-background: url("../images/mobile/featuring_mobile.jpg");
     text-align: left;
   }
   #answer-#{$i} {
-    display: none;
     font-family: 'Roboto Slab';
     font-size: 1vw;
-  }
-  #answer-#{$i}:target {
-    display: block;
   }
 }
 

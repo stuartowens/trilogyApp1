@@ -22031,7 +22031,7 @@
 
 
 	// module
-	exports.push([module.id, ".App {\n  font-family: 'Roboto'; }\n\n#Hero_code {\n  background-image: url(" + escape(__webpack_require__(189)) + "); }\n  @media screen and (min-width: 800px) {\n    #Hero_code {\n      background-image: url(" + escape(__webpack_require__(190)) + "); } }\n\n#Hero_data {\n  background-image: url(" + escape(__webpack_require__(191)) + "); }\n  @media screen and (min-width: 800px) {\n    #Hero_data {\n      background-image: url(" + escape(__webpack_require__(192)) + "); } }\n\n.Hero {\n  background-size: cover;\n  display: flex;\n  flex-direction: row;\n  flex-wrap: wrap;\n  justify-content: space-between; }\n\n.Hero-Mobile {\n  display: none; }\n\n#Hero_mobile_code {\n  background-size: cover;\n  background-image: url(" + escape(__webpack_require__(191)) + "); }\n\n.Header {\n  order: 1;\n  height: 7vmax;\n  width: 100vmax;\n  background-color: rgba(0, 0, 0, 0.8); }\n  .Header img {\n    left: 5;\n    position: absolute;\n    height: 5vmax;\n    margin-left: 5vmax;\n    margin-bottom: 1vmax;\n    padding: 1vmax; }\n  .Header p {\n    font-family: 'Roboto';\n    font-style: normal;\n    right: 0;\n    width: 30vmax;\n    font-size: 15px;\n    color: #dcdcdc;\n    position: absolute;\n    text-align: right;\n    padding-right: 2vmax; }\n    .Header p a {\n      color: #38bcbd; }\n\n.Learn-Head {\n  order: 2;\n  font-family: 'Roboto';\n  font-weight: bold;\n  color: white;\n  width: 25vmax;\n  margin-left: 4vmax;\n  margin-top: 3vmax;\n  text-align: left;\n  padding: 10px; }\n  .Learn-Head h1 {\n    font-size: 4vw;\n    font-weight: bold;\n    margin-bottom: 0; }\n  .Learn-Head p {\n    font-size: 2vw;\n    margin-top: 0;\n    font-family: 'Roboto Slab';\n    font-weight: lighter; }\n\n.Form {\n  order: 4;\n  width: 25vmax;\n  height: 10.5vmax;\n  margin-right: 8vmax;\n  margin-left: 4vmax;\n  margin-bottom: 3vmax;\n  text-align: center;\n  background-color: rgba(220, 220, 220, 0.85);\n  border-radius: 5px; }\n  .Form h2 {\n    margin-top: 5px;\n    margin-bottom: 0;\n    font-size: 2vmax;\n    font-weight: bold; }\n  .Form p {\n    margin-bottom: 0;\n    font-size: .95vw; }\n  .Form input {\n    background: transparent;\n    border: none;\n    border-bottom: 1px solid #000000;\n    text-align: center;\n    font-size: 1.5vmax;\n    width: 9vmax;\n    margin-left: 10px;\n    margin-bottom: .3vw; }\n  .Form button {\n    color: white;\n    font-size: 1.8vmax;\n    font-weight: bold;\n    border-radius: 6px;\n    background-color: #38bcdb;\n    width: 24vmax;\n    height: 2.7vmax;\n    margin-bottom: 0; }\n  .Form button:hover {\n    color: white;\n    background-color: #2e91a3; }\n\n.Top-Content {\n  order: 3;\n  width: 28vmax;\n  margin-right: 7vmax;\n  margin-top: 3vmax;\n  text-align: right; }\n  .Top-Content h2 {\n    font-size: 1.7vmax;\n    color: #38bcbd;\n    margin-bottom: .3vw; }\n  .Top-Content p {\n    color: white;\n    font-size: 1.2vw;\n    font-weight: 200;\n    margin-bottom: 0;\n    margin-top: 0;\n    border-bottom: solid #2e91a3 thick; }\n  .Top-Content h1 {\n    color: #38bcbd;\n    font-style: oblique;\n    margin-top: 0; }\n\n.Bottom-Content {\n  order: 5;\n  width: 28vmax;\n  margin-right: 7vmax;\n  margin-bottom: 3vmax;\n  text-align: right; }\n  .Bottom-Content h2 {\n    font-size: 1.7vmax;\n    color: white;\n    margin-bottom: .3vw; }\n  .Bottom-Content p {\n    color: white;\n    font-size: 1.2vw;\n    font-weight: 200;\n    margin-bottom: 0;\n    margin-top: 0;\n    border-bottom: solid white thick; }\n  .Bottom-Content h1 {\n    color: white;\n    font-style: oblique;\n    margin-top: 0; }\n\n.Feature {\n  background-image: url(" + escape(__webpack_require__(194)) + ");\n  background-size: cover;\n  display: flex;\n  flex-direction: column;\n  flex-wrap: wrap;\n  height: 50vmax;\n  justify-content: space-around; }\n  @media only screen and (max-aspect-ratio: 16 / 9) {\n    .Feature {\n      background-image: url(" + escape(__webpack_require__(193)) + ");\n      align-items: center;\n      height: auto; } }\n\n.lazy-feature {\n  background-image: url(" + escape(__webpack_require__(193)) + ");\n  background-size: cover; }\n  @media screen and (min-width: 800px) {\n    .lazy-feature {\n      background-image: url(" + escape(__webpack_require__(194)) + "); } }\n  .lazy-feature h1 {\n    margin-top: 0;\n    font-size: 3vw;\n    width: 100vw;\n    padding-top: 4vw;\n    text-decoration: underline;\n    color: white;\n    text-align: center; }\n  @media only screen and (max-aspect-ratio: 16 / 9) {\n    .lazy-feature h1 {\n      font-size: 7.5vw; } }\n\n#feature-1 {\n  font-family: 'Roboto Slab';\n  color: white;\n  order: 1;\n  width: 20vw;\n  margin: 6vw;\n  margin-top: 0;\n  margin-bottom: 2vw;\n  text-align: center; }\n  #feature-1 img {\n    width: 6vw; }\n  @media only screen and (max-aspect-ratio: 16 / 9) {\n    #feature-1 {\n      width: 53vmax;\n      margin: 0;\n      font-size: 3vw; }\n      #feature-1 img {\n        width: 18vw; } }\n\n#feature-2 {\n  font-family: 'Roboto Slab';\n  color: white;\n  order: 2;\n  width: 20vw;\n  margin: 6vw;\n  margin-top: 0;\n  margin-bottom: 2vw;\n  text-align: center; }\n  #feature-2 img {\n    width: 6vw; }\n  @media only screen and (max-aspect-ratio: 16 / 9) {\n    #feature-2 {\n      width: 53vmax;\n      margin: 0;\n      font-size: 3vw; }\n      #feature-2 img {\n        width: 18vw; } }\n\n#feature-3 {\n  font-family: 'Roboto Slab';\n  color: white;\n  order: 3;\n  width: 20vw;\n  margin: 6vw;\n  margin-top: 0;\n  margin-bottom: 2vw;\n  text-align: center; }\n  #feature-3 img {\n    width: 6vw; }\n  @media only screen and (max-aspect-ratio: 16 / 9) {\n    #feature-3 {\n      width: 53vmax;\n      margin: 0;\n      font-size: 3vw; }\n      #feature-3 img {\n        width: 18vw; } }\n\n#feature-4 {\n  font-family: 'Roboto Slab';\n  color: white;\n  order: 4;\n  width: 20vw;\n  margin: 6vw;\n  margin-top: 0;\n  margin-bottom: 2vw;\n  text-align: center; }\n  #feature-4 img {\n    width: 6vw; }\n  @media only screen and (max-aspect-ratio: 16 / 9) {\n    #feature-4 {\n      width: 53vmax;\n      margin: 0;\n      font-size: 3vw; }\n      #feature-4 img {\n        width: 18vw; } }\n\n#feature-5 {\n  font-family: 'Roboto Slab';\n  color: white;\n  order: 5;\n  width: 20vw;\n  margin: 6vw;\n  margin-top: 0;\n  margin-bottom: 2vw;\n  text-align: center; }\n  #feature-5 img {\n    width: 6vw; }\n  @media only screen and (max-aspect-ratio: 16 / 9) {\n    #feature-5 {\n      width: 53vmax;\n      margin: 0;\n      font-size: 3vw; }\n      #feature-5 img {\n        width: 18vw; } }\n\n#feature-6 {\n  font-family: 'Roboto Slab';\n  color: white;\n  order: 6;\n  width: 20vw;\n  margin: 6vw;\n  margin-top: 0;\n  margin-bottom: 2vw;\n  text-align: center; }\n  #feature-6 img {\n    width: 6vw; }\n  @media only screen and (max-aspect-ratio: 16 / 9) {\n    #feature-6 {\n      width: 53vmax;\n      margin: 0;\n      font-size: 3vw; }\n      #feature-6 img {\n        width: 18vw; } }\n\n#feature-7 {\n  font-family: 'Roboto Slab';\n  color: white;\n  order: 7;\n  width: 20vw;\n  margin: 6vw;\n  margin-top: 0;\n  margin-bottom: 2vw;\n  text-align: center; }\n  #feature-7 img {\n    width: 6vw; }\n  @media only screen and (max-aspect-ratio: 16 / 9) {\n    #feature-7 {\n      width: 53vmax;\n      margin: 0;\n      font-size: 3vw; }\n      #feature-7 img {\n        width: 18vw; } }\n\n#feature-3 img {\n  height: 35vw;\n  width: auto; }\n\n#feature-3 p {\n  font-size: .8vw; }\n\n@media only screen and (max-aspect-ratio: 16 / 9) {\n  #feature-3 {\n    order: 0; }\n    #feature-3 img {\n      height: 45vmax; }\n    #feature-3 p {\n      display: none; } }\n\n#feature-6 {\n  display: none;\n  font-size: 1.8; }\n  @media only screen and (max-aspect-ratio: 16 / 9) {\n    #feature-6 {\n      display: block; } }\n\n.Faq {\n  background-image: url(" + escape(__webpack_require__(195)) + ");\n  background-size: cover;\n  height: 45vw; }\n  @media screen and (min-width: 800px) {\n    .Faq {\n      background-image: url(" + escape(__webpack_require__(196)) + "); } }\n  .Faq h1 {\n    margin-top: 0;\n    padding-top: 5vw;\n    font-size: 3vw;\n    text-decoration: underline;\n    color: black; }\n\n.faq-questions {\n  width: 40vw;\n  margin-left: 10vw; }\n  .faq-questions a {\n    text-decoration: none; }\n\n#faq-1 {\n  font-family: 'Roboto Slab';\n  font-size: 1.2vw;\n  color: black;\n  order: 1;\n  width: 30vw;\n  margin-top: 0;\n  margin-bottom: 0;\n  text-align: left; }\n\n#answer-1 {\n  display: none;\n  font-family: 'Roboto Slab';\n  font-size: 1vw; }\n\n#answer-1:target {\n  display: block; }\n\n#faq-2 {\n  font-family: 'Roboto Slab';\n  font-size: 1.2vw;\n  color: black;\n  order: 2;\n  width: 30vw;\n  margin-top: 0;\n  margin-bottom: 0;\n  text-align: left; }\n\n#answer-2 {\n  display: none;\n  font-family: 'Roboto Slab';\n  font-size: 1vw; }\n\n#answer-2:target {\n  display: block; }\n\n#faq-3 {\n  font-family: 'Roboto Slab';\n  font-size: 1.2vw;\n  color: black;\n  order: 3;\n  width: 30vw;\n  margin-top: 0;\n  margin-bottom: 0;\n  text-align: left; }\n\n#answer-3 {\n  display: none;\n  font-family: 'Roboto Slab';\n  font-size: 1vw; }\n\n#answer-3:target {\n  display: block; }\n\n#faq-4 {\n  font-family: 'Roboto Slab';\n  font-size: 1.2vw;\n  color: black;\n  order: 4;\n  width: 30vw;\n  margin-top: 0;\n  margin-bottom: 0;\n  text-align: left; }\n\n#answer-4 {\n  display: none;\n  font-family: 'Roboto Slab';\n  font-size: 1vw; }\n\n#answer-4:target {\n  display: block; }\n\n#faq-5 {\n  font-family: 'Roboto Slab';\n  font-size: 1.2vw;\n  color: black;\n  order: 5;\n  width: 30vw;\n  margin-top: 0;\n  margin-bottom: 0;\n  text-align: left; }\n\n#answer-5 {\n  display: none;\n  font-family: 'Roboto Slab';\n  font-size: 1vw; }\n\n#answer-5:target {\n  display: block; }\n\n#faq-6 {\n  font-family: 'Roboto Slab';\n  font-size: 1.2vw;\n  color: black;\n  order: 6;\n  width: 30vw;\n  margin-top: 0;\n  margin-bottom: 0;\n  text-align: left; }\n\n#answer-6 {\n  display: none;\n  font-family: 'Roboto Slab';\n  font-size: 1vw; }\n\n#answer-6:target {\n  display: block; }\n\n#faq-7 {\n  font-family: 'Roboto Slab';\n  font-size: 1.2vw;\n  color: black;\n  order: 7;\n  width: 30vw;\n  margin-top: 0;\n  margin-bottom: 0;\n  text-align: left; }\n\n#answer-7 {\n  display: none;\n  font-family: 'Roboto Slab';\n  font-size: 1vw; }\n\n#answer-7:target {\n  display: block; }\n\n.Footer {\n  order: 1;\n  height: 7vmax;\n  background-color: #38bcdb; }\n  .Footer img {\n    left: 5;\n    position: absolute;\n    height: 5vmax;\n    margin-left: 5vmax;\n    margin-bottom: 1vmax;\n    padding: 1vmax; }\n  .Footer p {\n    font-family: 'Roboto';\n    font-style: normal;\n    right: 0;\n    width: 30vmax;\n    font-size: .8vw;\n    color: black;\n    position: absolute;\n    text-align: right;\n    padding-right: 2vmax; }\n    .Footer p a {\n      color: #38bcbd; }\n\nhtml, body {\n  width: 100%;\n  height: 100%;\n  margin: 0;\n  padding: 0;\n  overflow: hidden; }\n\nbody {\n  overflow: auto;\n  perspective: 1px;\n  transform-style: preserve-3d; }\n  body, body * {\n    transform-style: preserve-3d; }\n\n.Story {\n  background-image: url(" + escape(__webpack_require__(197)) + ");\n  background-size: cover;\n  height: 30vw;\n  position: relative; }\n  @media screen and (min-width: 800px) {\n    .Story {\n      background-image: url(" + escape(__webpack_require__(198)) + "); } }\n  .Story h1 {\n    transform: translateZ(0.1px) scale(0.9);\n    z-index: 100;\n    font-size: 3vw;\n    padding-top: 4vw;\n    vertical-align: middle;\n    margin: auto;\n    position: absolute;\n    top: 3vw;\n    bottom: 0;\n    left: 0;\n    right: 0;\n    text-decoration: underline;\n    color: #2e91a3;\n    text-align: center; }\n  .Story p {\n    transform: translateZ(0.2px) scale(0.8);\n    z-index: 200;\n    width: 75vw;\n    color: white;\n    text-align: center;\n    font-size: 1.5vw;\n    font-family: 'Roboto Slab';\n    font-weight: lighter;\n    margin: auto;\n    position: absolute;\n    top: 12vw;\n    bottom: 0;\n    left: 0;\n    right: 0; }\n\n@media only screen and (max-aspect-ratio: 16 / 9) {\n  .Hero {\n    display: none; }\n  .Hero-Mobile {\n    display: flex; }\n    .Hero-Mobile h1 {\n      font-size: 2vw; }\n  .Header {\n    width: 100vw; }\n  .Form {\n    width: 100%;\n    height: 45vw;\n    margin: 0;\n    padding: 0; }\n    .Form h2 {\n      margin-top: 0;\n      padding-top: 3vw;\n      font-size: 4.5vmax; }\n    .Form p {\n      font-size: 3.2vw;\n      color: #676767;\n      font-weight: 300; }\n    .Form input {\n      width: 27vmax;\n      height: 6vmax;\n      margin-bottom: 2vmax;\n      font-size: 2.5vmax; }\n    .Form button {\n      width: 85vw;\n      height: 12vw;\n      margin-bottom: 3vw;\n      font-size: 3.2vmax; } }\n", ""]);
+	exports.push([module.id, ".App {\n  font-family: 'Roboto'; }\n\n#Hero_code {\n  background-image: url(" + escape(__webpack_require__(189)) + "); }\n  @media screen and (min-width: 800px) {\n    #Hero_code {\n      background-image: url(" + escape(__webpack_require__(190)) + "); } }\n\n#Hero_data {\n  background-image: url(" + escape(__webpack_require__(191)) + "); }\n  @media screen and (min-width: 800px) {\n    #Hero_data {\n      background-image: url(" + escape(__webpack_require__(192)) + "); } }\n\n.Hero {\n  background-size: cover;\n  display: flex;\n  flex-direction: row;\n  flex-wrap: wrap;\n  justify-content: space-between; }\n\n.Hero-Mobile {\n  display: none; }\n\n#Hero_mobile_code {\n  background-size: cover;\n  background-image: url(" + escape(__webpack_require__(191)) + "); }\n\n.Header {\n  order: 1;\n  height: 7vmax;\n  width: 100vmax;\n  background-color: rgba(0, 0, 0, 0.8); }\n  .Header img {\n    left: 5;\n    position: absolute;\n    height: 5vmax;\n    margin-left: 5vmax;\n    margin-bottom: 1vmax;\n    padding: 1vmax; }\n  .Header p {\n    font-family: 'Roboto';\n    font-style: normal;\n    right: 0;\n    width: 30vmax;\n    font-size: 15px;\n    color: #dcdcdc;\n    position: absolute;\n    text-align: right;\n    padding-right: 2vmax; }\n    .Header p a {\n      color: #38bcbd; }\n\n.Learn-Head {\n  order: 2;\n  font-family: 'Roboto';\n  font-weight: bold;\n  color: white;\n  width: 25vmax;\n  margin-left: 4vmax;\n  margin-top: 3vmax;\n  text-align: left;\n  padding: 10px; }\n  .Learn-Head h1 {\n    font-size: 4vw;\n    font-weight: bold;\n    margin-bottom: 0; }\n  .Learn-Head p {\n    font-size: 2vw;\n    margin-top: 0;\n    font-family: 'Roboto Slab';\n    font-weight: lighter; }\n\n.Form {\n  order: 4;\n  width: 25vmax;\n  height: 10.5vmax;\n  margin-right: 8vmax;\n  margin-left: 4vmax;\n  margin-bottom: 3vmax;\n  text-align: center;\n  background-color: rgba(220, 220, 220, 0.85);\n  border-radius: 5px; }\n  .Form h2 {\n    margin-top: 5px;\n    margin-bottom: 0;\n    font-size: 2vmax;\n    font-weight: bold; }\n  .Form p {\n    margin-bottom: 0;\n    font-size: .95vw; }\n  .Form input {\n    background: transparent;\n    border: none;\n    border-bottom: 1px solid #000000;\n    text-align: center;\n    font-size: 1.5vmax;\n    width: 9vmax;\n    margin-left: 10px;\n    margin-bottom: .3vw; }\n  .Form button {\n    color: white;\n    font-size: 1.8vmax;\n    font-weight: bold;\n    border-radius: 6px;\n    background-color: #38bcdb;\n    width: 24vmax;\n    height: 2.7vmax;\n    margin-bottom: 0; }\n  .Form button:hover {\n    color: white;\n    background-color: #2e91a3; }\n\n.Top-Content {\n  order: 3;\n  width: 28vmax;\n  margin-right: 7vmax;\n  margin-top: 3vmax;\n  text-align: right; }\n  .Top-Content h2 {\n    font-size: 1.7vmax;\n    color: #38bcbd;\n    margin-bottom: .3vw; }\n  .Top-Content p {\n    color: white;\n    font-size: 1.2vw;\n    font-weight: 200;\n    margin-bottom: 0;\n    margin-top: 0;\n    border-bottom: solid #2e91a3 thick; }\n  .Top-Content h1 {\n    color: #38bcbd;\n    font-style: oblique;\n    margin-top: 0; }\n\n.Bottom-Content {\n  order: 5;\n  width: 28vmax;\n  margin-right: 7vmax;\n  margin-bottom: 3vmax;\n  text-align: right; }\n  .Bottom-Content h2 {\n    font-size: 1.7vmax;\n    color: white;\n    margin-bottom: .3vw; }\n  .Bottom-Content p {\n    color: white;\n    font-size: 1.2vw;\n    font-weight: 200;\n    margin-bottom: 0;\n    margin-top: 0;\n    border-bottom: solid white thick; }\n  .Bottom-Content h1 {\n    color: white;\n    font-style: oblique;\n    margin-top: 0; }\n\n.Feature {\n  background-image: url(" + escape(__webpack_require__(194)) + ");\n  background-size: cover;\n  display: flex;\n  flex-direction: column;\n  flex-wrap: wrap;\n  height: 50vmax;\n  justify-content: space-around; }\n  @media only screen and (max-aspect-ratio: 16 / 9) {\n    .Feature {\n      background-image: url(" + escape(__webpack_require__(193)) + ");\n      align-items: center;\n      height: auto; } }\n\n.lazy-feature {\n  background-image: url(" + escape(__webpack_require__(193)) + ");\n  background-size: cover; }\n  @media screen and (min-width: 800px) {\n    .lazy-feature {\n      background-image: url(" + escape(__webpack_require__(194)) + "); } }\n  .lazy-feature h1 {\n    margin-top: 0;\n    font-size: 3vw;\n    width: 100vw;\n    padding-top: 4vw;\n    text-decoration: underline;\n    color: white;\n    text-align: center; }\n  @media only screen and (max-aspect-ratio: 16 / 9) {\n    .lazy-feature h1 {\n      font-size: 7.5vw; } }\n\n#feature-1 {\n  font-family: 'Roboto Slab';\n  color: white;\n  order: 1;\n  width: 20vw;\n  margin: 6vw;\n  margin-top: 0;\n  margin-bottom: 2vw;\n  text-align: center; }\n  #feature-1 img {\n    width: 6vw; }\n  @media only screen and (max-aspect-ratio: 16 / 9) {\n    #feature-1 {\n      width: 53vmax;\n      margin: 0;\n      font-size: 3vw; }\n      #feature-1 img {\n        width: 18vw; } }\n\n#feature-2 {\n  font-family: 'Roboto Slab';\n  color: white;\n  order: 2;\n  width: 20vw;\n  margin: 6vw;\n  margin-top: 0;\n  margin-bottom: 2vw;\n  text-align: center; }\n  #feature-2 img {\n    width: 6vw; }\n  @media only screen and (max-aspect-ratio: 16 / 9) {\n    #feature-2 {\n      width: 53vmax;\n      margin: 0;\n      font-size: 3vw; }\n      #feature-2 img {\n        width: 18vw; } }\n\n#feature-3 {\n  font-family: 'Roboto Slab';\n  color: white;\n  order: 3;\n  width: 20vw;\n  margin: 6vw;\n  margin-top: 0;\n  margin-bottom: 2vw;\n  text-align: center; }\n  #feature-3 img {\n    width: 6vw; }\n  @media only screen and (max-aspect-ratio: 16 / 9) {\n    #feature-3 {\n      width: 53vmax;\n      margin: 0;\n      font-size: 3vw; }\n      #feature-3 img {\n        width: 18vw; } }\n\n#feature-4 {\n  font-family: 'Roboto Slab';\n  color: white;\n  order: 4;\n  width: 20vw;\n  margin: 6vw;\n  margin-top: 0;\n  margin-bottom: 2vw;\n  text-align: center; }\n  #feature-4 img {\n    width: 6vw; }\n  @media only screen and (max-aspect-ratio: 16 / 9) {\n    #feature-4 {\n      width: 53vmax;\n      margin: 0;\n      font-size: 3vw; }\n      #feature-4 img {\n        width: 18vw; } }\n\n#feature-5 {\n  font-family: 'Roboto Slab';\n  color: white;\n  order: 5;\n  width: 20vw;\n  margin: 6vw;\n  margin-top: 0;\n  margin-bottom: 2vw;\n  text-align: center; }\n  #feature-5 img {\n    width: 6vw; }\n  @media only screen and (max-aspect-ratio: 16 / 9) {\n    #feature-5 {\n      width: 53vmax;\n      margin: 0;\n      font-size: 3vw; }\n      #feature-5 img {\n        width: 18vw; } }\n\n#feature-6 {\n  font-family: 'Roboto Slab';\n  color: white;\n  order: 6;\n  width: 20vw;\n  margin: 6vw;\n  margin-top: 0;\n  margin-bottom: 2vw;\n  text-align: center; }\n  #feature-6 img {\n    width: 6vw; }\n  @media only screen and (max-aspect-ratio: 16 / 9) {\n    #feature-6 {\n      width: 53vmax;\n      margin: 0;\n      font-size: 3vw; }\n      #feature-6 img {\n        width: 18vw; } }\n\n#feature-7 {\n  font-family: 'Roboto Slab';\n  color: white;\n  order: 7;\n  width: 20vw;\n  margin: 6vw;\n  margin-top: 0;\n  margin-bottom: 2vw;\n  text-align: center; }\n  #feature-7 img {\n    width: 6vw; }\n  @media only screen and (max-aspect-ratio: 16 / 9) {\n    #feature-7 {\n      width: 53vmax;\n      margin: 0;\n      font-size: 3vw; }\n      #feature-7 img {\n        width: 18vw; } }\n\n#feature-3 img {\n  height: 35vw;\n  width: auto; }\n\n#feature-3 p {\n  font-size: .8vw; }\n\n@media only screen and (max-aspect-ratio: 16 / 9) {\n  #feature-3 {\n    order: 0; }\n    #feature-3 img {\n      height: 45vmax; }\n    #feature-3 p {\n      display: none; } }\n\n#feature-6 {\n  display: none;\n  font-size: 1.8; }\n  @media only screen and (max-aspect-ratio: 16 / 9) {\n    #feature-6 {\n      display: block; } }\n\n.Faq {\n  background-image: url(" + escape(__webpack_require__(195)) + ");\n  background-size: cover;\n  height: 45vw; }\n  @media screen and (min-width: 800px) {\n    .Faq {\n      background-image: url(" + escape(__webpack_require__(196)) + "); } }\n  .Faq h1 {\n    margin-top: 0;\n    padding-top: 5vw;\n    font-size: 3vw;\n    text-decoration: underline;\n    color: black; }\n\n.faq-questions {\n  width: 40vw;\n  margin-left: 10vw; }\n  .faq-questions a {\n    text-decoration: none; }\n\n.Collapsible__trigger {\n  font-family: 'Roboto Slab';\n  font-size: 1.2vw;\n  color: black;\n  margin-top: 0;\n  margin-bottom: 0;\n  text-align: left; }\n\n.Collapsible__trigger:before {\n  font-family: 'FontAwesome';\n  font-size: 1.2vw;\n  content: \"\\F13A\";\n  float: left;\n  color: black;\n  border-radius: 50%;\n  background-color: #38bcdb; }\n\n.Collapsible__trigger.is-closed:before {\n  font-family: 'FontAwesome';\n  font-size: 1.2vw;\n  content: \"\\F138\";\n  float: left;\n  color: #38bcdb;\n  border-radius: 50%;\n  background-color: black; }\n\n#faq-1 {\n  font-family: 'Roboto Slab';\n  font-size: 1.2vw;\n  color: black;\n  order: 1;\n  width: 30vw;\n  margin-top: 0;\n  margin-bottom: 0;\n  text-align: left; }\n\n#answer-1 {\n  font-family: 'Roboto Slab';\n  font-size: 1vw; }\n\n#faq-2 {\n  font-family: 'Roboto Slab';\n  font-size: 1.2vw;\n  color: black;\n  order: 2;\n  width: 30vw;\n  margin-top: 0;\n  margin-bottom: 0;\n  text-align: left; }\n\n#answer-2 {\n  font-family: 'Roboto Slab';\n  font-size: 1vw; }\n\n#faq-3 {\n  font-family: 'Roboto Slab';\n  font-size: 1.2vw;\n  color: black;\n  order: 3;\n  width: 30vw;\n  margin-top: 0;\n  margin-bottom: 0;\n  text-align: left; }\n\n#answer-3 {\n  font-family: 'Roboto Slab';\n  font-size: 1vw; }\n\n#faq-4 {\n  font-family: 'Roboto Slab';\n  font-size: 1.2vw;\n  color: black;\n  order: 4;\n  width: 30vw;\n  margin-top: 0;\n  margin-bottom: 0;\n  text-align: left; }\n\n#answer-4 {\n  font-family: 'Roboto Slab';\n  font-size: 1vw; }\n\n#faq-5 {\n  font-family: 'Roboto Slab';\n  font-size: 1.2vw;\n  color: black;\n  order: 5;\n  width: 30vw;\n  margin-top: 0;\n  margin-bottom: 0;\n  text-align: left; }\n\n#answer-5 {\n  font-family: 'Roboto Slab';\n  font-size: 1vw; }\n\n#faq-6 {\n  font-family: 'Roboto Slab';\n  font-size: 1.2vw;\n  color: black;\n  order: 6;\n  width: 30vw;\n  margin-top: 0;\n  margin-bottom: 0;\n  text-align: left; }\n\n#answer-6 {\n  font-family: 'Roboto Slab';\n  font-size: 1vw; }\n\n#faq-7 {\n  font-family: 'Roboto Slab';\n  font-size: 1.2vw;\n  color: black;\n  order: 7;\n  width: 30vw;\n  margin-top: 0;\n  margin-bottom: 0;\n  text-align: left; }\n\n#answer-7 {\n  font-family: 'Roboto Slab';\n  font-size: 1vw; }\n\n.Footer {\n  order: 1;\n  height: 7vmax;\n  background-color: #38bcdb; }\n  .Footer img {\n    left: 5;\n    position: absolute;\n    height: 5vmax;\n    margin-left: 5vmax;\n    margin-bottom: 1vmax;\n    padding: 1vmax; }\n  .Footer p {\n    font-family: 'Roboto';\n    font-style: normal;\n    right: 0;\n    width: 30vmax;\n    font-size: .8vw;\n    color: black;\n    position: absolute;\n    text-align: right;\n    padding-right: 2vmax; }\n    .Footer p a {\n      color: #38bcbd; }\n\nhtml, body {\n  width: 100%;\n  height: 100%;\n  margin: 0;\n  padding: 0;\n  overflow: hidden; }\n\nbody {\n  overflow: auto;\n  perspective: 1px;\n  transform-style: preserve-3d; }\n  body, body * {\n    transform-style: preserve-3d; }\n\n.Story {\n  background-image: url(" + escape(__webpack_require__(197)) + ");\n  background-size: cover;\n  height: 30vw;\n  position: relative; }\n  @media screen and (min-width: 800px) {\n    .Story {\n      background-image: url(" + escape(__webpack_require__(198)) + "); } }\n  .Story h1 {\n    transform: translateZ(0.1px) scale(0.9);\n    z-index: 100;\n    font-size: 3vw;\n    padding-top: 4vw;\n    vertical-align: middle;\n    margin: auto;\n    position: absolute;\n    top: 3vw;\n    bottom: 0;\n    left: 0;\n    right: 0;\n    text-decoration: underline;\n    color: #2e91a3;\n    text-align: center; }\n  .Story p {\n    transform: translateZ(0.2px) scale(0.8);\n    z-index: 200;\n    width: 75vw;\n    color: white;\n    text-align: center;\n    font-size: 1.5vw;\n    font-family: 'Roboto Slab';\n    font-weight: lighter;\n    margin: auto;\n    position: absolute;\n    top: 12vw;\n    bottom: 0;\n    left: 0;\n    right: 0; }\n\n@media only screen and (max-aspect-ratio: 16 / 9) {\n  .Hero {\n    display: none; }\n  .Hero-Mobile {\n    display: flex; }\n    .Hero-Mobile h1 {\n      font-size: 2vw; }\n  .Header {\n    width: 100vw; }\n  .Form {\n    width: 100%;\n    height: 45vw;\n    margin: 0;\n    padding: 0; }\n    .Form h2 {\n      margin-top: 0;\n      padding-top: 3vw;\n      font-size: 4.5vmax; }\n    .Form p {\n      font-size: 3.2vw;\n      color: #676767;\n      font-weight: 300; }\n    .Form input {\n      width: 27vmax;\n      height: 6vmax;\n      margin-bottom: 2vmax;\n      font-size: 2.5vmax; }\n    .Form button {\n      width: 85vw;\n      height: 12vw;\n      margin-bottom: 3vw;\n      font-size: 3.2vmax; } }\n", ""]);
 
 	// exports
 
@@ -23299,6 +23299,10 @@
 
 	__webpack_require__(185);
 
+	var _Collapsible = __webpack_require__(219);
+
+	var _Collapsible2 = _interopRequireDefault(_Collapsible);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -23318,34 +23322,39 @@
 
 	  _createClass(Faq, [{
 	    key: 'render',
+
+	    // constructor(){
+	    //   super()
+	    // }
+	    // componentDidMount(){
+	    //   var answer = document.getElementById('answer-1');
+	    //   var question = document.getElementById('faq-1');
+	    //   $('#answer-1').hide();
+	    //   $('#faq-1').click(
+	    //       function() {
+	    //           var toggle = $(this).nextUntil('#faq-1');
+	    //           toggle.slideToggle();
+	    //           $('#answer-1').not(toggle).slideUp();
+	    //       });
+	    // };
 	    value: function render() {
 	      return _react2.default.createElement(
 	        'div',
 	        { className: 'Faq' },
 	        _react2.default.createElement(
 	          'div',
-	          { className: 'faq-questions' },
+	          { className: 'faq-questions', id: 'accordion' },
 	          _react2.default.createElement(
 	            'h1',
 	            null,
 	            'Frequently Asked Questions'
 	          ),
 	          _react2.default.createElement(
-	            'div',
-	            { id: 'faq-1' },
-	            _react2.default.createElement(
-	              'a',
-	              { href: '#answer-1' },
-	              _react2.default.createElement('i', { id: 'icon-1', className: 'fa fa-chevron-circle-right', 'aria-hidden': 'true' }),
-	              '  When does the program start?'
-	            )
-	          ),
-	          _react2.default.createElement(
-	            'div',
-	            { id: 'answer-1' },
+	            _Collapsible2.default,
+	            { className: 'faq-1', trigger: 'When does the program start?' },
 	            _react2.default.createElement(
 	              'ul',
-	              null,
+	              { id: 'answer-1' },
 	              _react2.default.createElement(
 	                'li',
 	                null,
@@ -23364,21 +23373,11 @@
 	            )
 	          ),
 	          _react2.default.createElement(
-	            'div',
-	            { id: 'faq-2' },
-	            _react2.default.createElement(
-	              'a',
-	              { href: '#answer-2' },
-	              _react2.default.createElement('i', { className: 'fa fa-chevron-circle-right', 'aria-hidden': 'true' }),
-	              '  Can I keep working while studying at Trilogy Data Science and Analytics Boot Camp?'
-	            )
-	          ),
-	          _react2.default.createElement(
-	            'div',
-	            { id: 'answer-2' },
+	            _Collapsible2.default,
+	            { className: 'faq-2', trigger: ' Can I keep working while studying at Trilogy Data Science and Analytics Boot Camp?' },
 	            _react2.default.createElement(
 	              'ul',
-	              null,
+	              { id: 'answer-2' },
 	              _react2.default.createElement(
 	                'li',
 	                null,
@@ -23397,21 +23396,11 @@
 	            )
 	          ),
 	          _react2.default.createElement(
-	            'div',
-	            { id: 'faq-3' },
-	            _react2.default.createElement(
-	              'a',
-	              { href: '#answer-3' },
-	              _react2.default.createElement('i', { className: 'fa fa-chevron-circle-right', 'aria-hidden': 'true' }),
-	              '  How long does it take to complete the program?'
-	            )
-	          ),
-	          _react2.default.createElement(
-	            'div',
-	            { id: 'answer-3' },
+	            _Collapsible2.default,
+	            { className: 'faq-3', trigger: ' How long does it take to complete the program?' },
 	            _react2.default.createElement(
 	              'ul',
-	              null,
+	              { id: 'answer-3' },
 	              _react2.default.createElement(
 	                'li',
 	                null,
@@ -23430,21 +23419,11 @@
 	            )
 	          ),
 	          _react2.default.createElement(
-	            'div',
-	            { id: 'faq-4' },
-	            _react2.default.createElement(
-	              'a',
-	              { href: '#answer-4' },
-	              _react2.default.createElement('i', { className: 'fa fa-chevron-circle-right', 'aria-hidden': 'true' }),
-	              '  Do you provide career placement support?'
-	            )
-	          ),
-	          _react2.default.createElement(
-	            'div',
-	            { id: 'answer-4' },
+	            _Collapsible2.default,
+	            { className: 'faq-4', trigger: ' Do you provide career placement support?' },
 	            _react2.default.createElement(
 	              'ul',
-	              null,
+	              { id: 'answer-4' },
 	              _react2.default.createElement(
 	                'li',
 	                null,
@@ -23463,21 +23442,11 @@
 	            )
 	          ),
 	          _react2.default.createElement(
-	            'div',
-	            { id: 'faq-5' },
-	            _react2.default.createElement(
-	              'a',
-	              { href: '#answer-5' },
-	              _react2.default.createElement('i', { className: 'fa fa-chevron-circle-right', 'aria-hidden': 'true' }),
-	              '  Do I need to have previous experience in programming or data analytics before applying?'
-	            )
-	          ),
-	          _react2.default.createElement(
-	            'div',
-	            { id: 'answer-5' },
+	            _Collapsible2.default,
+	            { className: 'faq-5', trigger: '  Do I need to have previous experience in programming or data analytics before applying?' },
 	            _react2.default.createElement(
 	              'ul',
-	              null,
+	              { id: 'answer-5' },
 	              _react2.default.createElement(
 	                'li',
 	                null,
@@ -23496,21 +23465,11 @@
 	            )
 	          ),
 	          _react2.default.createElement(
-	            'div',
-	            { id: 'faq-6' },
-	            _react2.default.createElement(
-	              'a',
-	              { href: '#answer-6' },
-	              _react2.default.createElement('i', { className: 'fa fa-chevron-circle-right', 'aria-hidden': 'true' }),
-	              '  What sets your boot camp apart from othere I can join in Trilogy?'
-	            )
-	          ),
-	          _react2.default.createElement(
-	            'div',
-	            { id: 'answer-6' },
+	            _Collapsible2.default,
+	            { className: 'faq-6', trigger: '  What sets your boot camp apart from othere I can join in Trilogy?' },
 	            _react2.default.createElement(
 	              'ul',
-	              null,
+	              { id: 'answer-6' },
 	              _react2.default.createElement(
 	                'li',
 	                null,
@@ -23760,6 +23719,389 @@
 	}(_react2.default.Component);
 
 	exports.default = HeroMobile;
+
+/***/ }),
+/* 219 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _propTypes = __webpack_require__(220);
+
+	var _propTypes2 = _interopRequireDefault(_propTypes);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var Collapsible = function (_Component) {
+	  _inherits(Collapsible, _Component);
+
+	  function Collapsible(props) {
+	    _classCallCheck(this, Collapsible);
+
+	    // Bind class methods
+	    var _this = _possibleConstructorReturn(this, (Collapsible.__proto__ || Object.getPrototypeOf(Collapsible)).call(this, props));
+
+	    _this.handleTriggerClick = _this.handleTriggerClick.bind(_this);
+	    _this.handleTransitionEnd = _this.handleTransitionEnd.bind(_this);
+	    _this.continueOpenCollapsible = _this.continueOpenCollapsible.bind(_this);
+
+	    // Defaults the dropdown to be closed
+	    if (props.open) {
+	      _this.state = {
+	        isClosed: false,
+	        shouldSwitchAutoOnNextCycle: false,
+	        height: 'auto',
+	        transition: 'none',
+	        hasBeenOpened: true,
+	        overflow: props.overflowWhenOpen,
+	        inTransition: false
+	      };
+	    } else {
+	      _this.state = {
+	        isClosed: true,
+	        shouldSwitchAutoOnNextCycle: false,
+	        height: 0,
+	        transition: 'height ' + props.transitionTime + 'ms ' + props.easing,
+	        hasBeenOpened: false,
+	        overflow: 'hidden',
+	        inTransition: false
+	      };
+	    }
+	    return _this;
+	  }
+
+	  _createClass(Collapsible, [{
+	    key: 'componentDidUpdate',
+	    value: function componentDidUpdate(prevProps, prevState) {
+	      var _this2 = this;
+
+	      if (this.state.shouldOpenOnNextCycle) {
+	        this.continueOpenCollapsible();
+	      }
+
+	      if (prevState.height === 'auto' && this.state.shouldSwitchAutoOnNextCycle === true) {
+	        window.setTimeout(function () {
+	          // Set small timeout to ensure a true re-render
+	          _this2.setState({
+	            height: 0,
+	            overflow: 'hidden',
+	            isClosed: true,
+	            shouldSwitchAutoOnNextCycle: false
+	          });
+	        }, 50);
+	      }
+
+	      // If there has been a change in the open prop (controlled by accordion)
+	      if (prevProps.open !== this.props.open) {
+	        if (this.props.open === true) {
+	          this.openCollapsible();
+	          this.props.onOpening();
+	        } else {
+	          this.closeCollapsible();
+	          this.props.onClosing();
+	        }
+	      }
+	    }
+	  }, {
+	    key: 'closeCollapsible',
+	    value: function closeCollapsible() {
+	      this.setState({
+	        shouldSwitchAutoOnNextCycle: true,
+	        height: this.refs.inner.offsetHeight,
+	        transition: 'height ' + this.props.transitionTime + 'ms ' + this.props.easing,
+	        inTransition: true
+	      });
+	    }
+	  }, {
+	    key: 'openCollapsible',
+	    value: function openCollapsible() {
+	      this.setState({
+	        inTransition: true,
+	        shouldOpenOnNextCycle: true
+	      });
+	    }
+	  }, {
+	    key: 'continueOpenCollapsible',
+	    value: function continueOpenCollapsible() {
+	      this.setState({
+	        height: this.refs.inner.offsetHeight,
+	        transition: 'height ' + this.props.transitionTime + 'ms ' + this.props.easing,
+	        isClosed: false,
+	        hasBeenOpened: true,
+	        inTransition: true,
+	        shouldOpenOnNextCycle: false
+	      });
+	    }
+	  }, {
+	    key: 'handleTriggerClick',
+	    value: function handleTriggerClick(event) {
+	      event.preventDefault();
+
+	      if (this.props.triggerDisabled) {
+	        return;
+	      }
+
+	      if (this.props.handleTriggerClick) {
+	        this.props.handleTriggerClick(this.props.accordionPosition);
+	      } else {
+	        if (this.state.isClosed === true) {
+	          this.openCollapsible();
+	          this.props.onOpening();
+	        } else {
+	          this.closeCollapsible();
+	          this.props.onClosing();
+	        }
+	      }
+	    }
+	  }, {
+	    key: 'renderNonClickableTriggerElement',
+	    value: function renderNonClickableTriggerElement() {
+	      if (this.props.triggerSibling && typeof this.props.triggerSibling === 'string') {
+	        return _react2.default.createElement(
+	          'span',
+	          { className: this.props.classParentString + '__trigger-sibling' },
+	          this.props.triggerSibling
+	        );
+	      } else if (this.props.triggerSibling) {
+	        return _react2.default.createElement(this.props.triggerSibling, null);
+	      }
+
+	      return null;
+	    }
+	  }, {
+	    key: 'handleTransitionEnd',
+	    value: function handleTransitionEnd() {
+	      // Switch to height auto to make the container responsive
+	      if (!this.state.isClosed) {
+	        this.setState({ height: 'auto', overflow: this.props.overflowWhenOpen, inTransition: false });
+	        this.props.onOpen();
+	      } else {
+	        this.setState({ inTransition: false });
+	        this.props.onClose();
+	      }
+	    }
+	  }, {
+	    key: 'render',
+	    value: function render() {
+	      var dropdownStyle = {
+	        height: this.state.height,
+	        WebkitTransition: this.state.transition,
+	        msTransition: this.state.transition,
+	        transition: this.state.transition,
+	        overflow: this.state.overflow
+	      };
+
+	      var openClass = this.state.isClosed ? 'is-closed' : 'is-open';
+	      var disabledClass = this.props.triggerDisabled ? 'is-disabled' : '';
+
+	      //If user wants different text when tray is open
+	      var trigger = this.state.isClosed === false && this.props.triggerWhenOpen !== undefined ? this.props.triggerWhenOpen : this.props.trigger;
+
+	      // Don't render children until the first opening of the Collapsible if lazy rendering is enabled
+	      var children = this.props.lazyRender && !this.state.hasBeenOpened && this.state.isClosed && !this.state.inTransition ? null : this.props.children;
+
+	      // Construct CSS classes strings
+	      var triggerClassString = this.props.classParentString + '__trigger ' + openClass + ' ' + disabledClass + ' ' + (this.state.isClosed ? this.props.triggerClassName : this.props.triggerOpenedClassName);
+	      var parentClassString = this.props.classParentString + ' ' + (this.state.isClosed ? this.props.className : this.props.openedClassName);
+	      var outerClassString = this.props.classParentString + '__contentOuter ' + this.props.contentOuterClassName;
+	      var innerClassString = this.props.classParentString + '__contentInner ' + this.props.contentInnerClassName;
+
+	      return _react2.default.createElement(
+	        'div',
+	        { className: parentClassString.trim() },
+	        _react2.default.createElement(
+	          'span',
+	          {
+	            className: triggerClassString.trim(),
+	            onClick: this.handleTriggerClick },
+	          trigger
+	        ),
+	        this.renderNonClickableTriggerElement(),
+	        _react2.default.createElement(
+	          'div',
+	          {
+	            className: outerClassString.trim(),
+	            ref: 'outer',
+	            style: dropdownStyle,
+	            onTransitionEnd: this.handleTransitionEnd
+	          },
+	          _react2.default.createElement(
+	            'div',
+	            {
+	              className: innerClassString.trim(),
+	              ref: 'inner'
+	            },
+	            children
+	          )
+	        )
+	      );
+	    }
+	  }]);
+
+	  return Collapsible;
+	}(_react.Component);
+
+	Collapsible.propTypes = {
+	  transitionTime: _propTypes2.default.number,
+	  easing: _propTypes2.default.string,
+	  open: _propTypes2.default.bool,
+	  classParentString: _propTypes2.default.string,
+	  openedClassName: _propTypes2.default.string,
+	  triggerClassName: _propTypes2.default.string,
+	  triggerOpenedClassName: _propTypes2.default.string,
+	  contentOuterClassName: _propTypes2.default.string,
+	  contentInnerClassName: _propTypes2.default.string,
+	  accordionPosition: _propTypes2.default.oneOfType([_propTypes2.default.string, _propTypes2.default.number]),
+	  handleTriggerClick: _propTypes2.default.func,
+	  onOpen: _propTypes2.default.func,
+	  onClose: _propTypes2.default.func,
+	  onOpening: _propTypes2.default.func,
+	  onClosing: _propTypes2.default.func,
+	  trigger: _propTypes2.default.oneOfType([_propTypes2.default.string, _propTypes2.default.element]),
+	  triggerWhenOpen: _propTypes2.default.oneOfType([_propTypes2.default.string, _propTypes2.default.element]),
+	  triggerDisabled: _propTypes2.default.bool,
+	  lazyRender: _propTypes2.default.bool,
+	  overflowWhenOpen: _propTypes2.default.oneOf(['hidden', 'visible', 'auto', 'scroll', 'inherit', 'initial', 'unset']),
+	  triggerSibling: _propTypes2.default.oneOfType([_propTypes2.default.element, _propTypes2.default.func])
+	};
+
+	Collapsible.defaultProps = {
+	  transitionTime: 400,
+	  easing: 'linear',
+	  open: false,
+	  classParentString: 'Collapsible',
+	  triggerDisabled: false,
+	  lazyRender: false,
+	  overflowWhenOpen: 'hidden',
+	  openedClassName: '',
+	  triggerClassName: '',
+	  triggerOpenedClassName: '',
+	  contentOuterClassName: '',
+	  contentInnerClassName: '',
+	  className: '',
+	  triggerSibling: null,
+	  onOpen: function onOpen() {},
+	  onClose: function onClose() {},
+	  onOpening: function onOpening() {},
+	  onClosing: function onClosing() {}
+	};
+
+	exports.default = Collapsible;
+
+/***/ }),
+/* 220 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(process) {/**
+	 * Copyright (c) 2013-present, Facebook, Inc.
+	 *
+	 * This source code is licensed under the MIT license found in the
+	 * LICENSE file in the root directory of this source tree.
+	 */
+
+	if (process.env.NODE_ENV !== 'production') {
+	  var REACT_ELEMENT_TYPE = (typeof Symbol === 'function' &&
+	    Symbol.for &&
+	    Symbol.for('react.element')) ||
+	    0xeac7;
+
+	  var isValidElement = function(object) {
+	    return typeof object === 'object' &&
+	      object !== null &&
+	      object.$$typeof === REACT_ELEMENT_TYPE;
+	  };
+
+	  // By explicitly using `prop-types` you are opting into new development behavior.
+	  // http://fb.me/prop-types-in-prod
+	  var throwOnDirectAccess = true;
+	  module.exports = __webpack_require__(30)(isValidElement, throwOnDirectAccess);
+	} else {
+	  // By explicitly using `prop-types` you are opting into new production behavior.
+	  // http://fb.me/prop-types-in-prod
+	  module.exports = __webpack_require__(221)();
+	}
+
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
+
+/***/ }),
+/* 221 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	/**
+	 * Copyright (c) 2013-present, Facebook, Inc.
+	 *
+	 * This source code is licensed under the MIT license found in the
+	 * LICENSE file in the root directory of this source tree.
+	 */
+
+	'use strict';
+
+	var emptyFunction = __webpack_require__(9);
+	var invariant = __webpack_require__(12);
+	var ReactPropTypesSecret = __webpack_require__(31);
+
+	module.exports = function() {
+	  function shim(props, propName, componentName, location, propFullName, secret) {
+	    if (secret === ReactPropTypesSecret) {
+	      // It is still safe when called from React.
+	      return;
+	    }
+	    invariant(
+	      false,
+	      'Calling PropTypes validators directly is not supported by the `prop-types` package. ' +
+	      'Use PropTypes.checkPropTypes() to call them. ' +
+	      'Read more at http://fb.me/use-check-prop-types'
+	    );
+	  };
+	  shim.isRequired = shim;
+	  function getShim() {
+	    return shim;
+	  };
+	  // Important!
+	  // Keep this list in sync with production version in `./factoryWithTypeCheckers.js`.
+	  var ReactPropTypes = {
+	    array: shim,
+	    bool: shim,
+	    func: shim,
+	    number: shim,
+	    object: shim,
+	    string: shim,
+	    symbol: shim,
+
+	    any: shim,
+	    arrayOf: getShim,
+	    element: shim,
+	    instanceOf: getShim,
+	    node: shim,
+	    objectOf: getShim,
+	    oneOf: getShim,
+	    oneOfType: getShim,
+	    shape: getShim,
+	    exact: getShim
+	  };
+
+	  ReactPropTypes.checkPropTypes = emptyFunction;
+	  ReactPropTypes.PropTypes = ReactPropTypes;
+
+	  return ReactPropTypes;
+	};
+
 
 /***/ })
 /******/ ]);
