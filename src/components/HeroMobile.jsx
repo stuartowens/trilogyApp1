@@ -19,24 +19,24 @@ class HeroMobile extends React.Component {
   render() {
     return (
         <div>
-          <div className="Hero-Mobile" id="Hero_mobile_code">
-            <Header />
-            <div className="Learn-Mobile-Head">
-              <h1>Learn Coding<br /> in 24 Weeks</h1>
-              <p>Class starts May 15, 2018</p>
+          <div className="Hero-Mobile">
+            <div  id="Hero_mobile_code">
+              <Header />
+              <div className="Learn-Head">
+                <h1>Learn Coding<br /> in 24 Weeks</h1>
+                <p>Class starts May 15, 2018</p>
+              </div>
+              {/* <div className="Top-Content">
+                <h2 id="Top-Content-H">CODING</h2>
+                <p id="Top-Content-P">Coding Boot Camp equips students skills for full-stack web development through <br /> dynamic, in-person classes.</p>
+              </div>
+              <div className="Bottom-Bottom-Content">
+                <h2 id="Bottom-Content-H">DATA ANALYTICS</h2>
+                <p id="Bottom-Content-P">Data Boot Camp equips students with the key skills for full-stack web development<br /> through dynamic, in-person classes.</p>
+              </div> */}
             </div>
-            <div className="Top-Mobile-Content">
-              <h2 id="Top-Mobile-Content-H">CODING</h2>
-              <p id="Top-Mobile-Content-P">Coding Boot Camp equips students skills for full-stack web development through <br /> dynamic, in-person classes.</p>
-              {/* <h1>   ___________________</h1> */}
-            </div>
-            <div className="Bottom-Bottom-Content">
-              <h2 id="Bottom-Mobile-Content-H">DATA ANALYTICS</h2>
-              <p id="Bottom-Mobile-Content-P">Data Boot Camp equips students with the key skills for full-stack web development<br /> through dynamic, in-person classes.</p>
-              {/* <h1>   ___________________</h1> */}
-            </div>
+            <Form />
           </div>
-          <Form />
         </div>
       )
   }

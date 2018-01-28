@@ -36,22 +36,18 @@ $mobile-featuring-background: url("../images/mobile/featuring_mobile.jpg");
 
 .Hero {
   background-size: cover;
-  display: none;
+  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 .Hero-Mobile {
+  display: none;
+}
+
+#Hero_mobile_code {
   background-size: cover;
   background-image: $mobile-data-background;
-}
-@media only screen and (max-height: 800px) {
-  .Hero {
-    display: flex;
-  }
-  .Hero-Mobile {
-    display: none;
-  }
 }
 
 .Header {
@@ -152,7 +148,6 @@ $mobile-featuring-background: url("../images/mobile/featuring_mobile.jpg");
   }
 }
 
-
 .Top-Content {
   order: 3;
   width: 28vmax;
@@ -203,17 +198,22 @@ $mobile-featuring-background: url("../images/mobile/featuring_mobile.jpg");
     margin-top: 0;
   }
 }
+
+
+
 .Feature {
-  background-image: $mobile-featuring-background;
-  @media screen and (min-width: 800px) {
-    background-image: $featuring-background;
-  }
+  background-image: $featuring-background;
   background-size: cover;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  justify-content: space-around;
   height: 50vmax;
+  justify-content: space-around;
+  @media only screen and (max-aspect-ratio: 16/9) {
+    background-image: $mobile-featuring-background;
+    align-items: center;
+    height: auto;
+  }
 }
 .lazy-feature {
   background-image: $mobile-featuring-background;
@@ -224,16 +224,21 @@ $mobile-featuring-background: url("../images/mobile/featuring_mobile.jpg");
   h1 {
     margin-top: 0;
     font-size: 3vw;
-    width: 95vw;
+    width: 100vw;
     padding-top: 4vw;
     text-decoration: underline;
     color: white;
     text-align: center;
   }
+  @media only screen and (max-aspect-ratio: 16/9) {
+    h1 {
+      font-size: 7.5vw;
+    }
+  }
 }
 
 
-@for $i from 1 through 6 {
+@for $i from 1 through 7 {
   #feature-#{$i} {
     font-family: 'Roboto Slab';
     color: white;
@@ -246,6 +251,14 @@ $mobile-featuring-background: url("../images/mobile/featuring_mobile.jpg");
     img {
       width: 6vw;
     }
+    @media only screen and (max-aspect-ratio: 16/9) {
+      width: 53vmax;
+      margin: 0;
+      font-size: 3vw;
+      img {
+        width: 18vw;
+      }
+    }
    }
 }
 #feature-3 {
@@ -255,6 +268,22 @@ $mobile-featuring-background: url("../images/mobile/featuring_mobile.jpg");
   }
   p {
     font-size: .8vw;
+  }
+  @media only screen and (max-aspect-ratio: 16/9) {
+    order: 0;
+    img {
+      height: 45vmax;
+    }
+    p {
+      display:none
+    }
+  }
+}
+#feature-6 {
+  display: none;
+  font-size: 1.8;
+  @media only screen and (max-aspect-ratio: 16/9) {
+    display: block;
   }
 }
 
@@ -408,4 +437,48 @@ $parallax-ios : true !default;
     left:0;
     right:0;
   }
+}
+
+@media only screen and (max-aspect-ratio: 16/9) {
+  .Hero {
+    display: none;
+  }
+  .Hero-Mobile {
+    display: flex;
+    h1 {
+      font-size: 2vw;
+    }
+  }
+  .Header {
+    width: 100vw;
+  }
+  .Form {
+    width: 100%;
+    height: 45vw;
+    margin: 0;
+    padding: 0;
+    h2 {
+      margin-top: 0;
+      padding-top: 3vw;
+      font-size: 4.5vmax;
+    }
+    p {
+      font-size: 3.2vw;
+      color: darken(grey,10);
+      font-weight: 300;
+    }
+    input {
+      width: 27vmax;
+      height: 6vmax;
+      margin-bottom: 2vmax;
+      font-size: 2.5vmax;
+    }
+    button{
+      width: 85vw;
+      height: 12vw;
+      margin-bottom: 3vw;
+      font-size: 3.2vmax;
+    }
+  }
+
 }
