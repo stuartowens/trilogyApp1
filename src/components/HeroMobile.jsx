@@ -22,18 +22,13 @@ class HeroMobile extends React.Component {
           <div className="Hero-Mobile">
             <div  id="Hero_mobile_code">
               <Header />
-              <div className="Learn-Head">
-                <h1>Learn Coding<br /> in 24 Weeks</h1>
+              <div className="Learn-Heading">
+                <h1>Learn Coding in 24 Weeks</h1>
                 <p>Class starts May 15, 2018</p>
               </div>
-              {/* <div className="Top-Content">
-                <h2 id="Top-Content-H">CODING</h2>
-                <p id="Top-Content-P">Coding Boot Camp equips students skills for full-stack web development through <br /> dynamic, in-person classes.</p>
+              <div className="Data-Content">
+                <p>Data Boot Camp equips students with the key skills for full-stack web development through dynamic, in-person classes.</p>
               </div>
-              <div className="Bottom-Bottom-Content">
-                <h2 id="Bottom-Content-H">DATA ANALYTICS</h2>
-                <p id="Bottom-Content-P">Data Boot Camp equips students with the key skills for full-stack web development<br /> through dynamic, in-person classes.</p>
-              </div> */}
             </div>
             <Form />
           </div>

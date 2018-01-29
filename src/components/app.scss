@@ -471,11 +471,97 @@ $parallax-ios : true !default;
   .Hero {
     display: none;
   }
+  .Header {
+    height: 35vmax;
+    position: relative;
+    img {
+      vertical-align: middle;
+      margin : auto;
+      position : absolute;
+      top:3vw;
+      bottom:0;
+      left:0;
+      right:0;
+      bottom: 0;
+      width: 55vmax;
+      height: 25vmax;
+    }
+    p {
+      vertical-align: middle;
+      margin : auto;
+      margin-bottom:5vw;
+      position : absolute;
+      top:3vw;
+      bottom:0;
+      left:0;
+      right:0;
+      width: 74vmax;
+      font-size: 3.5vmax;
+      text-align: center;
+    }
+  }
+  .Hero_mobile_code {
+    height: 50vmax;
+  }
   .Hero-Mobile {
     display: flex;
+    vertical-align: middle;
+    margin: auto;
     flex-direction: column;
+  }
+  .Learn-Heading {
+    vertical-align: middle;
+    margin: auto;
+    position: relative;
+    margin-bottom: 6vw;
+    height: 20vmax;
     h1 {
-      font-size: 2vw;
+      margin : auto;
+      position : relative;
+      top:9vw;
+      bottom:0;
+      left:0;
+      right:0;
+      vertical-align: middle;
+      color: white;
+      // width: 45vmax;
+      font-size: 6.5vw;
+      text-align: center;
+    }
+    p {
+      vertical-align: middle;
+      margin : auto;
+      position : relative;
+      top:12vw;
+      bottom:0;
+      left:0;
+      right:0;
+      color: white;
+      width: 75vmax;
+      font-size: 4vw;
+      text-align: center;
+    }
+  }
+  .Data-Content {
+    height: 25vmax;
+    position: relative;
+    margin-top: 5vmax;
+    margin-bottom: 10vmax;
+    p {
+      border-top: solid $blue thick;
+      border-top-width: 15px;
+      padding-top: 3vw;
+      vertical-align: middle;
+      margin : auto;
+      position : absolute;
+      top:3vw;
+      bottom:0;
+      left:0;
+      right:0;
+      color: white;
+      width: 85vmax;
+      font-size: 4vw;
+      text-align: center;
     }
   }
   .Header {
