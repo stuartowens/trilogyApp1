@@ -6,7 +6,7 @@ const heroContent = () => {
   var heroContent = [
     {
       h: 'CODING',
-      p:'Coding Boot Camp equips stuedents skills for full-stack web development through <br /> dynamic, in-person classes.'
+      p:'Coding Boot Camp equips students skills for full-stack web development through <br /> dynamic, in-person classes.'
     },
     {
       h: 'DATA ANALYTICS',
