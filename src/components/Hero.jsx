@@ -1,10 +1,15 @@
 import React from 'react';
 import './app.scss';
-import Coding from './Coding.jsx';
-import Data from './Data.jsx';
 import Form from './Form.jsx';
 import Header from './Header.jsx';
+import heroContent from '../Content/HeroContent.js';
 
+//Here I use the function from HeroContent to change the background Image every five seconds
+//The only issue here is that it is flashing upon loading the first few times it moves back and forth
+//This is most likely due to the way I am changing the content. I'd like to find a better way to do this
+//in the css using a mixin.
+//Like I said in the CSS file the instrucitons weren't completely clear on what kind of transition wanted
+//for the paragraph element, ie if it's literally supposed to move up or if it can simply change the content
 
 class Hero extends React.Component {
   constructor(props){
@@ -14,7 +19,7 @@ class Hero extends React.Component {
     }
   }
   componentDidMount () {
-    // console.log(this.props, 'heroId');
+    heroContent();
   }
   render() {
     return (
@@ -28,12 +33,10 @@ class Hero extends React.Component {
             <div className="Top-Content">
               <h2 id="Top-Content-H">CODING</h2>
               <p id="Top-Content-P">Coding Boot Camp equips students skills for full-stack web development through <br /> dynamic, in-person classes.</p>
-              {/* <h1>   ___________________</h1> */}
             </div>
             <div className="Bottom-Content">
               <h2 id="Bottom-Content-H">DATA ANALYTICS</h2>
               <p id="Bottom-Content-P">Data Boot Camp equips students with the key skills for full-stack web development<br /> through dynamic, in-person classes.</p>
-              {/* <h1>   ___________________</h1> */}
             </div>
             <Form />
           </div>

@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
+//This is the react component I found from React-smooth-transition repo, that I used to make the faq section work
+
 class Collapsible extends Component {
   constructor(props) {
     super(props)

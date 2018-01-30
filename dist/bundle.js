@@ -21895,11 +21895,11 @@
 
 	var _Hero2 = _interopRequireDefault(_Hero);
 
-	var _HeroMobile = __webpack_require__(218);
+	var _HeroMobile = __webpack_require__(207);
 
 	var _HeroMobile2 = _interopRequireDefault(_HeroMobile);
 
-	var _Header = __webpack_require__(205);
+	var _Header = __webpack_require__(203);
 
 	var _Header2 = _interopRequireDefault(_Header);
 
@@ -21915,13 +21915,9 @@
 
 	var _Faq2 = _interopRequireDefault(_Faq);
 
-	var _Footer = __webpack_require__(216);
+	var _Footer = __webpack_require__(219);
 
 	var _Footer2 = _interopRequireDefault(_Footer);
-
-	var _HeroContent = __webpack_require__(217);
-
-	var _HeroContent2 = _interopRequireDefault(_HeroContent);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -21931,32 +21927,24 @@
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
+	//The App component holds all of the components except for the Header and form component which live inside
+	//the hero components
 	var App = function (_React$Component) {
 	  _inherits(App, _React$Component);
 
 	  function App() {
 	    _classCallCheck(this, App);
 
-	    var _this = _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).call(this));
-
-	    _this.state = {
-	      heroId: 'Hero_code'
-	    };
-	    return _this;
+	    return _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).apply(this, arguments));
 	  }
 
 	  _createClass(App, [{
-	    key: 'componentDidMount',
-	    value: function componentDidMount() {
-	      (0, _HeroContent2.default)();
-	    }
-	  }, {
 	    key: 'render',
 	    value: function render() {
 	      return _react2.default.createElement(
 	        'div',
 	        { className: 'App' },
-	        _react2.default.createElement(_Hero2.default, { heroId: this.state.heroId }),
+	        _react2.default.createElement(_Hero2.default, null),
 	        _react2.default.createElement(_HeroMobile2.default, null),
 	        _react2.default.createElement(_Feature2.default, null),
 	        _react2.default.createElement(_Story2.default, null),
@@ -22031,7 +22019,7 @@
 
 
 	// module
-	exports.push([module.id, ".App {\n  font-family: 'Roboto'; }\n\n#Hero_code {\n  background-image: url(" + escape(__webpack_require__(189)) + "); }\n  @media screen and (min-width: 800px) {\n    #Hero_code {\n      background-image: url(" + escape(__webpack_require__(190)) + "); } }\n\n#Hero_data {\n  background-image: url(" + escape(__webpack_require__(191)) + "); }\n  @media screen and (min-width: 800px) {\n    #Hero_data {\n      background-image: url(" + escape(__webpack_require__(192)) + "); } }\n\n.Hero {\n  background-size: cover;\n  display: flex;\n  flex-direction: row;\n  flex-wrap: wrap;\n  justify-content: space-between; }\n\n.Hero-Mobile {\n  display: none; }\n\n#Hero_mobile_code {\n  background-size: cover;\n  background-image: url(" + escape(__webpack_require__(191)) + "); }\n\n.Header {\n  order: 1;\n  height: 7vmax;\n  width: 100vmax;\n  background-color: rgba(0, 0, 0, 0.8); }\n  .Header img {\n    left: 5;\n    position: absolute;\n    height: 5vmax;\n    margin-left: 5vmax;\n    margin-bottom: 1vmax;\n    padding: 1vmax; }\n  .Header p {\n    font-family: 'Roboto';\n    font-style: normal;\n    right: 0;\n    width: 30vmax;\n    font-size: 15px;\n    color: #dcdcdc;\n    position: absolute;\n    text-align: right;\n    padding-right: 2vmax; }\n    .Header p a {\n      color: #38bcbd; }\n\n.Learn-Head {\n  order: 2;\n  font-family: 'Roboto';\n  font-weight: bold;\n  color: white;\n  width: 25vmax;\n  margin-left: 4vmax;\n  margin-top: 3vmax;\n  text-align: left;\n  padding: 10px; }\n  .Learn-Head h1 {\n    font-size: 4vw;\n    font-weight: bold;\n    margin-bottom: 0; }\n  .Learn-Head p {\n    font-size: 2vw;\n    margin-top: 0;\n    font-family: 'Roboto Slab';\n    font-weight: lighter; }\n\n.Form {\n  order: 4;\n  width: 25vmax;\n  height: 10.5vmax;\n  margin-right: 8vmax;\n  margin-left: 4vmax;\n  margin-bottom: 3vmax;\n  text-align: center;\n  background-color: rgba(220, 220, 220, 0.85);\n  border-radius: 5px; }\n  .Form h2 {\n    margin-top: 5px;\n    margin-bottom: 0;\n    font-size: 2vmax;\n    font-weight: bold; }\n  .Form p {\n    margin-bottom: 0;\n    font-size: .95vw; }\n  .Form input {\n    background: transparent;\n    border: none;\n    border-bottom: 1px solid #000000;\n    text-align: center;\n    font-size: 1.5vmax;\n    width: 9vmax;\n    margin-left: 10px;\n    margin-bottom: .3vw; }\n  .Form button {\n    color: white;\n    font-size: 1.8vmax;\n    font-weight: bold;\n    border-radius: 6px;\n    background-color: #38bcdb;\n    width: 24vmax;\n    height: 2.7vmax;\n    margin-bottom: 0; }\n  .Form button:hover {\n    color: white;\n    background-color: #2e91a3; }\n\n.Top-Content {\n  order: 3;\n  width: 28vmax;\n  margin-right: 7vmax;\n  margin-top: 3vmax;\n  text-align: right; }\n  .Top-Content h2 {\n    font-size: 1.7vmax;\n    color: #38bcbd;\n    margin-bottom: .3vw; }\n  .Top-Content p {\n    color: white;\n    font-size: 1.2vw;\n    font-weight: 200;\n    margin-bottom: 0;\n    margin-top: 0;\n    border-bottom: solid #2e91a3 thick; }\n  .Top-Content h1 {\n    color: #38bcbd;\n    font-style: oblique;\n    margin-top: 0; }\n\n.Bottom-Content {\n  order: 5;\n  width: 28vmax;\n  margin-right: 7vmax;\n  margin-bottom: 3vmax;\n  text-align: right; }\n  .Bottom-Content h2 {\n    font-size: 1.7vmax;\n    color: white;\n    margin-bottom: .3vw; }\n  .Bottom-Content p {\n    color: white;\n    font-size: 1.2vw;\n    font-weight: 200;\n    margin-bottom: 0;\n    margin-top: 0;\n    border-bottom: solid white thick; }\n  .Bottom-Content h1 {\n    color: white;\n    font-style: oblique;\n    margin-top: 0; }\n\n.Feature {\n  background-image: url(" + escape(__webpack_require__(194)) + ");\n  background-size: cover;\n  display: flex;\n  flex-direction: column;\n  flex-wrap: wrap;\n  height: 50vmax;\n  justify-content: space-around; }\n  @media only screen and (max-aspect-ratio: 16 / 9) {\n    .Feature {\n      background-image: url(" + escape(__webpack_require__(193)) + ");\n      align-items: center;\n      height: auto; } }\n\n.lazy-feature {\n  background-image: url(" + escape(__webpack_require__(193)) + ");\n  background-size: cover; }\n  @media screen and (min-width: 800px) {\n    .lazy-feature {\n      background-image: url(" + escape(__webpack_require__(194)) + "); } }\n  .lazy-feature h1 {\n    margin-top: 0;\n    font-size: 3vw;\n    width: 100vw;\n    padding-top: 4vw;\n    text-decoration: underline;\n    color: white;\n    text-align: center; }\n  @media only screen and (max-aspect-ratio: 16 / 9) {\n    .lazy-feature h1 {\n      font-size: 7.5vw; } }\n\n#feature-1 {\n  font-family: 'Roboto Slab';\n  color: white;\n  order: 1;\n  width: 20vw;\n  margin: 6vw;\n  margin-top: 0;\n  margin-bottom: 2vw;\n  text-align: center; }\n  #feature-1 img {\n    width: 6vw; }\n  @media only screen and (max-aspect-ratio: 16 / 9) {\n    #feature-1 {\n      width: 53vmax;\n      margin: 0;\n      font-size: 3vw; }\n      #feature-1 img {\n        width: 18vw; } }\n\n#feature-2 {\n  font-family: 'Roboto Slab';\n  color: white;\n  order: 2;\n  width: 20vw;\n  margin: 6vw;\n  margin-top: 0;\n  margin-bottom: 2vw;\n  text-align: center; }\n  #feature-2 img {\n    width: 6vw; }\n  @media only screen and (max-aspect-ratio: 16 / 9) {\n    #feature-2 {\n      width: 53vmax;\n      margin: 0;\n      font-size: 3vw; }\n      #feature-2 img {\n        width: 18vw; } }\n\n#feature-3 {\n  font-family: 'Roboto Slab';\n  color: white;\n  order: 3;\n  width: 20vw;\n  margin: 6vw;\n  margin-top: 0;\n  margin-bottom: 2vw;\n  text-align: center; }\n  #feature-3 img {\n    width: 6vw; }\n  @media only screen and (max-aspect-ratio: 16 / 9) {\n    #feature-3 {\n      width: 53vmax;\n      margin: 0;\n      font-size: 3vw; }\n      #feature-3 img {\n        width: 18vw; } }\n\n#feature-4 {\n  font-family: 'Roboto Slab';\n  color: white;\n  order: 4;\n  width: 20vw;\n  margin: 6vw;\n  margin-top: 0;\n  margin-bottom: 2vw;\n  text-align: center; }\n  #feature-4 img {\n    width: 6vw; }\n  @media only screen and (max-aspect-ratio: 16 / 9) {\n    #feature-4 {\n      width: 53vmax;\n      margin: 0;\n      font-size: 3vw; }\n      #feature-4 img {\n        width: 18vw; } }\n\n#feature-5 {\n  font-family: 'Roboto Slab';\n  color: white;\n  order: 5;\n  width: 20vw;\n  margin: 6vw;\n  margin-top: 0;\n  margin-bottom: 2vw;\n  text-align: center; }\n  #feature-5 img {\n    width: 6vw; }\n  @media only screen and (max-aspect-ratio: 16 / 9) {\n    #feature-5 {\n      width: 53vmax;\n      margin: 0;\n      font-size: 3vw; }\n      #feature-5 img {\n        width: 18vw; } }\n\n#feature-6 {\n  font-family: 'Roboto Slab';\n  color: white;\n  order: 6;\n  width: 20vw;\n  margin: 6vw;\n  margin-top: 0;\n  margin-bottom: 2vw;\n  text-align: center; }\n  #feature-6 img {\n    width: 6vw; }\n  @media only screen and (max-aspect-ratio: 16 / 9) {\n    #feature-6 {\n      width: 53vmax;\n      margin: 0;\n      font-size: 3vw; }\n      #feature-6 img {\n        width: 18vw; } }\n\n#feature-7 {\n  font-family: 'Roboto Slab';\n  color: white;\n  order: 7;\n  width: 20vw;\n  margin: 6vw;\n  margin-top: 0;\n  margin-bottom: 2vw;\n  text-align: center; }\n  #feature-7 img {\n    width: 6vw; }\n  @media only screen and (max-aspect-ratio: 16 / 9) {\n    #feature-7 {\n      width: 53vmax;\n      margin: 0;\n      font-size: 3vw; }\n      #feature-7 img {\n        width: 18vw; } }\n\n#feature-3 img {\n  height: 35vw;\n  width: auto; }\n\n#feature-3 p {\n  font-size: .8vw; }\n\n@media only screen and (max-aspect-ratio: 16 / 9) {\n  #feature-3 {\n    order: 0; }\n    #feature-3 img {\n      height: 45vmax; }\n    #feature-3 p {\n      display: none; } }\n\n#feature-6 {\n  display: none;\n  font-size: 1.8; }\n  @media only screen and (max-aspect-ratio: 16 / 9) {\n    #feature-6 {\n      display: block; } }\n\n.Faq {\n  background-image: url(" + escape(__webpack_require__(196)) + ");\n  background-size: cover;\n  height: 45vw; }\n  .Faq h1 {\n    margin-top: 0;\n    padding-top: 5vw;\n    font-size: 3vw;\n    text-decoration: underline;\n    color: black; }\n  @media only screen and (max-aspect-ratio: 16 / 9) {\n    .Faq {\n      background-image: url(" + escape(__webpack_require__(195)) + ");\n      align-items: center;\n      height: auto; } }\n\n.faq-questions {\n  width: 40vw;\n  margin-left: 10vw; }\n  .faq-questions a {\n    text-decoration: none; }\n\n.Collapsible__trigger {\n  font-family: 'Roboto Slab';\n  font-size: 1.2vw;\n  color: black;\n  margin-top: 0;\n  margin-bottom: 0;\n  text-align: left; }\n\n.Collapsible__trigger:before {\n  font-family: 'FontAwesome';\n  font-size: 1.2vw;\n  content: \"\\F13A\";\n  float: left;\n  color: black;\n  border-radius: 50%;\n  background-color: #38bcdb; }\n\n.Collapsible__trigger.is-closed:before {\n  font-family: 'FontAwesome';\n  font-size: 1.2vw;\n  content: \"\\F138\";\n  float: left;\n  color: #38bcdb;\n  border-radius: 50%;\n  background-color: black; }\n\n#faq-1 {\n  font-family: 'Roboto Slab';\n  font-size: 1.2vw;\n  color: black;\n  order: 1;\n  width: 30vw;\n  max-width: inherit;\n  margin-top: 0;\n  margin-bottom: 0;\n  text-align: left; }\n\n#answer-1 {\n  max-width: inherit;\n  font-family: 'Roboto Slab';\n  font-size: 1vw; }\n\n#faq-2 {\n  font-family: 'Roboto Slab';\n  font-size: 1.2vw;\n  color: black;\n  order: 2;\n  width: 30vw;\n  max-width: inherit;\n  margin-top: 0;\n  margin-bottom: 0;\n  text-align: left; }\n\n#answer-2 {\n  max-width: inherit;\n  font-family: 'Roboto Slab';\n  font-size: 1vw; }\n\n#faq-3 {\n  font-family: 'Roboto Slab';\n  font-size: 1.2vw;\n  color: black;\n  order: 3;\n  width: 30vw;\n  max-width: inherit;\n  margin-top: 0;\n  margin-bottom: 0;\n  text-align: left; }\n\n#answer-3 {\n  max-width: inherit;\n  font-family: 'Roboto Slab';\n  font-size: 1vw; }\n\n#faq-4 {\n  font-family: 'Roboto Slab';\n  font-size: 1.2vw;\n  color: black;\n  order: 4;\n  width: 30vw;\n  max-width: inherit;\n  margin-top: 0;\n  margin-bottom: 0;\n  text-align: left; }\n\n#answer-4 {\n  max-width: inherit;\n  font-family: 'Roboto Slab';\n  font-size: 1vw; }\n\n#faq-5 {\n  font-family: 'Roboto Slab';\n  font-size: 1.2vw;\n  color: black;\n  order: 5;\n  width: 30vw;\n  max-width: inherit;\n  margin-top: 0;\n  margin-bottom: 0;\n  text-align: left; }\n\n#answer-5 {\n  max-width: inherit;\n  font-family: 'Roboto Slab';\n  font-size: 1vw; }\n\n#faq-6 {\n  font-family: 'Roboto Slab';\n  font-size: 1.2vw;\n  color: black;\n  order: 6;\n  width: 30vw;\n  max-width: inherit;\n  margin-top: 0;\n  margin-bottom: 0;\n  text-align: left; }\n\n#answer-6 {\n  max-width: inherit;\n  font-family: 'Roboto Slab';\n  font-size: 1vw; }\n\n#faq-7 {\n  font-family: 'Roboto Slab';\n  font-size: 1.2vw;\n  color: black;\n  order: 7;\n  width: 30vw;\n  max-width: inherit;\n  margin-top: 0;\n  margin-bottom: 0;\n  text-align: left; }\n\n#answer-7 {\n  max-width: inherit;\n  font-family: 'Roboto Slab';\n  font-size: 1vw; }\n\n.Footer {\n  order: 1;\n  height: 7vmax;\n  background-color: #38bcdb; }\n  .Footer img {\n    left: 5;\n    position: absolute;\n    height: 5vmax;\n    margin-left: 5vmax;\n    margin-bottom: 1vmax;\n    padding: 1vmax; }\n  .Footer p {\n    font-family: 'Roboto';\n    font-style: normal;\n    right: 0;\n    width: 30vmax;\n    font-size: .8vw;\n    color: black;\n    position: absolute;\n    text-align: right;\n    padding-right: 2vmax; }\n    .Footer p a {\n      color: #38bcbd; }\n\nhtml, body {\n  width: 100%;\n  height: 100%;\n  margin: 0;\n  padding: 0;\n  overflow: hidden; }\n\nbody {\n  overflow: auto;\n  perspective: 1px;\n  transform-style: preserve-3d; }\n  body, body * {\n    transform-style: preserve-3d; }\n\n.Story {\n  background-image: url(" + escape(__webpack_require__(198)) + ");\n  background-size: cover;\n  height: 30vw;\n  position: relative; }\n  .Story h1 {\n    transform: translateZ(0.1px) scale(0.9);\n    z-index: 100;\n    font-size: 3vw;\n    padding-top: 4vw;\n    vertical-align: middle;\n    margin: auto;\n    position: absolute;\n    top: 3vw;\n    bottom: 0;\n    left: 0;\n    right: 0;\n    text-decoration: underline;\n    color: #38bcdb;\n    text-align: center; }\n  .Story p {\n    transform: translateZ(0.2px) scale(0.8);\n    z-index: 200;\n    width: 75vw;\n    color: white;\n    text-align: center;\n    font-size: 1.5vw;\n    font-family: 'Roboto Slab';\n    font-weight: lighter;\n    margin: auto;\n    position: absolute;\n    top: 12vw;\n    bottom: 0;\n    left: 0;\n    right: 0; }\n\n@media only screen and (max-aspect-ratio: 16 / 9) {\n  .Hero {\n    display: none; }\n  .Header {\n    height: 35vmax;\n    position: relative; }\n    .Header img {\n      vertical-align: middle;\n      margin: auto;\n      position: absolute;\n      top: 3vw;\n      bottom: 0;\n      left: 0;\n      right: 0;\n      bottom: 0;\n      width: 55vmax;\n      height: 25vmax; }\n    .Header p {\n      vertical-align: middle;\n      margin: auto;\n      margin-bottom: 5vw;\n      position: absolute;\n      top: 3vw;\n      bottom: 0;\n      left: 0;\n      right: 0;\n      width: 74vmax;\n      font-size: 3.5vmax;\n      text-align: center; }\n  .Hero_mobile_code {\n    height: 50vmax; }\n  .Hero-Mobile {\n    display: flex;\n    vertical-align: middle;\n    margin: auto;\n    flex-direction: column; }\n  .Learn-Heading {\n    vertical-align: middle;\n    margin: auto;\n    position: relative;\n    margin-bottom: 6vw;\n    height: 20vmax; }\n    .Learn-Heading h1 {\n      margin: auto;\n      position: relative;\n      top: 9vw;\n      bottom: 0;\n      left: 0;\n      right: 0;\n      vertical-align: middle;\n      color: white;\n      font-size: 6.5vw;\n      text-align: center; }\n    .Learn-Heading p {\n      vertical-align: middle;\n      margin: auto;\n      position: relative;\n      top: 12vw;\n      bottom: 0;\n      left: 0;\n      right: 0;\n      color: white;\n      width: 75vmax;\n      font-size: 4vw;\n      text-align: center; }\n  .Data-Content {\n    height: 25vmax;\n    position: relative;\n    margin-top: 5vmax;\n    margin-bottom: 10vmax; }\n    .Data-Content p {\n      border-top: solid #38bcdb thick;\n      border-top-width: 15px;\n      padding-top: 3vw;\n      vertical-align: middle;\n      margin: auto;\n      position: absolute;\n      top: 3vw;\n      bottom: 0;\n      left: 0;\n      right: 0;\n      color: white;\n      width: 85vmax;\n      font-size: 4vw;\n      text-align: center; }\n  .Header {\n    width: 100vw; }\n  .Form {\n    width: 100%;\n    height: 45vw;\n    margin: 0;\n    padding: 0; }\n    .Form h2 {\n      margin-top: 0;\n      padding-top: 3vw;\n      font-size: 4.5vmax; }\n    .Form p {\n      font-size: 3.2vw;\n      color: #676767;\n      font-weight: 300; }\n    .Form input {\n      width: 27vmax;\n      height: 6vmax;\n      margin-bottom: 2vmax;\n      font-size: 2.5vmax; }\n    .Form button {\n      width: 85vw;\n      height: 12vw;\n      margin-bottom: 3vw;\n      font-size: 3.2vmax; }\n  .Story {\n    background-image: url(" + escape(__webpack_require__(197)) + ");\n    min-height: 1000px; }\n    .Story h1 {\n      font-size: 8vmax; }\n    .Story p {\n      font-size: 5.5vmax; }\n  .Faq {\n    min-height: 1200px;\n    padding-bottom: 60vw; }\n  .faq-questions {\n    max-width: 80vmax;\n    width: 80vmax;\n    overflow: scroll;\n    vertical-align: middle;\n    margin: auto;\n    position: relative;\n    top: 3vw;\n    bottom: 0;\n    left: 0;\n    right: 0;\n    padding: 4vmax; }\n    .faq-questions h1 {\n      font-size: 8vw;\n      text-align: center;\n      margin: 3vmax; }\n  .Collapsible {\n    vertical-align: middle;\n    width: 85vmax;\n    max-width: inherit; }\n    .Collapsible span {\n      max-width: inherit;\n      font-size: 3.5vw;\n      padding: 2vw; }\n  .Collapsible__contentOuter {\n    margin: 3vmax;\n    max-width: inherit; }\n    .Collapsible__contentOuter li {\n      max-width: inherit;\n      font-size: 3vw;\n      padding: 1.5vw; }\n  span.Collapsible__trigger {\n    max-width: 75vmax; }\n  .Collapsible__trigger.is-closed:before {\n    font-size: 3vw; }\n  .Collapsible__trigger:before {\n    font-size: 3vw; } }\n\n.carousel {\n  padding: 20px;\n  overflow: hidden;\n  display: flex;\n  flex-direction: column;\n  align-items: center; }\n  .carousel > * {\n    flex: 0 0 auto; }\n  .carousel figure {\n    margin: 0;\n    width: 40%;\n    transform-style: preserve-3d;\n    transition: transform 0.5s;\n    transform-origin: 50% 50% -482.84271px; }\n    .carousel figure .Hero_mobile {\n      width: 100%;\n      padding: 0 0px; }\n      .carousel figure .Hero_mobile:not(:first-of-type) {\n        position: absolute;\n        left: 0;\n        top: 0;\n        transform-origin: 50% 50% -482.84271px; }\n      .carousel figure .Hero_mobile:nth-child(2) {\n        transform: rotateY(3.14159rad); }\n  .carousel nav {\n    display: flex;\n    justify-content: center;\n    margin: 20px 0 0;\n    height: 10vw; }\n    .carousel nav button {\n      flex: 0 0 auto;\n      margin: 0 5px;\n      width: 10vw;\n      cursor: pointer;\n      color: #333;\n      background: none;\n      border: 1px solid;\n      letter-spacing: 1px;\n      padding: 5px 10px; }\n\n.card {\n  -webkit-transition: -webkit-transform .5s;\n  -moz-transition: -moz-transform .5s;\n  -o-transition: -o-transform .5s;\n  transition: transform .5s;\n  -webkit-transform-style: preserve-3d;\n  -moz-transform-style: preserve-3d;\n  -o-transform-style: preserve-3d;\n  transform-style: preserve-3d;\n  position: relative;\n  width: 100vw;\n  height: auto; }\n\n/* hide back of pane during swap */\n.front, .back {\n  -webkit-backface-visibility: hidden;\n  -moz-backface-visibility: hidden;\n  -o-backface-visibility: hidden;\n  backface-visibility: hidden;\n  position: absolute;\n  background-image: url(" + escape(__webpack_require__(191)) + ");\n  background-size: cover;\n  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.14);\n  width: 100vw; }\n\n/* front pane, placed above back */\n.front {\n  z-index: 2;\n  background-image: url(" + escape(__webpack_require__(189)) + "); }\n\n/* back, initially hidden pane */\n.back {\n  -webkit-transform: rotateY(180deg);\n  -moz-transform: rotateY(180deg);\n  -o-transform: rotateY(180deg);\n  transform: rotateY(180deg);\n  z-index: 3; }\n\n.card-container {\n  -webkit-perspective: 800px;\n  -moz-perspective: 800px;\n  -o-perspective: 800px;\n  perspective: 800px;\n  margin-bottom: 30px;\n  z-index: 0;\n  height: 57vw; }\n\n/* flip the pane when hovered */\n.card-container:hover {\n  -webkit-transform: rotateY(180deg);\n  -moz-transform: rotateY(180deg);\n  -o-transform: rotateY(180deg);\n  transform: rotateY(180deg); }\n", ""]);
+	exports.push([module.id, ".App {\n  font-family: 'Roboto'; }\n\n#Hero_code {\n  background-image: url(" + escape(__webpack_require__(189)) + "); }\n  @media screen and (min-width: 800px) {\n    #Hero_code {\n      background-image: url(" + escape(__webpack_require__(190)) + "); } }\n\n#Hero_data {\n  background-image: url(" + escape(__webpack_require__(191)) + "); }\n  @media screen and (min-width: 800px) {\n    #Hero_data {\n      background-image: url(" + escape(__webpack_require__(192)) + "); } }\n\n.Hero {\n  background-size: cover;\n  display: flex;\n  flex-direction: row;\n  flex-wrap: wrap;\n  justify-content: space-between; }\n\n.Hero-Mobile {\n  display: none; }\n\n#Hero_mobile_code {\n  background-size: cover;\n  background-image: url(" + escape(__webpack_require__(191)) + "); }\n\n.Header {\n  order: 1;\n  height: 7vmax;\n  width: 100vmax;\n  background-color: rgba(0, 0, 0, 0.8); }\n  .Header img {\n    left: 5;\n    position: absolute;\n    height: 5vmax;\n    margin-left: 5vmax;\n    margin-bottom: 1vmax;\n    padding: 1vmax; }\n  .Header p {\n    font-family: 'Roboto';\n    font-style: normal;\n    right: 0;\n    width: 30vmax;\n    font-size: .9vmax;\n    color: #dcdcdc;\n    position: absolute;\n    text-align: right;\n    padding-right: 2vmax;\n    padding-top: 2vmax; }\n    .Header p a {\n      color: #38bcbd; }\n\n.Learn-Head {\n  order: 2;\n  font-family: 'Roboto';\n  font-weight: bold;\n  color: white;\n  width: 25vmax;\n  margin-left: 4vmax;\n  margin-top: 3vmax;\n  text-align: left;\n  padding: 10px; }\n  .Learn-Head h1 {\n    font-size: 4vw;\n    font-weight: bold;\n    margin-bottom: 0; }\n  .Learn-Head p {\n    font-size: 2vw;\n    margin-top: 0;\n    font-family: 'Roboto Slab';\n    font-weight: lighter; }\n\n.Form {\n  order: 4;\n  width: 25vmax;\n  height: 10.5vmax;\n  margin-right: 8vmax;\n  margin-left: 4vmax;\n  margin-bottom: 3vmax;\n  text-align: center;\n  background-color: rgba(220, 220, 220, 0.85);\n  border-radius: 5px; }\n  .Form h2 {\n    margin-top: 5px;\n    margin-bottom: 0;\n    font-size: 2vmax;\n    font-weight: bold; }\n  .Form p {\n    margin-bottom: 0;\n    font-size: .95vw; }\n  .Form input {\n    background: transparent;\n    border: none;\n    border-bottom: 1px solid #000000;\n    text-align: center;\n    font-size: 1.5vmax;\n    width: 9vmax;\n    margin-left: 10px;\n    margin-bottom: .3vw; }\n  .Form button {\n    color: white;\n    font-size: 1.8vmax;\n    font-weight: bold;\n    border-radius: 6px;\n    background-color: #38bcdb;\n    width: 24vmax;\n    height: 2.7vmax;\n    margin-bottom: 0; }\n  .Form button:hover {\n    color: white;\n    background-color: #2e91a3; }\n\n.Top-Content {\n  order: 3;\n  width: 28vmax;\n  margin-right: 7vmax;\n  margin-top: 3vmax;\n  text-align: right; }\n  .Top-Content h2 {\n    font-size: 1.7vmax;\n    color: #38bcbd;\n    margin-bottom: .3vw; }\n  .Top-Content p {\n    color: white;\n    font-size: 1.2vw;\n    font-weight: 200;\n    margin-bottom: 0;\n    margin-top: 0;\n    border-bottom: solid #2e91a3 thick; }\n  .Top-Content h1 {\n    color: #38bcbd;\n    font-style: oblique;\n    margin-top: 0; }\n\n.Bottom-Content {\n  order: 5;\n  width: 28vmax;\n  margin-right: 7vmax;\n  margin-bottom: 3vmax;\n  text-align: right; }\n  .Bottom-Content h2 {\n    font-size: 1.7vmax;\n    color: white;\n    margin-bottom: .3vw; }\n  .Bottom-Content p {\n    color: white;\n    font-size: 1.2vw;\n    font-weight: 200;\n    margin-bottom: 0;\n    margin-top: 0;\n    border-bottom: solid white thick; }\n  .Bottom-Content h1 {\n    color: white;\n    font-style: oblique;\n    margin-top: 0; }\n\n.Feature {\n  background-image: url(" + escape(__webpack_require__(193)) + ");\n  background-size: cover;\n  display: flex;\n  flex-direction: column;\n  flex-wrap: wrap;\n  height: 50vmax;\n  justify-content: space-around; }\n  @media only screen and (max-aspect-ratio: 16 / 9) {\n    .Feature {\n      background-image: url(" + escape(__webpack_require__(194)) + ");\n      align-items: center;\n      height: auto; } }\n\n.lazy-feature {\n  background-image: url(" + escape(__webpack_require__(194)) + ");\n  background-size: cover; }\n  @media screen and (min-width: 800px) {\n    .lazy-feature {\n      background-image: url(" + escape(__webpack_require__(193)) + "); } }\n  .lazy-feature h1 {\n    margin-top: 0;\n    font-size: 3vw;\n    width: 100vw;\n    padding-top: 4vw;\n    text-decoration: underline;\n    color: white;\n    text-align: center; }\n  @media only screen and (max-aspect-ratio: 16 / 9) {\n    .lazy-feature h1 {\n      font-size: 7.5vw; } }\n\n#feature-1 {\n  font-family: 'Roboto Slab';\n  color: white;\n  order: 1;\n  width: 20vw;\n  margin: 6vw;\n  margin-top: 0;\n  margin-bottom: 2vw;\n  text-align: center; }\n  #feature-1 img {\n    width: 6vw; }\n  @media only screen and (max-aspect-ratio: 16 / 9) {\n    #feature-1 {\n      width: 53vmax;\n      margin: 0;\n      font-size: 3vw; }\n      #feature-1 img {\n        width: 18vw; } }\n\n#feature-2 {\n  font-family: 'Roboto Slab';\n  color: white;\n  order: 2;\n  width: 20vw;\n  margin: 6vw;\n  margin-top: 0;\n  margin-bottom: 2vw;\n  text-align: center; }\n  #feature-2 img {\n    width: 6vw; }\n  @media only screen and (max-aspect-ratio: 16 / 9) {\n    #feature-2 {\n      width: 53vmax;\n      margin: 0;\n      font-size: 3vw; }\n      #feature-2 img {\n        width: 18vw; } }\n\n#feature-3 {\n  font-family: 'Roboto Slab';\n  color: white;\n  order: 3;\n  width: 20vw;\n  margin: 6vw;\n  margin-top: 0;\n  margin-bottom: 2vw;\n  text-align: center; }\n  #feature-3 img {\n    width: 6vw; }\n  @media only screen and (max-aspect-ratio: 16 / 9) {\n    #feature-3 {\n      width: 53vmax;\n      margin: 0;\n      font-size: 3vw; }\n      #feature-3 img {\n        width: 18vw; } }\n\n#feature-4 {\n  font-family: 'Roboto Slab';\n  color: white;\n  order: 4;\n  width: 20vw;\n  margin: 6vw;\n  margin-top: 0;\n  margin-bottom: 2vw;\n  text-align: center; }\n  #feature-4 img {\n    width: 6vw; }\n  @media only screen and (max-aspect-ratio: 16 / 9) {\n    #feature-4 {\n      width: 53vmax;\n      margin: 0;\n      font-size: 3vw; }\n      #feature-4 img {\n        width: 18vw; } }\n\n#feature-5 {\n  font-family: 'Roboto Slab';\n  color: white;\n  order: 5;\n  width: 20vw;\n  margin: 6vw;\n  margin-top: 0;\n  margin-bottom: 2vw;\n  text-align: center; }\n  #feature-5 img {\n    width: 6vw; }\n  @media only screen and (max-aspect-ratio: 16 / 9) {\n    #feature-5 {\n      width: 53vmax;\n      margin: 0;\n      font-size: 3vw; }\n      #feature-5 img {\n        width: 18vw; } }\n\n#feature-6 {\n  font-family: 'Roboto Slab';\n  color: white;\n  order: 6;\n  width: 20vw;\n  margin: 6vw;\n  margin-top: 0;\n  margin-bottom: 2vw;\n  text-align: center; }\n  #feature-6 img {\n    width: 6vw; }\n  @media only screen and (max-aspect-ratio: 16 / 9) {\n    #feature-6 {\n      width: 53vmax;\n      margin: 0;\n      font-size: 3vw; }\n      #feature-6 img {\n        width: 18vw; } }\n\n#feature-7 {\n  font-family: 'Roboto Slab';\n  color: white;\n  order: 7;\n  width: 20vw;\n  margin: 6vw;\n  margin-top: 0;\n  margin-bottom: 2vw;\n  text-align: center; }\n  #feature-7 img {\n    width: 6vw; }\n  @media only screen and (max-aspect-ratio: 16 / 9) {\n    #feature-7 {\n      width: 53vmax;\n      margin: 0;\n      font-size: 3vw; }\n      #feature-7 img {\n        width: 18vw; } }\n\n#feature-3 img {\n  height: 35vw;\n  width: auto; }\n\n#feature-3 p {\n  font-size: .8vw; }\n\n@media only screen and (max-aspect-ratio: 16 / 9) {\n  #feature-3 {\n    order: 0; }\n    #feature-3 img {\n      height: 45vmax; }\n    #feature-3 p {\n      display: none; } }\n\n#feature-6 {\n  display: none;\n  font-size: 1.8; }\n  @media only screen and (max-aspect-ratio: 16 / 9) {\n    #feature-6 {\n      display: block; } }\n\n.Faq {\n  background-image: url(" + escape(__webpack_require__(195)) + ");\n  background-size: cover;\n  height: 45vw; }\n  .Faq h1 {\n    margin-top: 0;\n    padding-top: 5vw;\n    font-size: 3vw;\n    text-decoration: underline;\n    color: black; }\n  @media only screen and (max-aspect-ratio: 16 / 9) {\n    .Faq {\n      background-image: url(" + escape(__webpack_require__(196)) + ");\n      align-items: center;\n      height: auto; } }\n\n.faq-questions {\n  width: 40vw;\n  margin-left: 10vw; }\n  .faq-questions a {\n    text-decoration: none; }\n\n.Collapsible {\n  margin-bottom: 1.5vmax; }\n\n.Collapsible__trigger {\n  font-family: 'Roboto Slab';\n  font-size: 1.2vw;\n  color: black;\n  margin-top: 0;\n  margin-bottom: 0;\n  text-align: left; }\n\n.Collapsible__trigger:before {\n  font-family: 'FontAwesome';\n  font-size: 1.2vw;\n  content: \"\\F13A\";\n  float: left;\n  color: black;\n  border-radius: 50%;\n  background-color: #38bcdb; }\n\n.Collapsible__trigger.is-closed:before {\n  font-family: 'FontAwesome';\n  font-size: 1.2vw;\n  content: \"\\F138\";\n  float: left;\n  color: #38bcdb;\n  border-radius: 50%;\n  background-color: black; }\n\n#faq-1 {\n  font-family: 'Roboto Slab';\n  font-size: 1.2vw;\n  color: black;\n  order: 1;\n  width: 30vw;\n  max-width: inherit;\n  margin-top: 0;\n  margin-bottom: 0;\n  text-align: left; }\n\n#answer-1 {\n  max-width: inherit;\n  font-family: 'Roboto Slab';\n  font-size: 1vw; }\n\n#faq-2 {\n  font-family: 'Roboto Slab';\n  font-size: 1.2vw;\n  color: black;\n  order: 2;\n  width: 30vw;\n  max-width: inherit;\n  margin-top: 0;\n  margin-bottom: 0;\n  text-align: left; }\n\n#answer-2 {\n  max-width: inherit;\n  font-family: 'Roboto Slab';\n  font-size: 1vw; }\n\n#faq-3 {\n  font-family: 'Roboto Slab';\n  font-size: 1.2vw;\n  color: black;\n  order: 3;\n  width: 30vw;\n  max-width: inherit;\n  margin-top: 0;\n  margin-bottom: 0;\n  text-align: left; }\n\n#answer-3 {\n  max-width: inherit;\n  font-family: 'Roboto Slab';\n  font-size: 1vw; }\n\n#faq-4 {\n  font-family: 'Roboto Slab';\n  font-size: 1.2vw;\n  color: black;\n  order: 4;\n  width: 30vw;\n  max-width: inherit;\n  margin-top: 0;\n  margin-bottom: 0;\n  text-align: left; }\n\n#answer-4 {\n  max-width: inherit;\n  font-family: 'Roboto Slab';\n  font-size: 1vw; }\n\n#faq-5 {\n  font-family: 'Roboto Slab';\n  font-size: 1.2vw;\n  color: black;\n  order: 5;\n  width: 30vw;\n  max-width: inherit;\n  margin-top: 0;\n  margin-bottom: 0;\n  text-align: left; }\n\n#answer-5 {\n  max-width: inherit;\n  font-family: 'Roboto Slab';\n  font-size: 1vw; }\n\n#faq-6 {\n  font-family: 'Roboto Slab';\n  font-size: 1.2vw;\n  color: black;\n  order: 6;\n  width: 30vw;\n  max-width: inherit;\n  margin-top: 0;\n  margin-bottom: 0;\n  text-align: left; }\n\n#answer-6 {\n  max-width: inherit;\n  font-family: 'Roboto Slab';\n  font-size: 1vw; }\n\n#faq-7 {\n  font-family: 'Roboto Slab';\n  font-size: 1.2vw;\n  color: black;\n  order: 7;\n  width: 30vw;\n  max-width: inherit;\n  margin-top: 0;\n  margin-bottom: 0;\n  text-align: left; }\n\n#answer-7 {\n  max-width: inherit;\n  font-family: 'Roboto Slab';\n  font-size: 1vw; }\n\n.Footer {\n  order: 1;\n  height: 7vmax;\n  background-color: #38bcdb; }\n  .Footer img {\n    left: 5;\n    position: absolute;\n    height: 5vmax;\n    margin-left: 5vmax;\n    margin-bottom: 0;\n    padding: 1vmax; }\n  .Footer p {\n    font-family: 'Roboto';\n    font-style: normal;\n    right: 0;\n    width: 30vmax;\n    font-size: .8vw;\n    color: black;\n    position: absolute;\n    text-align: right;\n    padding-right: 2vmax; }\n    .Footer p a {\n      color: #38bcbd; }\n\nhtml, body {\n  width: 100%;\n  height: 100%;\n  margin: 0;\n  padding: 0;\n  overflow: hidden; }\n\nbody {\n  overflow: auto;\n  perspective: 1px;\n  transform-style: preserve-3d; }\n  body, body * {\n    transform-style: preserve-3d; }\n\n.Story {\n  background-image: url(" + escape(__webpack_require__(197)) + ");\n  background-size: cover;\n  height: 30vw;\n  position: relative; }\n  .Story h1 {\n    transform: translateZ(0.1px) scale(0.9);\n    z-index: 100;\n    font-size: 3vw;\n    padding-top: 4vw;\n    vertical-align: middle;\n    margin: auto;\n    position: absolute;\n    top: 3vw;\n    bottom: 0;\n    left: 0;\n    right: 0;\n    text-decoration: underline;\n    color: #38bcdb;\n    text-align: center; }\n  .Story p {\n    transform: translateZ(0.2px) scale(0.8);\n    z-index: 200;\n    width: 75vw;\n    color: white;\n    text-align: center;\n    font-size: 1.5vw;\n    font-family: 'Roboto Slab';\n    font-weight: lighter;\n    margin: auto;\n    position: absolute;\n    top: 12vw;\n    bottom: 0;\n    left: 0;\n    right: 0; }\n\n@media only screen and (max-aspect-ratio: 16 / 9) {\n  .Hero {\n    display: none; }\n  .Header {\n    height: 35vmax;\n    position: relative;\n    background-color: black;\n    opacity: .90; }\n    .Header img {\n      vertical-align: middle;\n      margin: auto;\n      position: absolute;\n      top: 3vw;\n      bottom: 0;\n      left: 0;\n      right: 0;\n      bottom: 0;\n      width: 55vmax;\n      height: 25vmax; }\n    .Header p {\n      vertical-align: middle;\n      margin: auto;\n      margin-bottom: 5vw;\n      position: absolute;\n      top: 3vw;\n      bottom: 0;\n      left: 0;\n      right: 0;\n      width: 74vmax;\n      font-size: 3.5vmax;\n      text-align: center; }\n  .Footer {\n    height: 65vmax;\n    position: relative;\n    background-color: #38bcdb;\n    margin-top: 10vw; }\n    .Footer img {\n      vertical-align: middle;\n      margin: auto;\n      margin-top: 5vw;\n      position: absolute;\n      top: 0;\n      bottom: 60vw;\n      left: 0;\n      right: 0;\n      bottom: 0;\n      width: 75vmax;\n      height: 25vmax; }\n    .Footer p {\n      vertical-align: middle;\n      margin: auto;\n      margin-bottom: 5vw;\n      position: absolute;\n      top: 40vw;\n      bottom: 0;\n      left: 0;\n      right: 0;\n      width: 74vmax;\n      font-size: 3vmax;\n      text-align: center; }\n  .Hero_mobile_code {\n    height: 50vmax; }\n  .Hero-Mobile {\n    display: flex;\n    vertical-align: middle;\n    margin: auto;\n    flex-direction: column; }\n  .Learn-Heading {\n    vertical-align: middle;\n    margin: auto;\n    position: relative;\n    margin-bottom: 6vw;\n    height: 20vmax; }\n    .Learn-Heading h1 {\n      margin: auto;\n      position: relative;\n      top: 9vw;\n      bottom: 0;\n      left: 0;\n      right: 0;\n      vertical-align: middle;\n      color: white;\n      font-size: 6.5vw;\n      text-align: center; }\n    .Learn-Heading p {\n      vertical-align: middle;\n      margin: auto;\n      position: relative;\n      top: 12vw;\n      bottom: 0;\n      left: 0;\n      right: 0;\n      color: white;\n      width: 75vmax;\n      font-size: 4vw;\n      text-align: center; }\n  .Data-Content {\n    height: 25vmax;\n    position: relative;\n    margin-top: 5vmax;\n    margin-bottom: 10vmax; }\n    .Data-Content p {\n      border-top: solid #38bcdb thick;\n      border-top-width: 10px;\n      padding-top: 3vw;\n      vertical-align: middle;\n      margin: auto;\n      position: absolute;\n      top: 3vw;\n      bottom: 0;\n      left: 0;\n      right: 0;\n      color: white;\n      width: 75vmax;\n      font-size: 4vw;\n      text-align: center; }\n  .Data-Content:after {\n    font-family: 'FontAwesome';\n    font-size: 6vw;\n    content: \"\\F054\";\n    float: right;\n    color: white; }\n  .Data-Content:before {\n    font-family: 'FontAwesome';\n    font-size: 6vw;\n    content: \"\\F053\";\n    float: left;\n    color: white; }\n  .Header {\n    width: 100vw; }\n  .Form {\n    width: 100%;\n    height: 45vw;\n    margin: 0;\n    padding: 0; }\n    .Form h2 {\n      margin-top: 0;\n      padding-top: 3vw;\n      font-size: 4.5vmax; }\n    .Form p {\n      font-size: 3.2vw;\n      color: #676767;\n      font-weight: 300; }\n    .Form input {\n      width: 27vmax;\n      height: 6vmax;\n      margin-bottom: 2vmax;\n      font-size: 2.5vmax; }\n    .Form button {\n      width: 85vw;\n      height: 12vw;\n      margin-bottom: 3vw;\n      font-size: 3.2vmax; }\n  .Story {\n    background-image: url(" + escape(__webpack_require__(198)) + ");\n    min-height: 1000px; }\n    .Story h1 {\n      font-size: 8vmax; }\n    .Story p {\n      font-size: 5.5vmax; }\n  .Faq {\n    min-height: 1200px;\n    padding-bottom: 60vw; }\n  .faq-questions {\n    max-width: 80vmax;\n    width: 80vmax;\n    overflow: scroll;\n    vertical-align: middle;\n    margin: auto;\n    position: relative;\n    top: 3vw;\n    bottom: 0;\n    left: 0;\n    right: 0;\n    padding: 4vmax; }\n    .faq-questions h1 {\n      font-size: 8vw;\n      text-align: center;\n      margin: 3vmax; }\n  .Collapsible {\n    vertical-align: middle;\n    width: 85vmax;\n    max-width: inherit; }\n    .Collapsible span {\n      max-width: inherit;\n      font-size: 3.5vw;\n      padding: 2vw; }\n  .Collapsible__contentOuter {\n    margin: 3vmax;\n    max-width: inherit; }\n    .Collapsible__contentOuter li {\n      max-width: inherit;\n      font-size: 3vw;\n      padding: 1.5vw; }\n  span.Collapsible__trigger {\n    max-width: 75vmax; }\n  .Collapsible__trigger.is-closed:before {\n    font-size: 3vw; }\n  .Collapsible__trigger:before {\n    font-size: 3vw; } }\n\n.card {\n  -webkit-transition: -webkit-transform .5s;\n  -moz-transition: -moz-transform .5s;\n  -o-transition: -o-transform .5s;\n  transition: transform .5s;\n  -webkit-transform-style: preserve-3d;\n  -moz-transform-style: preserve-3d;\n  -o-transform-style: preserve-3d;\n  transform-style: preserve-3d;\n  position: relative;\n  width: 100vw;\n  height: auto; }\n\n/* hide back of pane during swap */\n.front, .back {\n  -webkit-backface-visibility: hidden;\n  -moz-backface-visibility: hidden;\n  -o-backface-visibility: hidden;\n  backface-visibility: hidden;\n  position: absolute;\n  background-image: url(" + escape(__webpack_require__(191)) + ");\n  background-size: cover;\n  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.14);\n  width: 100vw; }\n\n/* front pane, placed above back */\n.front {\n  z-index: 2;\n  background-image: url(" + escape(__webpack_require__(189)) + "); }\n\n/* back, initially hidden pane */\n.back {\n  -webkit-transform: rotateY(180deg);\n  -moz-transform: rotateY(180deg);\n  -o-transform: rotateY(180deg);\n  transform: rotateY(180deg);\n  z-index: 3; }\n\n.card-container {\n  -webkit-perspective: 800px;\n  -moz-perspective: 800px;\n  -o-perspective: 800px;\n  perspective: 800px;\n  margin-bottom: 30px;\n  z-index: 0;\n  height: 57vw; }\n\n/* flip the pane when hovered */\n.card-container.flip {\n  -webkit-transform: rotateY(180deg);\n  -moz-transform: rotateY(180deg);\n  -o-transform: rotateY(180deg);\n  transform: rotateY(180deg); }\n", ""]);
 
 	// exports
 
@@ -22168,37 +22156,37 @@
 /* 193 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "static/media/featuring_mobile.jpg";
+	module.exports = __webpack_require__.p + "static/media/featuring.jpg";
 
 /***/ }),
 /* 194 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "static/media/featuring.jpg";
+	module.exports = __webpack_require__.p + "static/media/featuring_mobile.jpg";
 
 /***/ }),
 /* 195 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "static/media/faq_mobile.jpg";
+	module.exports = __webpack_require__.p + "static/media/faq.jpg";
 
 /***/ }),
 /* 196 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "static/media/faq.jpg";
+	module.exports = __webpack_require__.p + "static/media/faq_mobile.jpg";
 
 /***/ }),
 /* 197 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "static/media/about_mobile.jpg";
+	module.exports = __webpack_require__.p + "static/media/about.jpg";
 
 /***/ }),
 /* 198 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "static/media/about.jpg";
+	module.exports = __webpack_require__.p + "static/media/about_mobile.jpg";
 
 /***/ }),
 /* 199 */
@@ -22695,21 +22683,17 @@
 
 	__webpack_require__(185);
 
-	var _Coding = __webpack_require__(202);
-
-	var _Coding2 = _interopRequireDefault(_Coding);
-
-	var _Data = __webpack_require__(203);
-
-	var _Data2 = _interopRequireDefault(_Data);
-
-	var _Form = __webpack_require__(204);
+	var _Form = __webpack_require__(202);
 
 	var _Form2 = _interopRequireDefault(_Form);
 
-	var _Header = __webpack_require__(205);
+	var _Header = __webpack_require__(203);
 
 	var _Header2 = _interopRequireDefault(_Header);
+
+	var _HeroContent = __webpack_require__(206);
+
+	var _HeroContent2 = _interopRequireDefault(_HeroContent);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -22718,6 +22702,13 @@
 	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	//Here I use the function from HeroContent to change the background Image every five seconds
+	//The only issue here is that it is flashing upon loading the first few times it moves back and forth
+	//This is most likely due to the way I am changing the content. I'd like to find a better way to do this
+	//in the css using a mixin.
+	//Like I said in the CSS file the instrucitons weren't completely clear on what kind of transition wanted
+	//for the paragraph element, ie if it's literally supposed to move up or if it can simply change the content
 
 	var Hero = function (_React$Component) {
 	  _inherits(Hero, _React$Component);
@@ -22736,7 +22727,7 @@
 	  _createClass(Hero, [{
 	    key: 'componentDidMount',
 	    value: function componentDidMount() {
-	      // console.log(this.props, 'heroId');
+	      (0, _HeroContent2.default)();
 	    }
 	  }, {
 	    key: 'render',
@@ -22833,115 +22824,7 @@
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-	var Coding = function (_React$Component) {
-	  _inherits(Coding, _React$Component);
-
-	  function Coding() {
-	    _classCallCheck(this, Coding);
-
-	    return _possibleConstructorReturn(this, (Coding.__proto__ || Object.getPrototypeOf(Coding)).apply(this, arguments));
-	  }
-
-	  _createClass(Coding, [{
-	    key: 'render',
-	    value: function render() {
-	      return _react2.default.createElement(
-	        'div',
-	        { className: 'Coding' },
-	        _react2.default.createElement(
-	          'h1',
-	          null,
-	          'Coding Component'
-	        )
-	      );
-	    }
-	  }]);
-
-	  return Coding;
-	}(_react2.default.Component);
-
-	exports.default = Coding;
-
-/***/ }),
-/* 203 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	__webpack_require__(185);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	var Data = function (_React$Component) {
-	  _inherits(Data, _React$Component);
-
-	  function Data() {
-	    _classCallCheck(this, Data);
-
-	    return _possibleConstructorReturn(this, (Data.__proto__ || Object.getPrototypeOf(Data)).apply(this, arguments));
-	  }
-
-	  _createClass(Data, [{
-	    key: 'render',
-	    value: function render() {
-	      return _react2.default.createElement(
-	        'div',
-	        { className: 'Data' },
-	        _react2.default.createElement(
-	          'h1',
-	          null,
-	          'Data Component'
-	        )
-	      );
-	    }
-	  }]);
-
-	  return Data;
-	}(_react2.default.Component);
-
-	exports.default = Data;
-
-/***/ }),
-/* 204 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	__webpack_require__(185);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	//Here is the form component, I only regret not being able to find an exact match for the icon
 
 	var Form = function (_React$Component) {
 	  _inherits(Form, _React$Component);
@@ -22978,7 +22861,7 @@
 	          'button',
 	          { type: 'submit' },
 	          'CONTINUE ',
-	          _react2.default.createElement('i', { className: 'fa fa-arrow-circle-o-right', 'aria-hidden': 'true' })
+	          _react2.default.createElement('i', { className: 'fa fa-chevron-circle-right', 'aria-hidden': 'true' })
 	        )
 	      );
 	    }
@@ -22990,7 +22873,7 @@
 	exports.default = Form;
 
 /***/ }),
-/* 205 */
+/* 203 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -23015,8 +22898,10 @@
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-	var Logo = __webpack_require__(206);
-	var svgFile2 = __webpack_require__(207);
+	var Logo = __webpack_require__(204);
+	var svgFile2 = __webpack_require__(205);
+
+	//Here I load the svg file and make a simple header, I could make this phoine number a real link if need be
 
 	var Header = function (_React$Component) {
 	  _inherits(Header, _React$Component);
@@ -23056,16 +22941,217 @@
 	exports.default = Header;
 
 /***/ }),
-/* 206 */
+/* 204 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "static/media/logo_trilogy.svg";
 
 /***/ }),
-/* 207 */
+/* 205 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "static/media/logo_trilogy_blk.svg";
+
+/***/ }),
+/* 206 */
+/***/ (function(module, exports) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	var heroContent = function heroContent() {
+
+	  //Here is the funciton  I use to switch the background and the content on the desktop version of the applying
+
+	  var heroIds = ['Hero_code', 'Hero_data'];
+	  var heroContent = [{
+	    h: 'CODING',
+	    p: 'Coding Boot Camp equips students skills for full-stack web development through <br /> dynamic, in-person classes.'
+	  }, {
+	    h: 'DATA ANALYTICS',
+	    p: 'Data Boot Camp equips students with the key skills for full-stack web development <br /> through dynamic, in-person classes.'
+	  }];
+	  var fontFamilies = ['Roboto', 'Roboto Slab'];
+	  var heroDiv = document.getElementById("Hero_code");
+	  var topContentH = document.getElementById("Top-Content-H");
+	  var bottomContentH = document.getElementById("Bottom-Content-H");
+	  var topContentP = document.getElementById("Top-Content-P");
+	  var bottomContentP = document.getElementById("Bottom-Content-P");
+
+	  var i = 0;
+	  setInterval(function () {
+	    heroDiv.id = heroIds[i];
+	    topContentH.innerHTML = bottomContentH.innerHTML;
+	    topContentP.innerHTML = bottomContentP.innerHTML;
+	    bottomContentH.innerHTML = heroContent[i].h;
+	    bottomContentP.innerHTML = heroContent[i].p;
+	    console.log(heroDiv.style.fontFamily);
+	    topContentP.style.fontFamily = fontFamilies[i];
+	    bottomContentP.style.fontFamily = fontFamilies[i];
+	    console.log(topContentP.style.fontFamily);
+	    i = i + 1;
+	    if (i === heroIds.length) {
+	      i = 0;
+	    }
+	  }, 5000);
+	};
+
+	exports.default = heroContent;
+
+/***/ }),
+/* 207 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	__webpack_require__(185);
+
+	var _Form = __webpack_require__(202);
+
+	var _Form2 = _interopRequireDefault(_Form);
+
+	var _Header = __webpack_require__(203);
+
+	var _Header2 = _interopRequireDefault(_Header);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	//As I mentionsed in the CSS file, the onClick handler lives here and it simply changes a class on
+	//the card element to flip it to the other side. Kind of a hack way to make a carousel, and if I had more items
+	//to switch between I would find a different way to do this. I also regret not having dedicated button for
+	//the switch, but if I had more time I could find a way to make the design and the functionality work together.
+	//I know the icon doesn't exactly look right  but if I knew where your icons come from I could recreate the mockup more acurrately
+
+	var HeroMobile = function (_React$Component) {
+	  _inherits(HeroMobile, _React$Component);
+
+	  function HeroMobile(props) {
+	    _classCallCheck(this, HeroMobile);
+
+	    var _this = _possibleConstructorReturn(this, (HeroMobile.__proto__ || Object.getPrototypeOf(HeroMobile)).call(this, props));
+
+	    _this.state = {};
+	    _this.onClickFunction = function () {
+	      var cardContainer = document.querySelector('.card-container');
+	      if (cardContainer.className === 'card-container flip') {
+	        cardContainer.className = 'card-container';
+	      } else {
+	        cardContainer.className = cardContainer.className + ' flip';
+	      }
+	    }.bind(_this);
+	    return _this;
+	  }
+
+	  _createClass(HeroMobile, [{
+	    key: 'render',
+	    value: function render() {
+	      var _this2 = this;
+
+	      return _react2.default.createElement(
+	        'div',
+	        null,
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'Hero-Mobile' },
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'Hero_mobile' },
+	            _react2.default.createElement(_Header2.default, null),
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'card-container' },
+	              _react2.default.createElement(
+	                'div',
+	                { className: 'card' },
+	                _react2.default.createElement(
+	                  'div',
+	                  { className: 'front' },
+	                  _react2.default.createElement(
+	                    'div',
+	                    { className: 'Learn-Heading' },
+	                    _react2.default.createElement(
+	                      'h1',
+	                      null,
+	                      'Learn Coding in 24 Weeks'
+	                    ),
+	                    _react2.default.createElement(
+	                      'p',
+	                      null,
+	                      'Class starts May 15, 2018'
+	                    )
+	                  ),
+	                  _react2.default.createElement(
+	                    'div',
+	                    { className: 'Data-Content', onClick: function onClick() {
+	                        return _this2.onClickFunction();
+	                      } },
+	                    _react2.default.createElement(
+	                      'p',
+	                      null,
+	                      'Coding Boot Camp equips students skills for full-stack web development through dynamic, in-person classes.'
+	                    )
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  'div',
+	                  { className: 'back' },
+	                  _react2.default.createElement(
+	                    'div',
+	                    { className: 'Learn-Heading' },
+	                    _react2.default.createElement(
+	                      'h1',
+	                      null,
+	                      'Learn Coding in 24 Weeks'
+	                    ),
+	                    _react2.default.createElement(
+	                      'p',
+	                      null,
+	                      'Class starts May 15, 2018'
+	                    )
+	                  ),
+	                  _react2.default.createElement(
+	                    'div',
+	                    { className: 'Data-Content', onClick: function onClick() {
+	                        return _this2.onClickFunction();
+	                      } },
+	                    _react2.default.createElement(
+	                      'p',
+	                      null,
+	                      'Data Boot Camp equips students with the key skills for full-stack web development through dynamic, in-person classes.'
+	                    )
+	                  )
+	                )
+	              )
+	            )
+	          ),
+	          _react2.default.createElement(_Form2.default, null)
+	        )
+	      );
+	    }
+	  }]);
+
+	  return HeroMobile;
+	}(_react2.default.Component);
+
+	exports.default = HeroMobile;
 
 /***/ }),
 /* 208 */
@@ -23099,6 +23185,8 @@
 	var dataCodingIcon = __webpack_require__(212);
 	var timeIcon = __webpack_require__(213);
 
+	//The static feature section, I have to change some things in the css to make the order work right for Mobile
+
 	var Feature = function (_React$Component) {
 	  _inherits(Feature, _React$Component);
 
@@ -23124,16 +23212,6 @@
 	          { className: 'Feature' },
 	          _react2.default.createElement(
 	            'div',
-	            { className: 'feature-child', id: 'feature-3' },
-	            _react2.default.createElement('img', { src: phone }),
-	            _react2.default.createElement(
-	              'p',
-	              null,
-	              '*The material in this course is subject to change due to market demand.'
-	            )
-	          ),
-	          _react2.default.createElement(
-	            'div',
 	            { className: 'feature-child', id: 'feature-1' },
 	            _react2.default.createElement('img', { src: dataCodingIcon }),
 	            _react2.default.createElement(
@@ -23150,6 +23228,16 @@
 	              'p',
 	              null,
 	              'Benefit from a wide range of career services to position you for success as you work to advance in your current career or seek a new opportunity.'
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'feature-child', id: 'feature-3' },
+	            _react2.default.createElement('img', { src: phone }),
+	            _react2.default.createElement(
+	              'p',
+	              null,
+	              '*The material in this course is subject to change due to market demand.'
 	            )
 	          ),
 	          _react2.default.createElement(
@@ -23247,6 +23335,8 @@
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
+	//here is the parallax component
+
 	var Story = function (_React$Component) {
 	  _inherits(Story, _React$Component);
 
@@ -23299,7 +23389,7 @@
 
 	__webpack_require__(185);
 
-	var _Collapsible = __webpack_require__(219);
+	var _Collapsible = __webpack_require__(216);
 
 	var _Collapsible2 = _interopRequireDefault(_Collapsible);
 
@@ -23310,6 +23400,10 @@
 	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	//If I could go back I would simply create these elements using a loop and keep the content
+	//in a sepperate place to make this look more clean
+	//I bring in the Collapsible component here to make the faq q and a collapse
 
 	var Faq = function (_React$Component) {
 	  _inherits(Faq, _React$Component);
@@ -23498,300 +23592,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	__webpack_require__(185);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	var Logo2 = __webpack_require__(207);
-
-	var Footer = function (_React$Component) {
-	  _inherits(Footer, _React$Component);
-
-	  function Footer() {
-	    _classCallCheck(this, Footer);
-
-	    return _possibleConstructorReturn(this, (Footer.__proto__ || Object.getPrototypeOf(Footer)).apply(this, arguments));
-	  }
-
-	  _createClass(Footer, [{
-	    key: 'render',
-	    value: function render() {
-	      return _react2.default.createElement(
-	        'div',
-	        { className: 'Footer' },
-	        _react2.default.createElement('img', { src: Logo2 }),
-	        _react2.default.createElement(
-	          'p',
-	          null,
-	          'This program is offered through ',
-	          _react2.default.createElement('br', null),
-	          ' asdcdwfwf ',
-	          _react2.default.createElement(
-	            'strong',
-	            null,
-	            'https://sddff:/'
-	          ),
-	          ' ',
-	          _react2.default.createElement('br', null),
-	          ' Powered by Trilogy Education Services ',
-	          _react2.default.createElement('br', null),
-	          ' Contact lsdfsss Boot Camp at ',
-	          _react2.default.createElement(
-	            'strong',
-	            null,
-	            '(xxx) xxx-xxxx'
-	          ),
-	          ' ',
-	          _react2.default.createElement('br', null),
-	          _react2.default.createElement('br', null),
-	          ' ',
-	          _react2.default.createElement('strong', null),
-	          ' | Privacy/Your Privacy Rights'
-	        )
-	      );
-	    }
-	  }]);
-
-	  return Footer;
-	}(_react2.default.Component);
-
-	exports.default = Footer;
-
-/***/ }),
-/* 217 */
-/***/ (function(module, exports) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	var heroContent = function heroContent() {
-	  var heroIds = ['Hero_code', 'Hero_data'];
-	  var heroContent = [{
-	    h: 'CODING',
-	    p: 'Coding Boot Camp equips students skills for full-stack web development through <br /> dynamic, in-person classes.'
-	  }, {
-	    h: 'DATA ANALYTICS',
-	    p: 'Data Boot Camp equips students with the key skills for full-stack web development <br /> through dynamic, in-person classes.'
-	  }];
-	  var heroDiv = document.getElementById("Hero_code");
-	  var topContentH = document.getElementById("Top-Content-H");
-	  var bottomContentH = document.getElementById("Bottom-Content-H");
-	  var topContentP = document.getElementById("Top-Content-P");
-	  var bottomContentP = document.getElementById("Bottom-Content-P");
-
-	  var i = 0;
-	  setInterval(function () {
-	    heroDiv.id = heroIds[i];
-	    topContentH.innerHTML = bottomContentH.innerHTML;
-	    topContentP.innerHTML = bottomContentP.innerHTML;
-	    bottomContentH.innerHTML = heroContent[i].h;
-	    bottomContentP.innerHTML = heroContent[i].p;
-	    i = i + 1;
-	    if (i === heroIds.length) {
-	      i = 0;
-	    }
-	  }, 5000);
-	};
-
-	exports.default = heroContent;
-
-/***/ }),
-/* 218 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	__webpack_require__(185);
-
-	var _Coding = __webpack_require__(202);
-
-	var _Coding2 = _interopRequireDefault(_Coding);
-
-	var _Data = __webpack_require__(203);
-
-	var _Data2 = _interopRequireDefault(_Data);
-
-	var _Form = __webpack_require__(204);
-
-	var _Form2 = _interopRequireDefault(_Form);
-
-	var _Header = __webpack_require__(205);
-
-	var _Header2 = _interopRequireDefault(_Header);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	var HeroMobile = function (_React$Component) {
-	  _inherits(HeroMobile, _React$Component);
-
-	  function HeroMobile(props) {
-	    _classCallCheck(this, HeroMobile);
-
-	    var _this = _possibleConstructorReturn(this, (HeroMobile.__proto__ || Object.getPrototypeOf(HeroMobile)).call(this, props));
-
-	    _this.state = {
-	      // heroId: 'Hero_code'
-	    };
-	    return _this;
-	  }
-
-	  _createClass(HeroMobile, [{
-	    key: 'componentDidMount',
-	    value: function componentDidMount() {
-	      // console.log(this.props, 'heroId');
-	      // var carousel = document.getElementById('carousel');
-	      // console.log(carousel, 'carousel')
-	      // var figure = carousel.querySelector('figure');
-	      // var nav = carousel.querySelector('nav');
-	      // var numImages = figure.childElementCount;
-	      // var theta =  2 * Math.PI / numImages;
-	      // var currImage = 0;
-	      // nav.addEventListener('click', onClick, true);
-	      // function onClick(e) {
-	      // 	e.stopPropagation();
-	      //
-	      // 	var t = e.target;
-	      // 	if (t.tagName.toUpperCase() != 'BUTTON')
-	      // 		return;
-	      //
-	      // 	if (t.classList.contains('next')) {
-	      // 		currImage++;
-	      // 	}
-	      // 	else {
-	      // 		currImage--;
-	      // 	}
-	      //
-	      // 	figure.style.transform = `rotateY(${currImage * -theta}rad)`;
-	      // }
-	    }
-	  }, {
-	    key: 'render',
-	    value: function render() {
-	      return _react2.default.createElement(
-	        'div',
-	        null,
-	        _react2.default.createElement(
-	          'div',
-	          { className: 'Hero-Mobile' },
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'Hero_mobile' },
-	            _react2.default.createElement(_Header2.default, null),
-	            _react2.default.createElement(
-	              'div',
-	              { className: 'card-container' },
-	              _react2.default.createElement(
-	                'div',
-	                { className: 'card' },
-	                _react2.default.createElement(
-	                  'div',
-	                  { className: 'front' },
-	                  _react2.default.createElement(
-	                    'div',
-	                    { className: 'Learn-Heading' },
-	                    _react2.default.createElement(
-	                      'h1',
-	                      null,
-	                      'Learn Coding in 24 Weeks'
-	                    ),
-	                    _react2.default.createElement(
-	                      'p',
-	                      null,
-	                      'Class starts May 15, 2018'
-	                    )
-	                  ),
-	                  _react2.default.createElement(
-	                    'div',
-	                    { className: 'Data-Content' },
-	                    _react2.default.createElement(
-	                      'p',
-	                      null,
-	                      'Data Boot Camp equips students with the key skills for full-stack web development through dynamic, in-person classes.'
-	                    )
-	                  )
-	                ),
-	                _react2.default.createElement(
-	                  'div',
-	                  { className: 'back' },
-	                  _react2.default.createElement(
-	                    'div',
-	                    { className: 'Learn-Heading' },
-	                    _react2.default.createElement(
-	                      'h1',
-	                      null,
-	                      'Learn Coding in 24 Weeks'
-	                    ),
-	                    _react2.default.createElement(
-	                      'p',
-	                      null,
-	                      'Class starts May 15, 2018'
-	                    )
-	                  ),
-	                  _react2.default.createElement(
-	                    'div',
-	                    { className: 'Data-Content' },
-	                    _react2.default.createElement(
-	                      'p',
-	                      null,
-	                      'Data Boot Camp equips students with the key skills for full-stack web development through dynamic, in-person classes.'
-	                    )
-	                  )
-	                )
-	              )
-	            )
-	          ),
-	          _react2.default.createElement(_Form2.default, null)
-	        )
-	      );
-	    }
-	  }]);
-
-	  return HeroMobile;
-	}(_react2.default.Component);
-
-	exports.default = HeroMobile;
-
-/***/ }),
-/* 219 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _propTypes = __webpack_require__(220);
+	var _propTypes = __webpack_require__(217);
 
 	var _propTypes2 = _interopRequireDefault(_propTypes);
 
@@ -23802,6 +23603,8 @@
 	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	//This is the react component I found from React-smooth-transition repo, that I used to make the faq section work
 
 	var Collapsible = function (_Component) {
 	  _inherits(Collapsible, _Component);
@@ -24060,7 +23863,7 @@
 	exports.default = Collapsible;
 
 /***/ }),
-/* 220 */
+/* 217 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -24089,13 +23892,13 @@
 	} else {
 	  // By explicitly using `prop-types` you are opting into new production behavior.
 	  // http://fb.me/prop-types-in-prod
-	  module.exports = __webpack_require__(221)();
+	  module.exports = __webpack_require__(218)();
 	}
 
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
 
 /***/ }),
-/* 221 */
+/* 218 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/**
@@ -24157,6 +23960,92 @@
 	  return ReactPropTypes;
 	};
 
+
+/***/ }),
+/* 219 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	__webpack_require__(185);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var Logo2 = __webpack_require__(205);
+
+	//Here I have to require the logo since it's is a svg file but it works fine a
+
+	var Footer = function (_React$Component) {
+	  _inherits(Footer, _React$Component);
+
+	  function Footer() {
+	    _classCallCheck(this, Footer);
+
+	    return _possibleConstructorReturn(this, (Footer.__proto__ || Object.getPrototypeOf(Footer)).apply(this, arguments));
+	  }
+
+	  _createClass(Footer, [{
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
+	        'div',
+	        { className: 'Footer' },
+	        _react2.default.createElement('img', { src: Logo2 }),
+	        _react2.default.createElement(
+	          'p',
+	          null,
+	          'This program is offered through ',
+	          _react2.default.createElement('br', null),
+	          ' asdcdwfwf ',
+	          _react2.default.createElement(
+	            'strong',
+	            null,
+	            'https://sddff:/'
+	          ),
+	          ' ',
+	          _react2.default.createElement('br', null),
+	          ' Powered by Trilogy Education Services ',
+	          _react2.default.createElement('br', null),
+	          ' Contact lsdfsss Boot Camp at ',
+	          _react2.default.createElement(
+	            'strong',
+	            null,
+	            '(xxx) xxx-xxxx'
+	          ),
+	          ' ',
+	          _react2.default.createElement('br', null),
+	          _react2.default.createElement('br', null),
+	          _react2.default.createElement(
+	            'strong',
+	            null,
+	            'Terms & Conditions'
+	          ),
+	          ' | Privacy/Your Privacy Rights'
+	        )
+	      );
+	    }
+	  }]);
+
+	  return Footer;
+	}(_react2.default.Component);
+
+	exports.default = Footer;
 
 /***/ })
 /******/ ]);

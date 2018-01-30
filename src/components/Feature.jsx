@@ -6,7 +6,7 @@ var benefitIcon = require('../images/icons/benefit.svg');
 var dataCodingIcon = require('../images/icons/data_coding.svg');
 var timeIcon = require('../images/icons/time.svg');
 
-
+//The static feature section, I have to change some things in the css to make the order work right for Mobile
 
 class Feature extends React.Component {
   render() {
@@ -14,10 +14,6 @@ class Feature extends React.Component {
       <div className="lazy-feature">
         <h1>Featuring</h1>
         <div className="Feature">
-          <div className="feature-child" id="feature-3">
-            <img src={phone} />
-            <p>*The material in this course is subject to change due to market demand.</p>
-          </div>
           <div className="feature-child" id="feature-1">
             <img src={dataCodingIcon}/>
             <p>Learn Advanced Excel, Python, Javascript '(D3.js, Leaflet.js)', HTML5/CSS, API Interactions, Social Media Mining, SQL, Tableau, Advanced Statistics, Machine LEarning, R, Git/GitHub, and More.*</p>
@@ -25,6 +21,10 @@ class Feature extends React.Component {
           <div className="feature-child" id="feature-2">
             <img src={benefitIcon}/>
             <p>Benefit from a wide range of career services to position you for success as you work to advance in your current career or seek a new opportunity.</p>
+          </div>
+          <div className="feature-child" id="feature-3">
+            <img src={phone} />
+            <p>*The material in this course is subject to change due to market demand.</p>
           </div>
           <div className="feature-child" id="feature-4">
             <img src={timeIcon}/>

@@ -1,4 +1,4 @@
-
+//Setting some values for colors and backgrounds here to be used below
 $blue: #38bcdb !global;
 $blue-hover: #2e91a3 !global;
 $grey: #a9aaab !global;
@@ -19,6 +19,8 @@ $mobile-featuring-background: url("../images/mobile/featuring_mobile.jpg");
 .App {
   font-family: 'Roboto';
 }
+//Setting the backgrounds based on screen width, later on I used aspect ratio almost exclusively
+// I might return to this @media setting instead
 #Hero_code {
   background-image: $mobile-code-background;
   @media screen and (min-width: 800px) {
@@ -33,7 +35,7 @@ $mobile-featuring-background: url("../images/mobile/featuring_mobile.jpg");
 }
 
 
-
+//Set the Hero component up to be a flex container and hero mobile container to not be displayed
 .Hero {
   background-size: cover;
   display: flex;
@@ -49,7 +51,7 @@ $mobile-featuring-background: url("../images/mobile/featuring_mobile.jpg");
   background-size: cover;
   background-image: $mobile-data-background;
 }
-
+ //Here the header and Headings are placed in order and sized accordingly
 .Header {
   order:1;
   height: 7vmax;
@@ -68,11 +70,12 @@ $mobile-featuring-background: url("../images/mobile/featuring_mobile.jpg");
     font-style: normal;
     right: 0;
     width: 30vmax;
-    font-size: 15px;
+    font-size: .9vmax;
     color: #dcdcdc;
     position: absolute;
     text-align:right;
     padding-right: 2vmax;
+    padding-top: 2vmax;
     a {
       color: #38bcbd;
     }
@@ -101,6 +104,13 @@ $mobile-featuring-background: url("../images/mobile/featuring_mobile.jpg");
     font-weight: lighter;
   }
 }
+
+//These styles are just for the form in the large screen version
+//The only thing I didn't have time to find was an icon that looks exactly like the one in the mockup
+//I found an icon that is similar from fontAwesome, maybe if I knew where these icons are supposed to come from
+//I could use the correct one
+
+
 .Form {
   order: 4;
   width: 25vmax;
@@ -173,6 +183,14 @@ $mobile-featuring-background: url("../images/mobile/featuring_mobile.jpg");
     margin-top: 0;
   }
 }
+
+//I change the content of these using the function from HeroContent but there is a flash, if I had more time I'd like to
+//to set the content to move up and change color. But I would also like some more clarification on what was being asked for here.
+//The instructions were not clear if there was supposed to be a transition effect where the content litterally moves up
+//or if the content can just be switched out. Also it wasn't specified where the style changes were supposed to take effect
+
+
+
 .Bottom-Content {
   order: 5;
   width: 28vmax;
@@ -199,6 +217,10 @@ $mobile-featuring-background: url("../images/mobile/featuring_mobile.jpg");
   }
 }
 
+
+//I set up the Feature component to also be a flex container then I changes the order
+//for the mobile version to put the phone at the top. I also set the last item int he flex box to display
+//Because it is the disclaimer which ends up at the bottom
 
 
 .Feature {
@@ -237,6 +259,8 @@ $mobile-featuring-background: url("../images/mobile/featuring_mobile.jpg");
   }
 }
 
+//used an @for here to save some time on making a sepperate call for eatch item;
+
 
 @for $i from 1 through 7 {
   #feature-#{$i} {
@@ -261,6 +285,9 @@ $mobile-featuring-background: url("../images/mobile/featuring_mobile.jpg");
     }
    }
 }
+
+//I had to give the phone image some individual settings since it's so different
+
 #feature-3 {
   img {
     height: 35vw;
@@ -279,6 +306,9 @@ $mobile-featuring-background: url("../images/mobile/featuring_mobile.jpg");
     }
   }
 }
+
+//The disclaimer which is at the bottom on the mobile version so it's hidden here
+
 #feature-6 {
   display: none;
   font-size: 1.8;
@@ -287,6 +317,11 @@ $mobile-featuring-background: url("../images/mobile/featuring_mobile.jpg");
   }
 }
 
+//For the faq page I ended up using a component I found in the Smooth-React-transition, it has some nice built in
+//classes which make it easy to work with. You can see the built in classes below such as Collapsible and outterContent
+//I utilized these classes to put an icon on the front of the faq question which changes. If I had more time I'd
+//like to get the background color for these icons right. It's just a matter of positioning the background
+//with the right border-radius. The other thing I was thinking about was turning the icon rather than using two differnt icons
 
 
 .Faq {
@@ -313,6 +348,10 @@ $mobile-featuring-background: url("../images/mobile/featuring_mobile.jpg");
   a {
     text-decoration: none;
   }
+}
+.Collapsible {
+  // height: 4vmax;
+  margin-bottom: 1.5vmax;
 }
 .Collapsible__trigger {
   font-family: 'Roboto Slab';
@@ -372,7 +411,7 @@ $mobile-featuring-background: url("../images/mobile/featuring_mobile.jpg");
     position: absolute;
     height: 5vmax;
     margin-left: 5vmax;
-    margin-bottom: 1vmax;
+    margin-bottom: 0;
     padding: 1vmax;
   }
   p {
@@ -390,6 +429,9 @@ $mobile-featuring-background: url("../images/mobile/featuring_mobile.jpg");
     }
   }
 }
+
+//this is where I was able to incorparate another mixin to get the parallax component to work. These mixin are nice especially
+//if you are ever going to add more items to the component, you can reuse the mixin
 
 $parallax-perspective : 1 !default;
 $parallax-element : "body" !default;
@@ -425,6 +467,8 @@ $parallax-ios : true !default;
 
 @include parallax-init;
 // @include parallax-init;
+
+
 
 .Story {
   // @include parallax-init();
@@ -467,6 +511,11 @@ $parallax-ios : true !default;
   }
 }
 
+//Most of the styling for mobile is found here, I decided to sepperate it out from the other components.
+//it made it a little easier to work on it all at once.
+//After working on the footer, I did notice that the logo doesn't exactly match the once in the mockup.
+//I wonder if this is just an old logo?
+
 @media only screen and (max-aspect-ratio: 16/9) {
   .Hero {
     display: none;
@@ -474,6 +523,8 @@ $parallax-ios : true !default;
   .Header {
     height: 35vmax;
     position: relative;
+    background-color: black;
+    opacity: .90;
     img {
       vertical-align: middle;
       margin : auto;
@@ -497,6 +548,38 @@ $parallax-ios : true !default;
       right:0;
       width: 74vmax;
       font-size: 3.5vmax;
+      text-align: center;
+    }
+  }
+  .Footer {
+    height: 65vmax;
+    position: relative;
+    background-color: $blue;
+    margin-top: 10vw;
+    img {
+      vertical-align: middle;
+      margin: auto;
+      margin-top: 5vw;
+      position: absolute;
+      top: 0;
+      bottom: 60vw;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 75vmax;
+      height: 25vmax;
+    }
+    p {
+      vertical-align: middle;
+      margin: auto;
+      margin-bottom:5vw;
+      position: absolute;
+      top: 40vw;
+      bottom: 0;
+      left:0;
+      right:0;
+      width: 74vmax;
+      font-size: 3vmax;
       text-align: center;
     }
   }
@@ -549,7 +632,7 @@ $parallax-ios : true !default;
     margin-bottom: 10vmax;
     p {
       border-top: solid $blue thick;
-      border-top-width: 15px;
+      border-top-width: 10px;
       padding-top: 3vw;
       vertical-align: middle;
       margin : auto;
@@ -559,10 +642,24 @@ $parallax-ios : true !default;
       left:0;
       right:0;
       color: white;
-      width: 85vmax;
+      width: 75vmax;
       font-size: 4vw;
       text-align: center;
     }
+  }
+  .Data-Content:after {
+    font-family:'FontAwesome';
+    font-size: 6vw;
+    content:"\f054";
+    float: right;
+    color: white;
+  }
+  .Data-Content:before {
+    font-family:'FontAwesome';
+    font-size: 6vw;
+    content:"\f053";
+    float: left;
+    color: white;
   }
   .Header {
     width: 100vw;
@@ -662,78 +759,14 @@ $parallax-ios : true !default;
   }
 }
 
-$n: 2;
-$item-width: 40%;
-$item-separation: 0px;
-$viewer-distance: 500px;
+//This is kind of my hack version of a carousel, I looked at using another carousel but it seemed a little overkill
+//I also wonder if it would be ok to incorporate a carousel from bootstrap framework.
+//My only regret here would be putting the on click on the entire paragraph element on the bottom and again not having
+// the exact icons but I was again able to use fontAwesome icons that look similar.
+//I would  incorporate a more traditional carousel here for sure if there were more items to shift through
+//but since we only needed to switch between two items I simply put them facing opposite directions then
+//then I flip the card by puttng a class on the element in an onClick funciton found in the HeroMobile component.
 
-$theta: 2 * 3.141592653589793 / $n;
-$apothem: 482.842712474619px;
-
-.carousel {
-	padding: 20px;
-
-	// perspective: $viewer-distance;
-	overflow: hidden;
-
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	> * {
-		flex: 0 0 auto;
-	}
-
-	figure {
-		margin: 0;
-
-		width: $item-width;
-		transform-style: preserve-3d;
-		transition: transform 0.5s;
-		transform-origin: 50% 50% (-$apothem);
-
-		.Hero_mobile {
-			width: 100%;
-			// box-sizing: border-box;
-			padding: 0 $item-separation / 2;
-
-			// opacity: 0.9;
-
-			&:not(:first-of-type) {
-				position: absolute;
-				left: 0;
-				top: 0;
-				transform-origin: 50% 50% (-$apothem);
-			}
-
-			@for $i from 2 through $n {
-				&:nth-child(#{$i}) {
-					transform: rotateY(#{($i - 1) * $theta}rad);
-				}
-			}
-		}
-	}
-
-	nav {
-		display: flex;
-		justify-content: center;
-		margin: 20px 0 0;
-    height: 10vw;
-
-		button {
-			flex: 0 0 auto;
-			margin: 0 5px;
-			width: 10vw;
-			cursor: pointer;
-
-			color: #333;
-			background: none;
-			border: 1px solid;
-			letter-spacing: 1px;
-			padding: 5px 10px;
-		}
-	}
-
-}
 
 .card {
 	-webkit-transition: -webkit-transform .5s;
@@ -792,9 +825,31 @@ $apothem: 482.842712474619px;
   height: 57vw;
 }
 /* flip the pane when hovered */
-.card-container:hover {
+.card-container.flip {
 	-webkit-transform: rotateY(180deg);
 	-moz-transform: rotateY(180deg);
 	-o-transform: rotateY(180deg);
 	transform: rotateY(180deg);
 }
+
+// #carousel-button {
+//   width: 100vmax;
+//   color: blue;
+//   height: 0px;
+//   border: white thick solid;
+// }
+
+// #carousel-button:before {
+//   font-family:'FontAwesome';
+//   font-size: 6vw;
+//   content:"\f053";
+//   float: left;
+//   color: white;
+// }
+// #carousel-button:after {
+//   font-family:'FontAwesome';
+//   font-size: 6vw;
+//   content:"\f054";
+//   float: right;
+//   color: white;
+// }

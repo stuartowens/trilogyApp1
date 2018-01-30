@@ -7,25 +7,15 @@ import Feature from './Feature.jsx';
 import Story from './Story.jsx';
 import Faq from './Faq.jsx';
 import Footer from './Footer.jsx';
-import heroContent from '../Content/HeroContent.js';
 
 
-
+//The App component holds all of the components except for the Header and form component which live inside
+//the hero components
 class App extends React.Component {
-  constructor(){
-    super()
-    this.state= {
-      heroId: 'Hero_code'
-    }
-  }
-  componentDidMount(){
-    heroContent();
-  };
   render() {
     return (
         <div className="App">
-          {/* <Header /> */}
-          <Hero heroId={this.state.heroId}/>
+          <Hero />
           <HeroMobile />
           <Feature />
           <Story />

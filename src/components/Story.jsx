@@ -1,6 +1,7 @@
 import React from 'react';
 import './app.scss';
 
+//here is the parallax component
 
 class Story extends React.Component {
   render() {

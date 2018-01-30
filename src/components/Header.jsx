@@ -3,6 +3,8 @@ import './app.scss';
 var Logo = require('../images/logos/logo_trilogy.svg');
 var svgFile2 = require('../images/logos/logo_trilogy_blk.svg');
 
+//Here I load the svg file and make a simple header, I could make this phoine number a real link if need be
+
 class Header extends React.Component {
   render() {
     return (

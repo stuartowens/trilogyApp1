@@ -1,6 +1,7 @@
 import React from 'react';
 import './app.scss';
 
+//Here is the form component, I only regret not being able to find an exact match for the icon
 
 class Form extends React.Component {
   render() {
@@ -13,7 +14,7 @@ class Form extends React.Component {
             {/* <p>   </p> */}
             <input type="text" placeholder="Last name" />
           </form>
-          <button type="submit">CONTINUE <i className="fa fa-arrow-circle-o-right" aria-hidden="true"></i></button>
+          <button type="submit">CONTINUE <i className="fa fa-chevron-circle-right" aria-hidden="true"></i></button>
         </div>
       )
   }

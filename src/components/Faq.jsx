@@ -2,6 +2,9 @@ import React from 'react';
 import './app.scss';
 import Collapsible from  './Collapsible.jsx';
 
+//If I could go back I would simply create these elements using a loop and keep the content
+//in a sepperate place to make this look more clean
+//I bring in the Collapsible component here to make the faq q and a collapse
 
 class Faq extends React.Component {
   render() {
