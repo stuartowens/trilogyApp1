@@ -692,20 +692,24 @@ $parallax-ios : true !default;
       font-size: 3.2vmax;
     }
   }
+
   .Story {
     background-image: $mobile-about-background;
     min-height: 1000px;
+    height: 85vw;
     h1 {
       font-size: 8vmax;
     }
     p {
-      font-size: 5.5vmax;
+      font-size: 2.5vmax;
     }
   }
+
   .Faq {
     min-height:1200px;
     padding-bottom: 60vw;
   }
+
   .faq-questions {
     max-width: 80vmax;
     width: 80vmax;
@@ -725,6 +729,7 @@ $parallax-ios : true !default;
       margin: 3vmax;
     }
   }
+
   .Collapsible {
     vertical-align: middle;
     width: 85vmax;
@@ -737,6 +742,7 @@ $parallax-ios : true !default;
       padding: 2vw;
     }
   }
+
   .Collapsible__contentOuter {
     margin: 3vmax;
     max-width: inherit;
@@ -746,10 +752,12 @@ $parallax-ios : true !default;
       padding: 1.5vw;
     }
   }
+
   span.Collapsible__trigger {
     max-width: 75vmax;
     // overflow: hidden;
   }
+
   .Collapsible__trigger.is-closed:before {
     font-size: 3vw;
 
